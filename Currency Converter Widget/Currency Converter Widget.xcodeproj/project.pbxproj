@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		77CB392B2EF222EC00A27DFD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB392A2EF222EC00A27DFD /* WidgetKit.framework */; };
 		77CB392D2EF222EC00A27DFD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB392C2EF222EC00A27DFD /* SwiftUI.framework */; };
-		77CB39982EF222EC00A27DFD /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB39992EF222EC00A27DFD /* AppIntents.framework */; };
 		77CB393E2EF222EE00A27DFD /* Widget ExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 77CB39282EF222EC00A27DFD /* Widget ExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		77CB39982EF222EC00A27DFD /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB39992EF222EC00A27DFD /* AppIntents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +58,7 @@
 		77CB39282EF222EC00A27DFD /* Widget ExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget ExtensionExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CB392A2EF222EC00A27DFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		77CB392C2EF222EC00A27DFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		77CB39952EF2C1A000A27DFD /* Widget ExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Widget ExtensionExtension.entitlements"; sourceTree = "<group>"; };
 		77CB39992EF222EC00A27DFD /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -135,12 +136,14 @@
 		77CB38F12EF21F9F00A27DFD = {
 			isa = PBXGroup;
 			children = (
+				77CB39952EF2C1A000A27DFD /* Widget ExtensionExtension.entitlements */,
 				77CB38FC2EF21F9F00A27DFD /* Currency Converter Widget */,
 				77CB390A2EF21FA100A27DFD /* Currency Converter WidgetTests */,
 				77CB39142EF21FA200A27DFD /* Currency Converter WidgetUITests */,
 				77CB392E2EF222EC00A27DFD /* Widget Extension */,
 				77CB39292EF222EC00A27DFD /* Frameworks */,
 				77CB38FB2EF21F9F00A27DFD /* Products */,
+				77CB39822EF22E9B00A27DFD /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +165,14 @@
 				77CB392C2EF222EC00A27DFD /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77CB39822EF22E9B00A27DFD /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				77CB39992EF222EC00A27DFD /* AppIntents.framework */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,6 +653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Widget ExtensionExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 683MXZZR23;
@@ -669,6 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Widget ExtensionExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 683MXZZR23;
