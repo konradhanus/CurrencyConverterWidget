@@ -2,7 +2,13 @@ import WidgetKit
 import SwiftUI
 import AppIntents
 
-// --- Pomocnik do przechowywania stanu (kwota) ---
+// --- 1. MODEL DANYCH I LISTA WALUT ---
+
+// Lista dostępnych walut
+let allCurrencies = [
+    "PLN", "USD", "EUR", "GBP", "CHF", "JPY", "CZK", "NOK", "SEK", "CAD", "AUD", "THB", "HUF", "DKK"
+]
+
 struct WidgetStorage {
     static let shared = UserDefaults.standard
     static let amountKey = "widgetCustomAmount"
@@ -13,35 +19,67 @@ struct WidgetStorage {
     }
 }
 
-// --- Struktura do dekodowania odpowiedzi z API ---
 struct ExchangeRateResponse: Codable {
     let rates: [String: Double]
 }
 
-// --- KONFIGURACJA WIDŻETU (App Intent) ---
+// --- 2. KONFIGURACJA LISTY ROZWIJANEJ (AppEntity) ---
+
+struct CurrencyEntity: AppEntity {
+    let id: String
+    
+    static var typeDisplayRepresentation: TypeDisplayRepresentation = "Waluta"
+    var displayRepresentation: DisplayRepresentation {
+        DisplayRepresentation(title: "\(id)")
+    }
+    
+    static var defaultQuery = CurrencyQuery()
+}
+
+struct CurrencyQuery: EntityStringQuery {
+    func entities(for identifiers: [String]) async throws -> [CurrencyEntity] {
+        identifiers.map { CurrencyEntity(id: $0) }
+    }
+    
+    func entities(matching string: String) async throws -> [CurrencyEntity] {
+        allCurrencies
+            .filter { $0.localizedCaseInsensitiveContains(string) }
+            .map { CurrencyEntity(id: $0) }
+    }
+    
+    func suggestedEntities() async throws -> [CurrencyEntity] {
+        allCurrencies.map { CurrencyEntity(id: $0) }
+    }
+}
+
+// --- 3. KONFIGURACJA WIDŻETU (Intent) ---
+
 @available(iOS 17.0, *)
 struct CurrencySelectionIntent: WidgetConfigurationIntent {
     static var title: LocalizedStringResource = "Konfiguracja Walut"
     static var description = IntentDescription("Wybierz waluty do przeliczania.")
 
-    @Parameter(title: "Z Waluty", default: "THB")
-    var fromCurrency: String
+    // POPRAWKA: Typy muszą być opcjonalne (CurrencyEntity?)
+    @Parameter(title: "Z Waluty")
+    var fromCurrency: CurrencyEntity?
 
-    @Parameter(title: "Na Walutę", default: "PLN")
-    var toCurrency: String
+    @Parameter(title: "Na Walutę")
+    var toCurrency: CurrencyEntity?
     
+    // Wartości domyślne
     init() {
-        self.fromCurrency = "THB"
-        self.toCurrency = "PLN"
+        self.fromCurrency = CurrencyEntity(id: "THB")
+        self.toCurrency = CurrencyEntity(id: "PLN")
     }
     
     init(from: String, to: String) {
-        self.fromCurrency = from
-        self.toCurrency = to
+        self.fromCurrency = CurrencyEntity(id: from)
+        self.toCurrency = CurrencyEntity(id: to)
     }
 }
 
-// --- MODEL DANYCH ---
+// --- 4. TIMELINE PROVIDER ---
+
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let rate: Double
@@ -50,31 +88,35 @@ struct SimpleEntry: TimelineEntry {
     let to: String
 }
 
-// --- DOSTAWCA DANYCH (Provider) ---
-// POPRAWKA: AppIntentTimelineProvider (bez 's' w środku)
 @available(iOS 17.0, *)
 struct Provider: AppIntentTimelineProvider {
-    
-    // Te aliasy pomagają kompilatorowi zrozumieć typy
     typealias Entry = SimpleEntry
     typealias Intent = CurrencySelectionIntent
 
-    // Context jest teraz poprawnie rozpoznawany dzięki AppIntentTimelineProvider
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), rate: 0.12, amount: 100, from: "THB", to: "PLN")
+        SimpleEntry(date: Date(), rate: 4.0, amount: 100, from: "USD", to: "PLN")
     }
 
     func snapshot(for configuration: CurrencySelectionIntent, in context: Context) async -> SimpleEntry {
-        let rate = await fetchRate(from: configuration.fromCurrency, to: configuration.toCurrency)
-        return SimpleEntry(date: Date(), rate: rate, amount: WidgetStorage.amount, from: configuration.fromCurrency, to: configuration.toCurrency)
+        // POPRAWKA: Bezpieczne rozpakowanie opcjonalnych wartości
+        let fromCode = configuration.fromCurrency?.id ?? "USD"
+        let toCode = configuration.toCurrency?.id ?? "PLN"
+        
+        let rate = await fetchRate(from: fromCode, to: toCode)
+        return SimpleEntry(date: Date(), rate: rate, amount: WidgetStorage.amount, from: fromCode, to: toCode)
     }
     
     func timeline(for configuration: CurrencySelectionIntent, in context: Context) async -> Timeline<SimpleEntry> {
-        let rate = await fetchRate(from: configuration.fromCurrency, to: configuration.toCurrency)
+        // POPRAWKA: Bezpieczne rozpakowanie opcjonalnych wartości
+        let fromCode = configuration.fromCurrency?.id ?? "USD"
+        let toCode = configuration.toCurrency?.id ?? "PLN"
+        
+        let rate = await fetchRate(from: fromCode, to: toCode)
         let currentAmount = WidgetStorage.amount
         
-        let entry = SimpleEntry(date: .now, rate: rate, amount: currentAmount, from: configuration.fromCurrency, to: configuration.toCurrency)
+        let entry = SimpleEntry(date: .now, rate: rate, amount: currentAmount, from: fromCode, to: toCode)
         
+        // Odświeżanie co godzinę
         let nextUpdate = Calendar.current.date(byAdding: .hour, value: 1, to: .now)!
         return Timeline(entries: [entry], policy: .after(nextUpdate))
     }
@@ -89,13 +131,13 @@ struct Provider: AppIntentTimelineProvider {
             let response = try JSONDecoder().decode(ExchangeRateResponse.self, from: data)
             return response.rates[to] ?? 0.0
         } catch {
-            print("Błąd pobierania: \(error)")
             return 0.0
         }
     }
 }
 
-// --- GŁÓWNY WIDOK WIDŻETU ---
+// --- 5. GŁÓWNY WIDOK WIDŻETU ---
+
 struct WidgetExtensionEntryView : View {
     var entry: Provider.Entry
     @Environment(\.widgetFamily) var family
@@ -108,39 +150,45 @@ struct WidgetExtensionEntryView : View {
             MediumWidgetView(entry: entry)
         case .systemLarge:
             LargeWidgetView(entry: entry)
+        case .accessoryCircular:
+            AccessoryCircularView(entry: entry)
+        case .accessoryRectangular:
+            AccessoryRectangularView(entry: entry)
+        case .accessoryInline:
+            AccessoryInlineView(entry: entry)
         default:
-            MediumWidgetView(entry: entry)
+            SmallWidgetView(entry: entry)
         }
     }
 }
 
-// --- WIDOK: MAŁY (Small) ---
+// --- WIDOKI SYSTEMOWE (Ekran Główny) ---
+
 struct SmallWidgetView: View {
     var entry: Provider.Entry
-    
     var body: some View {
         VStack(spacing: 0) {
             VStack(alignment: .trailing, spacing: 2) {
                 Text("\(entry.from) → \(entry.to)")
                     .font(.system(size: 10, weight: .bold))
-                    .foregroundColor(.white.opacity(0.6))
+                    .foregroundStyle(.white.opacity(0.6))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Text(formatAmount(entry.amount))
                     .font(.system(size: 14, design: .monospaced))
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundStyle(.white.opacity(0.8))
                 
                 let result = entry.amount * entry.rate
                 Text(formatAmount(result))
                     .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                     .minimumScaleFactor(0.6)
                     .lineLimit(1)
             }
             .padding(.horizontal, 8)
             .padding(.vertical, 6)
             .background(Color.black.opacity(0.2))
-            .cornerRadius(8)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
             .padding(.bottom, 4)
             
             KeypadView(buttonHeight: 20, fontSize: 12, spacing: 2)
@@ -149,42 +197,30 @@ struct SmallWidgetView: View {
     }
 }
 
-// --- WIDOK: ŚREDNI (Medium) ---
 struct MediumWidgetView: View {
     var entry: Provider.Entry
-    
     var body: some View {
         HStack(spacing: 16) {
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
-                    Text(entry.from)
-                        .font(.caption.weight(.bold))
-                        .foregroundColor(Color.blue.opacity(0.8))
-                    Image(systemName: "arrow.right")
-                        .font(.caption2)
-                        .foregroundColor(.white.opacity(0.5))
-                    Text(entry.to)
-                        .font(.caption.weight(.bold))
-                        .foregroundColor(Color.purple.opacity(0.8))
+                    Text(entry.from).font(.caption.weight(.bold)).foregroundStyle(.blue)
+                    Image(systemName: "arrow.right").font(.caption2).foregroundStyle(.secondary)
+                    Text(entry.to).font(.caption.weight(.bold)).foregroundStyle(.purple)
                 }
-                
                 Spacer()
-                
                 Text(formatAmount(entry.amount))
-                    .font(.system(size: 20, weight: .regular, design: .monospaced))
-                    .foregroundColor(.white.opacity(0.8))
+                    .font(.system(size: 20, design: .monospaced))
+                    .foregroundStyle(.secondary)
                 
                 let result = entry.amount * entry.rate
                 Text(formatAmount(result))
                     .font(.system(size: 34, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
+                    .foregroundStyle(.primary)
                     .minimumScaleFactor(0.5)
                     .lineLimit(1)
-                
                 Spacer()
                 Text("1 \(entry.from) ≈ \(String(format: "%.3f", entry.rate)) \(entry.to)")
-                    .font(.caption2)
-                    .foregroundColor(.white.opacity(0.4))
+                    .font(.caption2).foregroundStyle(.tertiary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
@@ -196,35 +232,40 @@ struct MediumWidgetView: View {
     }
 }
 
-// --- WIDOK: DUŻY (Large) ---
 struct LargeWidgetView: View {
     var entry: Provider.Entry
     
     var body: some View {
-        VStack(spacing: 16) {
-            VStack(alignment: .trailing, spacing: 8) {
+        VStack(spacing: 12) {
+            // GÓRA: Ekran Wyników
+            VStack(alignment: .trailing, spacing: 4) {
                 HStack {
                     Label(entry.from, systemImage: "arrow.up.circle.fill")
-                        .foregroundColor(.white.opacity(0.7))
+                        .foregroundStyle(.white.opacity(0.7))
                     Spacer()
                     Label(entry.to, systemImage: "arrow.down.circle.fill")
-                        .foregroundColor(.green.opacity(0.8))
+                        .foregroundStyle(.green.opacity(0.8))
                 }
                 .font(.caption.weight(.bold))
                 
                 Divider().background(.white.opacity(0.2))
                 
+                Spacer(minLength: 0)
+                
                 Text(formatAmount(entry.amount))
-                    .font(.system(size: 36, weight: .light, design: .monospaced))
-                    .foregroundColor(.white.opacity(0.9))
-                    .minimumScaleFactor(0.8)
+                    .font(.system(size: 32, weight: .light, design: .monospaced))
+                    .foregroundStyle(.white.opacity(0.9))
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(1)
                 
                 let result = entry.amount * entry.rate
                 Text(formatAmount(result))
-                    .font(.system(size: 56, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
+                    .font(.system(size: 52, weight: .bold, design: .rounded))
+                    .foregroundStyle(.white)
                     .minimumScaleFactor(0.5)
                     .lineLimit(1)
+                
+                Spacer(minLength: 0)
                 
                 HStack {
                     Spacer()
@@ -232,22 +273,66 @@ struct LargeWidgetView: View {
                         .font(.caption2)
                         .padding(4)
                         .background(.white.opacity(0.1))
-                        .cornerRadius(4)
-                        .foregroundColor(.white.opacity(0.5))
+                        .clipShape(RoundedRectangle(cornerRadius: 4))
+                        .foregroundStyle(.white.opacity(0.5))
                 }
             }
-            .padding()
+            .padding(12)
             .background(Color.black.opacity(0.3))
-            .cornerRadius(16)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .frame(maxHeight: .infinity)
             
-            KeypadView(buttonHeight: 45, fontSize: 24, spacing: 10)
+            // DÓŁ: Klawiatura
+            KeypadView(buttonHeight: 40, fontSize: 22, spacing: 8)
+                .padding(.bottom, 4)
         }
         .padding()
         .widgetURL(URL(string: "currencyconverter://open"))
     }
 }
 
-// --- KLAWIATURA (Wspólna) ---
+// --- WIDOKI EKRANU BLOKADY (Lock Screen) ---
+
+struct AccessoryRectangularView: View {
+    var entry: Provider.Entry
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Text(entry.from).font(.headline)
+                Image(systemName: "arrow.right").font(.caption)
+                Text(entry.to).font(.headline)
+            }
+            let result = entry.amount * entry.rate
+            Text("\(formatAmount(entry.amount)) = \(formatAmount(result))")
+                .minimumScaleFactor(0.5)
+        }
+    }
+}
+
+struct AccessoryCircularView: View {
+    var entry: Provider.Entry
+    var body: some View {
+        ZStack {
+            AccessoryWidgetBackground()
+            VStack(spacing: 0) {
+                Text(entry.to)
+                    .font(.caption2.bold())
+                Text(String(format: "%.2f", entry.rate))
+                    .font(.system(size: 10))
+            }
+        }
+    }
+}
+
+struct AccessoryInlineView: View {
+    var entry: Provider.Entry
+    var body: some View {
+        Text("1 \(entry.from) = \(String(format: "%.2f", entry.rate)) \(entry.to)")
+    }
+}
+
+// --- WSPÓLNA KLAWIATURA ---
+
 struct KeypadView: View {
     var buttonHeight: CGFloat
     var fontSize: CGFloat
@@ -267,11 +352,10 @@ struct KeypadView: View {
             
             Button(intent: ClearAmountIntent()) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.red.opacity(0.2))
+                    RoundedRectangle(cornerRadius: 10).fill(Color.red.opacity(0.2))
                     Image(systemName: "trash")
                         .font(.system(size: fontSize * 0.7))
-                        .foregroundColor(.red.opacity(0.8))
+                        .foregroundStyle(Color.red.opacity(0.8))
                 }
                 .frame(height: buttonHeight)
             }
@@ -281,11 +365,10 @@ struct KeypadView: View {
             
             Button(intent: RefreshIntent()) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.blue.opacity(0.2))
+                    RoundedRectangle(cornerRadius: 10).fill(Color.blue.opacity(0.2))
                     Image(systemName: "arrow.clockwise")
                         .font(.system(size: fontSize * 0.7))
-                        .foregroundColor(.blue.opacity(0.8))
+                        .foregroundStyle(Color.blue.opacity(0.8))
                 }
                 .frame(height: buttonHeight)
             }
@@ -302,11 +385,10 @@ struct NumberButton: View {
     var body: some View {
         Button(intent: TypeNumberIntent(number)) {
             ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.white.opacity(0.1))
+                RoundedRectangle(cornerRadius: 10).fill(Color.white.opacity(0.1))
                 Text("\(number)")
                     .font(.system(size: fontSize, weight: .medium, design: .rounded))
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
             }
             .frame(height: height)
         }
@@ -314,7 +396,8 @@ struct NumberButton: View {
     }
 }
 
-// --- FORMATOWANIE ---
+// --- POMOCNIKI ---
+
 func formatAmount(_ val: Double) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .decimal
@@ -323,7 +406,7 @@ func formatAmount(_ val: Double) -> String {
     return formatter.string(from: NSNumber(value: val)) ?? "0"
 }
 
-// --- INTENCJE (Akcje) ---
+// --- INTENCJE ---
 
 struct TypeNumberIntent: AppIntent {
     static var title: LocalizedStringResource = "Wpisz cyfrę"
@@ -357,13 +440,13 @@ struct RefreshIntent: AppIntent {
     }
 }
 
-// --- PUNKT WEJŚCIA WIDŻETU ---
+// --- PUNKT WEJŚCIA ---
+
 @main
 struct WidgetExtensionWidget: Widget {
     let kind: String = "Widget_Extension"
 
     var body: some WidgetConfiguration {
-        // AppIntentConfiguration (Singular) - to jest kluczowe dla iOS 17
         AppIntentConfiguration(kind: kind, intent: CurrencySelectionIntent.self, provider: Provider()) { entry in
             WidgetExtensionEntryView(entry: entry)
                 .containerBackground(for: .widget) {
@@ -371,7 +454,14 @@ struct WidgetExtensionWidget: Widget {
                 }
         }
         .configurationDisplayName("Kalkulator Walut")
-        .description("Edytuj widżet, aby zmienić waluty.")
-        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+        .description("Przeliczaj waluty bezpośrednio na ekranie.")
+        .supportedFamilies([
+            .systemSmall,
+            .systemMedium,
+            .systemLarge,
+            .accessoryCircular,
+            .accessoryRectangular,
+            .accessoryInline
+        ])
     }
 }
