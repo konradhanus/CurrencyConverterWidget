@@ -1,5 +1,7 @@
+
 import SwiftUI
 import WidgetKit
+import AppIntents // Potrzebne dla interaktywnych widżetów
 
 // --- 1. Model Danych i Logika Aplikacji ---
 
@@ -55,7 +57,6 @@ class ExchangeRateViewModel: ObservableObject {
     func fetchExchangeRate() async {
         guard !isLoading else { return }
         
-        // Jeśli waluty są te same, kurs to 1
         if fromCurrency == toCurrency {
             self.exchangeRate = 1.0
             calculateResult()
@@ -63,7 +64,6 @@ class ExchangeRateViewModel: ObservableObject {
             return
         }
         
-        // Jeśli używamy własnego kursu, nie pobieraj danych
         if useCustomRate {
             calculateResult()
             return
@@ -114,7 +114,6 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            // Tło z gradientem dla efektu "liquid"
             LinearGradient(
                 gradient: Gradient(colors: [Color.blue.opacity(0.6), Color.purple.opacity(0.6)]),
                 startPoint: .topLeading,
@@ -125,7 +124,6 @@ struct ContentView: View {
             VStack(spacing: 20) {
                 Spacer()
                 
-                // Główny kontener w stylu "glassmorphism"
                 VStack(spacing: 25) {
                     headerView
                     amountInputView
@@ -154,8 +152,6 @@ struct ContentView: View {
         .onChange(of: viewModel.useCustomRate) { _,_ in Task { await viewModel.fetchExchangeRate() } }
         .onChange(of: viewModel.customRateString) { _,_ in viewModel.calculateResult() }
     }
-
-    // MARK: - Subviews
     
     private var headerView: some View {
         Text("Konwerter Walut")
@@ -270,17 +266,15 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
-// --- 3. KOD DLA WIDŻETÓW ---
+// --- 3. KOD DLA INTERAKTYWNYCH WIDŻETÓW (iOS 17+) ---
 /*
  
  KROK 1: Utwórz nowy cel (target) dla widżetu w Xcode.
  1. W Xcode wybierz: File -> New -> Target...
  2. Wyszukaj i wybierz "Widget Extension".
- 3. Nazwij go np. "CurrencyConverterWidgetExtension". Upewnij się, że opcja "Include Live Activity" jest odznaczona (chyba że chcesz ją dodać później) i kliknij "Finish".
+ 3. Nazwij go np. "CurrencyConverterWidgetExtension". Upewnij się, że opcja "Include Live Activity" jest odznaczona i kliknij "Finish".
  
  KROK 2: Zastąp zawartość pliku, który Xcode właśnie utworzył (np. `CurrencyConverterWidgetExtension.swift`) poniższym kodem.
- 
- UWAGA: Logika sieciowa w widżetach powinna być oszczędna. Poniższy kod pobiera dane raz na określony czas.
  
  */
 
@@ -290,48 +284,53 @@ struct ContentView_Previews: PreviewProvider {
  
  import WidgetKit
  import SwiftUI
+ import AppIntents
 
- // --- Model Danych dla Widżetu ---
- struct WidgetExchangeRateResponse: Codable {
-     let rates: [String: Double]
+ // --- Konfiguracja Widżetu (Wybór Walut) ---
+
+ struct CurrencySelectionIntent: WidgetConfigurationIntent {
+     static var title: LocalizedStringResource = "Wybierz Waluty"
+     static var description = IntentDescription("Wybierz parę walut do wyświetlenia w widżecie.")
+
+     @Parameter(title: "Waluta Źródłowa", default: "THB")
+     var fromCurrency: String
+
+     @Parameter(title: "Waluta Docelowa", default: "PLN")
+     var toCurrency: String
  }
+ 
+ // --- Dane i Logika Widżetu ---
 
- // --- Dostawca Linii Czasu dla Widżetu (TimelineProvider) ---
- struct Provider: TimelineProvider {
-     // Dane tymczasowe, gdy widżet się ładuje
+ struct Provider: AppIntentsTimelineProvider {
+     // Dane tymczasowe
      func placeholder(in context: Context) -> SimpleEntry {
-         SimpleEntry(date: Date(), rate: 0.1234, from: "THB", to: "PLN")
+         SimpleEntry(date: Date(), rate: 0.12, from: "THB", to: "PLN")
      }
 
-     // Dane dla podglądu widżetu w galerii
-     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-         let entry = SimpleEntry(date: Date(), rate: 0.1234, from: "THB", to: "PLN")
-         completion(entry)
-     }
-
-     // Dane aktualne i przyszłe aktualizacje
-     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-         Task {
-             let from = "THB"
-             let to = "PLN"
-             let rate = await fetchRate(from: from, to: to)
-             
-             let entry = SimpleEntry(date: .now, rate: rate, from: from, to: to)
-             
-             // Ustalenie, kiedy widżet ma się odświeżyć (np. za godzinę)
-             let nextUpdate = Calendar.current.date(byAdding: .hour, value: 1, to: .now)!
-             let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
-             completion(timeline)
-         }
+     // Dane dla podglądu
+     func snapshot(for configuration: CurrencySelectionIntent, in context: Context) async -> SimpleEntry {
+         let rate = await fetchRate(from: configuration.fromCurrency, to: configuration.toCurrency)
+         return SimpleEntry(date: Date(), rate: rate, from: configuration.fromCurrency, to: configuration.toCurrency)
      }
      
+     // Logika odświeżania widżetu
+     func timeline(for configuration: CurrencySelectionIntent, in context: Context) async -> Timeline<SimpleEntry> {
+         let rate = await fetchRate(from: configuration.fromCurrency, to: configuration.toCurrency)
+         let entry = SimpleEntry(date: .now, rate: rate, from: configuration.fromCurrency, to: configuration.toCurrency)
+         
+         let nextUpdate = Calendar.current.date(byAdding: .hour, value: 1, to: .now)!
+         return Timeline(entries: [entry], policy: .after(nextUpdate))
+     }
+     
+     // Funkcja pomocnicza do pobierania kursu
      private func fetchRate(from: String, to: String) async -> Double {
+         if from == to { return 1.0 }
          let urlString = "https://api.frankfurter.app/latest?from=\(from)&to=\(to)"
          guard let url = URL(string: urlString) else { return 0.0 }
 
          do {
              let (data, _) = try await URLSession.shared.data(from: url)
-             let response = try JSONDecoder().decode(WidgetExchangeRateResponse.self, from: data)
+             let response = try JSONDecoder().decode(ExchangeRateResponse.self, from: data)
              return response.rates[to] ?? 0.0
          } catch {
              print("Błąd pobierania w widżecie: \(error)")
@@ -339,72 +338,150 @@ struct ContentView_Previews: PreviewProvider {
          }
      }
  }
-
- // --- Wpis Linii Czasu (TimelineEntry) ---
+ 
+ // Model danych dla pojedynczego wpisu w historii widżetu
  struct SimpleEntry: TimelineEntry {
      let date: Date
      let rate: Double
      let from: String
      let to: String
  }
-
+ 
  // --- Widok Widżetu ---
+ 
  struct CurrencyConverterWidgetEntryView : View {
      var entry: Provider.Entry
      
-     // Widok dla mniejszych widżetów na ekranie głównym
-     @ViewBuilder
+     @Environment(\.widgetFamily) var family
+
      var body: some View {
-         ZStack {
-             LinearGradient(colors: [.blue.opacity(0.8), .purple.opacity(0.8)], startPoint: .top, endPoint: .bottom)
-             
-             VStack(alignment: .leading, spacing: 5) {
-                 Text("\(entry.from) → \(entry.to)")
-                     .font(.caption.weight(.bold))
-                     .foregroundColor(.white.opacity(0.8))
-                 
-                 Text(String(format: "%.4f", entry.rate))
-                     .font(.title2.weight(.semibold))
-                     .foregroundColor(.white)
-                     .minimumScaleFactor(0.5)
-                     .lineLimit(1)
-                 
-                 Text("1 \(entry.from)")
-                      .font(.caption2)
-                      .foregroundColor(.white.opacity(0.7))
-             }
-             .padding()
+         switch family {
+         case .accessoryRectangular:
+             AccessoryRectangularView(entry: entry)
+         default:
+             DefaultWidgetView(entry: entry)
          }
      }
  }
  
- // --- Konfiguracja dla ekranu blokady (Accessory Widget) ---
- struct AccessoryWidgetView: View {
+ // Widok dla ekranu głównego (mały, średni)
+ struct DefaultWidgetView: View {
      var entry: Provider.Entry
-
+     
+     var body: some View {
+         VStack {
+             HStack {
+                 Text("\(entry.from) → \(entry.to)")
+                     .font(.caption.weight(.bold))
+                 Spacer()
+                 // Przycisk do odświeżania
+                 Button(intent: RefreshIntent()) {
+                     Image(systemName: "arrow.clockwise")
+                 }
+                 .tint(.white.opacity(0.8))
+             }
+             
+             Spacer()
+             
+             Text(String(format: "%.4f", entry.rate))
+                 .font(.system(size: 36, weight: .semibold, design: .rounded))
+                 .minimumScaleFactor(0.5)
+                 .lineLimit(1)
+             
+             Spacer()
+             
+             HStack {
+                 Text("1 \(entry.from)")
+                     .font(.caption2)
+                 Spacer()
+                 // Przycisk do zamiany walut - zmienia konfigurację
+                 Button(intent: SwapCurrenciesIntent(from: entry.from, to: entry.to)) {
+                     Image(systemName: "arrow.left.arrow.right")
+                 }
+                 .tint(.white.opacity(0.8))
+             }
+         }
+         .foregroundColor(.white)
+         .padding()
+         .frame(maxWidth: .infinity, maxHeight: .infinity)
+         .background(LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing))
+     }
+ }
+ 
+ // Widok dla ekranu blokady
+ struct AccessoryRectangularView: View {
+     var entry: Provider.Entry
+     
      var body: some View {
          VStack(alignment: .leading) {
              Text("\(entry.from) → \(entry.to)")
                  .font(.headline)
              Text(String(format: "%.4f", entry.rate))
-                 .font(.body)
          }
      }
  }
-
-
+ 
  // --- Główna Struktura Widżetu ---
+
  struct CurrencyConverterWidget: Widget {
      let kind: String = "CurrencyConverterWidget"
 
      var body: some WidgetConfiguration {
-         StaticConfiguration(kind: kind, provider: Provider()) { entry in
+         AppIntentsConfiguration(kind: kind, intent: CurrencySelectionIntent.self, provider: Provider()) { entry in
              CurrencyConverterWidgetEntryView(entry: entry)
+                 .containerBackground(.fill.tertiary, for: .widget) // Standardowe tło
          }
-         .configurationDisplayName("Konwerter Walut")
-         .description("Szybko sprawdź aktualny kurs walut.")
-         .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular]) // Dodajemy wsparcie dla ekranu blokady
+         .configurationDisplayName("Kurs Walut")
+         .description("Śledź wybrany kurs i odświeżaj go ręcznie.")
+         .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular])
      }
+ }
+
+ // --- Logika Interakcji (AppIntents) ---
+
+ // Intent do odświeżania
+ struct RefreshIntent: AppIntent {
+     static var title: LocalizedStringResource = "Odśwież kurs"
+     
+     func perform() async throws -> some IntentResult {
+         // Powoduje ponowne załadowanie timeline'u dla widżetu
+         WidgetCenter.shared.reloadTimelines(ofKind: "CurrencyConverterWidget")
+         return .result()
+     }
+ }
+
+ // Intent do zamiany walut
+ struct SwapCurrenciesIntent: AppIntent {
+     static var title: LocalizedStringResource = "Zamień Waluty"
+     
+     @Parameter(title: "From Currency")
+     var from: String
+     
+     @Parameter(title: "To Currency")
+     var to: String
+     
+     init(from: String, to: String) {
+         self.from = from
+         self.to = to
+     }
+     
+     init() {}
+     
+     func perform() async throws -> some IntentResult {
+         // Tworzymy nową konfigurację z zamienionymi walutami
+         let newConfiguration = CurrencySelectionIntent()
+         newConfiguration.fromCurrency = self.to
+         newConfiguration.toCurrency = self.from
+         
+         // Aktualizujemy konfigurację widżetu
+         try await newConfiguration.updateConfiguration()
+         return .result()
+     }
+ }
+
+ // Potrzebne do dekodowania odpowiedzi z API w widżecie
+ struct ExchangeRateResponse: Codable {
+     let rates: [String: Double]
  }
  
  */

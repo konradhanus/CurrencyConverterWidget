@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		77CB392B2EF222EC00A27DFD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB392A2EF222EC00A27DFD /* WidgetKit.framework */; };
+		77CB392D2EF222EC00A27DFD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB392C2EF222EC00A27DFD /* SwiftUI.framework */; };
+		77CB39982EF222EC00A27DFD /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB39992EF222EC00A27DFD /* AppIntents.framework */; };
+		77CB393E2EF222EE00A27DFD /* Widget ExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 77CB39282EF222EC00A27DFD /* Widget ExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		77CB39082EF21FA100A27DFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +28,48 @@
 			remoteGlobalIDString = 77CB38F92EF21F9F00A27DFD;
 			remoteInfo = "Currency Converter Widget";
 		};
+		77CB393C2EF222EE00A27DFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77CB38F22EF21F9F00A27DFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77CB39272EF222EC00A27DFD;
+			remoteInfo = "Widget ExtensionExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77CB39432EF222EF00A27DFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77CB393E2EF222EE00A27DFD /* Widget ExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		77CB38FA2EF21F9F00A27DFD /* Currency Converter Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CB39072EF21FA100A27DFD /* Currency Converter WidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Currency Converter WidgetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CB39112EF21FA200A27DFD /* Currency Converter WidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Currency Converter WidgetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CB39282EF222EC00A27DFD /* Widget ExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Widget ExtensionExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CB392A2EF222EC00A27DFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		77CB392C2EF222EC00A27DFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		77CB39992EF222EC00A27DFD /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		77CB393F2EF222EF00A27DFD /* Exceptions for "Widget Extension" folder in "Widget ExtensionExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 77CB39272EF222EC00A27DFD /* Widget ExtensionExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		77CB38FC2EF21F9F00A27DFD /* Currency Converter Widget */ = {
@@ -43,6 +85,14 @@
 		77CB39142EF21FA200A27DFD /* Currency Converter WidgetUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Currency Converter WidgetUITests";
+			sourceTree = "<group>";
+		};
+		77CB392E2EF222EC00A27DFD /* Widget Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				77CB393F2EF222EF00A27DFD /* Exceptions for "Widget Extension" folder in "Widget ExtensionExtension" target */,
+			);
+			path = "Widget Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +119,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77CB39252EF222EC00A27DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CB392D2EF222EC00A27DFD /* SwiftUI.framework in Frameworks */,
+				77CB392B2EF222EC00A27DFD /* WidgetKit.framework in Frameworks */,
+				77CB39982EF222EC00A27DFD /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +138,8 @@
 				77CB38FC2EF21F9F00A27DFD /* Currency Converter Widget */,
 				77CB390A2EF21FA100A27DFD /* Currency Converter WidgetTests */,
 				77CB39142EF21FA200A27DFD /* Currency Converter WidgetUITests */,
+				77CB392E2EF222EC00A27DFD /* Widget Extension */,
+				77CB39292EF222EC00A27DFD /* Frameworks */,
 				77CB38FB2EF21F9F00A27DFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +150,18 @@
 				77CB38FA2EF21F9F00A27DFD /* Currency Converter Widget.app */,
 				77CB39072EF21FA100A27DFD /* Currency Converter WidgetTests.xctest */,
 				77CB39112EF21FA200A27DFD /* Currency Converter WidgetUITests.xctest */,
+				77CB39282EF222EC00A27DFD /* Widget ExtensionExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		77CB39292EF222EC00A27DFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77CB392A2EF222EC00A27DFD /* WidgetKit.framework */,
+				77CB392C2EF222EC00A27DFD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +174,12 @@
 				77CB38F62EF21F9F00A27DFD /* Sources */,
 				77CB38F72EF21F9F00A27DFD /* Frameworks */,
 				77CB38F82EF21F9F00A27DFD /* Resources */,
+				77CB39432EF222EF00A27DFD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77CB393D2EF222EE00A27DFD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				77CB38FC2EF21F9F00A27DFD /* Currency Converter Widget */,
@@ -163,6 +237,28 @@
 			productReference = 77CB39112EF21FA200A27DFD /* Currency Converter WidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		77CB39272EF222EC00A27DFD /* Widget ExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CB39402EF222EF00A27DFD /* Build configuration list for PBXNativeTarget "Widget ExtensionExtension" */;
+			buildPhases = (
+				77CB39242EF222EC00A27DFD /* Sources */,
+				77CB39252EF222EC00A27DFD /* Frameworks */,
+				77CB39262EF222EC00A27DFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				77CB392E2EF222EC00A27DFD /* Widget Extension */,
+			);
+			name = "Widget ExtensionExtension";
+			packageProductDependencies = (
+			);
+			productName = "Widget ExtensionExtension";
+			productReference = 77CB39282EF222EC00A27DFD /* Widget ExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +280,9 @@
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = 77CB38F92EF21F9F00A27DFD;
 					};
+					77CB39272EF222EC00A27DFD = {
+						CreatedOnToolsVersion = 16.3;
+					};
 				};
 			};
 			buildConfigurationList = 77CB38F52EF21F9F00A27DFD /* Build configuration list for PBXProject "Currency Converter Widget" */;
@@ -203,6 +302,7 @@
 				77CB38F92EF21F9F00A27DFD /* Currency Converter Widget */,
 				77CB39062EF21FA100A27DFD /* Currency Converter WidgetTests */,
 				77CB39102EF21FA200A27DFD /* Currency Converter WidgetUITests */,
+				77CB39272EF222EC00A27DFD /* Widget ExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +323,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		77CB390F2EF21FA200A27DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CB39262EF222EC00A27DFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +360,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77CB39242EF222EC00A27DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = 77CB38F92EF21F9F00A27DFD /* Currency Converter Widget */;
 			targetProxy = 77CB39122EF21FA200A27DFD /* PBXContainerItemProxy */;
+		};
+		77CB393D2EF222EE00A27DFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77CB39272EF222EC00A27DFD /* Widget ExtensionExtension */;
+			targetProxy = 77CB393C2EF222EE00A27DFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +637,60 @@
 			};
 			name = Release;
 		};
+		77CB39412EF222EF00A27DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683MXZZR23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanuscommercialars.Currency-Converter-Widget.Widget-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77CB39422EF222EF00A27DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 683MXZZR23;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanuscommercialars.Currency-Converter-Widget.Widget-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +726,15 @@
 			buildConfigurations = (
 				77CB39222EF21FA200A27DFD /* Debug */,
 				77CB39232EF21FA200A27DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77CB39402EF222EF00A27DFD /* Build configuration list for PBXNativeTarget "Widget ExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77CB39412EF222EF00A27DFD /* Debug */,
+				77CB39422EF222EF00A27DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
