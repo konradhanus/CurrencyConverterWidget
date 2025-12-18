@@ -21,6 +21,7 @@ class ExpenseManager: ObservableObject {
     // Klucze dla budżetu
     let budgetTotalKey = "tripBudgetTotal"
     let budgetCurrencyKey = "tripBudgetCurrency"
+    let secondaryBudgetCurrencyKey = "secondaryBudgetCurrency"
     let budgetStartKey = "tripStartDate"
     let budgetEndKey = "tripEndDate"
     
@@ -29,9 +30,9 @@ class ExpenseManager: ObservableObject {
     // Dane budżetu
     @Published var totalBudget: Double = 0.0
     @Published var budgetCurrency: String = "PLN"
-    @Published var secondaryBudgetCurrency: String = "USD" // Nowa waluta do przeliczenia
+    @Published var secondaryBudgetCurrency: String = "THB"
     @Published var tripStartDate: Date = Date()
-    @Published var tripEndDate: Date = Date().addingTimeInterval(86400 * 7) // Domyślnie tydzień
+    @Published var tripEndDate: Date = Date().addingTimeInterval(86400 * 7)
     @Published var isBudgetSet: Bool = false
     
     static let allCurrencies = ["THB", "PLN", "USD", "EUR", "GBP", "CHF", "JPY", "CAD", "AUD", "CZK", "NOK", "SEK", "HUF", "DKK"]
@@ -85,7 +86,7 @@ class ExpenseManager: ObservableObject {
     func loadBudget() {
         self.totalBudget = defaults.double(forKey: budgetTotalKey)
         self.budgetCurrency = defaults.string(forKey: budgetCurrencyKey) ?? "PLN"
-        self.secondaryBudgetCurrency = defaults.string(forKey: "secondaryBudgetCurrency") ?? "USD" // Ładuj drugą walutę
+        self.secondaryBudgetCurrency = defaults.string(forKey: secondaryBudgetCurrencyKey) ?? "THB"
         self.tripStartDate = defaults.object(forKey: budgetStartKey) as? Date ?? Date()
         self.tripEndDate = defaults.object(forKey: budgetEndKey) as? Date ?? Date().addingTimeInterval(86400 * 7)
         
@@ -102,7 +103,7 @@ class ExpenseManager: ObservableObject {
         
         defaults.set(total, forKey: budgetTotalKey)
         defaults.set(currency, forKey: budgetCurrencyKey)
-        defaults.set(secondaryCurrency, forKey: "secondaryBudgetCurrency") // Zapisz drugą walutę
+        defaults.set(secondaryCurrency, forKey: secondaryBudgetCurrencyKey)
         defaults.set(start, forKey: budgetStartKey)
         defaults.set(end, forKey: budgetEndKey)
     }
@@ -111,7 +112,6 @@ class ExpenseManager: ObservableObject {
         self.totalBudget = 0
         self.isBudgetSet = false
         defaults.set(0, forKey: budgetTotalKey)
-        defaults.set("", forKey: "secondaryBudgetCurrency") // Wyczyść również drugą walutę
     }
     
     static func fetchExchangeRate(from fromCurrency: String, to toCurrency: String) async -> Double {
@@ -384,8 +384,10 @@ struct CalculatorView: View {
 struct BudgetView: View {
     @EnvironmentObject var manager: ExpenseManager
     @State private var showSetupSheet = false
+    @State private var convertedSecondaryTotal: Double = 0.0
+    @State private var secondaryRate: Double = 0.0
+    @State private var isFetchingRate: Bool = false
     
-    // Obliczenia
     var stats: BudgetStats {
         calculateBudgetStats()
     }
@@ -414,13 +416,16 @@ struct BudgetView: View {
                 } else {
                     ScrollView {
                         VStack(spacing: 20) {
-                            // KARTA DZISIEJSZA (Główna)
-                            TodayBudgetCard(stats: stats, currency: manager.budgetCurrency)
+                            // 1. KARTA DZISIEJSZA (Główna) - TERAZ Z PARAMETRAMI
+                            TodayBudgetCard(
+                                stats: stats,
+                                currency: manager.budgetCurrency,
+                                secondaryCurrency: manager.secondaryBudgetCurrency,
+                                secondaryRate: secondaryRate,
+                                isFetching: isFetchingRate
+                            )
                             
-                            // OGÓLNE PODSUMOWANIE
-                            TripSummaryCard(stats: stats, currency: manager.budgetCurrency, start: manager.tripStartDate, end: manager.tripEndDate)
-                            
-                            // HISTORIA DZIENNA (Slider)
+                            // 2. HISTORIA DZIENNA (Slider)
                             VStack(alignment: .leading, spacing: 10) {
                                 Text("Historia Wydatków")
                                     .font(.headline)
@@ -431,14 +436,14 @@ struct BudgetView: View {
                                         HStack(spacing: 12) {
                                             ForEach(stats.dailyHistory, id: \.date) { dayStat in
                                                 DailyHistoryCard(stat: dayStat, currency: manager.budgetCurrency, dailyBase: stats.dailyBase)
-                                                    .id(dayStat.date) // ID potrzebne do scrollowania
+                                                    .id(dayStat.date)
                                             }
                                         }
                                         .padding(.horizontal)
                                         .onAppear {
-                                            // Przewiń do ostatniego elementu (najnowszego dnia) po załadowaniu
+                                            // Automatyczne przewijanie do ostatniego (najnowszego) dnia
                                             if let lastDay = stats.dailyHistory.last {
-                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                                     withAnimation {
                                                         scrollProxy.scrollTo(lastDay.date, anchor: .trailing)
                                                     }
@@ -448,6 +453,17 @@ struct BudgetView: View {
                                     }
                                 }
                             }
+                            
+                            // 3. OGÓLNE PODSUMOWANIE
+                            TripSummaryCard(
+                                stats: stats,
+                                currency: manager.budgetCurrency,
+                                start: manager.tripStartDate,
+                                end: manager.tripEndDate,
+                                secondaryCurrency: manager.secondaryBudgetCurrency,
+                                secondaryRate: secondaryRate,
+                                isFetching: isFetchingRate
+                            )
                             
                             // PRZYCISK EDYCJI
                             Button("Edytuj ustawienia wyjazdu") { showSetupSheet = true }
@@ -460,49 +476,19 @@ struct BudgetView: View {
                 }
             }
             .navigationTitle("Twój Budżet")
-            .toolbar {
-                // Przycisk zmiany waluty budżetu
-                if manager.isBudgetSet {
-                    ToolbarItem(placement: .primaryAction) {
-                        Menu {
-                            Text("Waluta budżetu:")
-                            ForEach(ExpenseManager.allCurrencies, id: \.self) { currency in
-                                Button(action: {
-                                    // Zapisujemy nową walutę, zachowując resztę ustawień
-                                    manager.saveBudget(
-                                        total: manager.totalBudget,
-                                        currency: currency,
-                                        start: manager.tripStartDate,
-                                        end: manager.tripEndDate
-                                    )
-                                }) {
-                                    HStack {
-                                        Text(currency)
-                                        if manager.budgetCurrency == currency {
-                                            Image(systemName: "checkmark")
-                                        }
-                                    }
-                                }
-                            }
-                        } label: {
-                            HStack(spacing: 4) {
-                                Text(manager.budgetCurrency)
-                                    .font(.subheadline.weight(.semibold))
-                                Image(systemName: "arrow.triangle.2.circlepath")
-                                    .font(.caption)
-                            }
-                            .padding(.vertical, 6)
-                            .padding(.horizontal, 10)
-                            .background(Color.secondary.opacity(0.15))
-                            .cornerRadius(15)
-                        }
-                    }
-                }
-            }
             .sheet(isPresented: $showSetupSheet) {
                 BudgetSetupView(isPresented: $showSetupSheet)
             }
+            .task(id: manager.budgetCurrency + manager.secondaryBudgetCurrency) {
+                await fetchSecondaryRate()
+            }
         }
+    }
+    
+    private func fetchSecondaryRate() async {
+        isFetchingRate = true
+        secondaryRate = await ExpenseManager.fetchExchangeRate(from: manager.budgetCurrency, to: manager.secondaryBudgetCurrency)
+        isFetchingRate = false
     }
     
     struct DailyHistoryItem: Identifiable {
@@ -510,101 +496,94 @@ struct BudgetView: View {
         let date: Date
         let dayNum: Int
         let spent: Double
+        let spentOriginalCurrencies: [String: Double]
     }
     
     struct BudgetStats {
         let totalDays: Int
-        let currentDayNum: Int // Np. Dzień 3 z 7
-        let dailyBase: Double // Średnia na dzień (Budget / Dni)
+        let currentDayNum: Int
+        let dailyBase: Double
         
         let spentBeforeToday: Double
         let spentToday: Double
         
-        // Logika Rollover
         let shouldHaveSpentUntilYesterday: Double
-        let savedFromPreviousDays: Double // (Teoretyczne wydatki do wczoraj) - (Faktyczne wydatki do wczoraj)
+        let savedFromPreviousDays: Double
         
-        let availableToday: Double // DailyBase + SavedFromPreviousDays
-        let remainingToday: Double // AvailableToday - SpentToday
+        let availableToday: Double
+        let remainingToday: Double
         
         let totalSpent: Double
         let totalRemaining: Double
-        let progress: Double // % zużycia dzisiaj
+        let progress: Double
         
-        // Nowe pole: Historia dni
         let dailyHistory: [DailyHistoryItem]
     }
     
     func calculateBudgetStats() -> BudgetStats {
         let calendar = Calendar.current
         
-        // Używamy dat bezpośrednio z managera (który jest @EnvironmentObject, więc zmiana wymusi przeliczenie)
         let start = calendar.startOfDay(for: manager.tripStartDate)
         let end = calendar.startOfDay(for: manager.tripEndDate)
-        
-        // 1. Liczba dni wyjazdu (włącznie z dniem końcowym)
         let components = calendar.dateComponents([.day], from: start, to: end)
         let totalDays = max(1, (components.day ?? 0) + 1)
         
-        // 2. Który to dzień?
         let today = calendar.startOfDay(for: Date())
-        
-        // Obliczamy ile dni minęło od startu (może być ujemne jeśli wyjazd w przyszłości)
         let daysFromStart = calendar.dateComponents([.day], from: start, to: today).day ?? 0
-        
-        // Numer dnia (1, 2, 3...). Ograniczamy do 1...totalDays dla celów wyświetlania
         let currentDayNum = min(totalDays, max(1, daysFromStart + 1))
         
-        // 3. Średnia dzienna
         let dailyBase = manager.totalBudget / Double(totalDays)
         
-        // 4. Wydatki - FILTROWANIE
         let tripExpenses = manager.expenses.filter { item in
             let itemDate = calendar.startOfDay(for: item.date)
             return itemDate >= start && itemDate <= end
         }
         
-        // Obliczanie historii dni (tylko dni które już minęły lub są dzisiaj)
         var history: [DailyHistoryItem] = []
-        // Generujemy historię od dnia startu do dzisiaj
         let endDateForHistory = calendar.date(byAdding: .day, value: daysFromStart, to: start) ?? today
         
         var currentDate = start
         var dayCounter = 1
-        while currentDate <= endDateForHistory && currentDate <= end { // Upewnij się, że nie wykracza poza koniec wyjazdu
-            let daySpent = tripExpenses
+        while currentDate <= endDateForHistory && currentDate <= end {
+            let dayExpenses = tripExpenses
                 .filter { calendar.isDate($0.date, inSameDayAs: currentDate) }
-                .reduce(0) { $0 + $1.convertedAmount }
             
-            history.append(DailyHistoryItem(date: currentDate, dayNum: dayCounter, spent: daySpent))
+            // POPRAWKA: reduce(0.0)
+            let daySpent = dayExpenses.reduce(0.0) { $0 + $1.convertedAmount }
             
+            var spentOriginals: [String: Double] = [:]
+            for expense in dayExpenses {
+                spentOriginals[expense.currency, default: 0.0] += expense.amount
+            }
+            
+            history.append(DailyHistoryItem(date: currentDate, dayNum: dayCounter, spent: daySpent, spentOriginalCurrencies: spentOriginals))
             currentDate = calendar.date(byAdding: .day, value: 1, to: currentDate) ?? currentDate
             dayCounter += 1
         }
-        // Historia jest już posortowana od najstarszego do najnowszego.
         
         let spentToday: Double
         if today >= start && today <= end {
+            // POPRAWKA: reduce(0.0)
             spentToday = tripExpenses
                 .filter { calendar.isDate($0.date, inSameDayAs: today) }
-                .reduce(0) { $0 + $1.convertedAmount }
+                .reduce(0.0) { $0 + $1.convertedAmount }
         } else {
             spentToday = 0
         }
             
+        // POPRAWKA: reduce(0.0)
         let spentBeforeToday = tripExpenses
             .filter { calendar.startOfDay(for: $0.date) < today }
-            .reduce(0) { $0 + $1.convertedAmount }
+            .reduce(0.0) { $0 + $1.convertedAmount }
             
-        let totalSpent = tripExpenses.reduce(0) { $0 + $1.convertedAmount }
+        // POPRAWKA: reduce(0.0)
+        let totalSpent = tripExpenses.reduce(0.0) { $0 + $1.convertedAmount }
         let totalRemaining = manager.totalBudget - totalSpent
         
-        // 5. Rollover (Przeniesienie budżetu)
         let passedBudgetDays = min(totalDays, max(0, daysFromStart))
         let shouldHaveSpentUntilYesterday = dailyBase * Double(passedBudgetDays)
         let savedFromPreviousDays = shouldHaveSpentUntilYesterday - spentBeforeToday
         
-        // 6. Dostępne na dziś
         var availableToday = dailyBase + savedFromPreviousDays
         if today < start || today > end {
             availableToday = 0
@@ -636,6 +615,9 @@ struct BudgetView: View {
 struct TodayBudgetCard: View {
     let stats: BudgetView.BudgetStats
     let currency: String
+    let secondaryCurrency: String
+    let secondaryRate: Double
+    let isFetching: Bool
     
     var body: some View {
         VStack(spacing: 20) {
@@ -647,9 +629,20 @@ struct TodayBudgetCard: View {
                         .font(.headline)
                 }
                 Spacer()
-                Text(stats.availableToday, format: .currency(code: currency))
-                    .font(.title2.weight(.bold))
-                    .foregroundColor(.primary)
+                VStack(alignment: .trailing) {
+                    Text(stats.availableToday, format: .currency(code: currency))
+                        .font(.title2.weight(.bold))
+                        .foregroundColor(.primary)
+                    
+                    if isFetching {
+                        ProgressView().scaleEffect(0.8)
+                    } else if currency != secondaryCurrency {
+                        let availableTodayConverted = stats.availableToday * secondaryRate
+                        Text("≈ \(availableTodayConverted, format: .currency(code: secondaryCurrency))")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                }
             }
             
             // Kołowy wykres
@@ -673,6 +666,15 @@ struct TodayBudgetCard: View {
                     Text(stats.remainingToday, format: .currency(code: currency))
                         .font(.title.weight(.bold))
                         .foregroundColor(stats.remainingToday >= 0 ? .primary : .red)
+                    
+                    if isFetching {
+                        ProgressView().scaleEffect(0.8)
+                    } else if currency != secondaryCurrency {
+                        let remainingTodayConverted = stats.remainingToday * secondaryRate
+                        Text("≈ \(remainingTodayConverted, format: .currency(code: secondaryCurrency))")
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                    }
                 }
             }
             .frame(height: 200)
@@ -717,12 +719,16 @@ struct TripSummaryCard: View {
     let currency: String
     let start: Date
     let end: Date
+    let secondaryCurrency: String
+    let secondaryRate: Double
+    let isFetching: Bool
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("Podsumowanie Wyjazdu")
                 .font(.headline)
             
+            // Główny budżet
             HStack {
                 VStack(alignment: .leading) {
                     Text("Całkowity budżet")
@@ -740,8 +746,43 @@ struct TripSummaryCard: View {
                 }
             }
             
+            // Sekcja przeliczenia na walutę lokalną
+            if currency != secondaryCurrency {
+                Divider().padding(.vertical, 5)
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("W walucie lokalnej (\(secondaryCurrency))")
+                            .font(.caption).foregroundColor(.secondary)
+                        
+                        if isFetching {
+                            ProgressView().scaleEffect(0.8)
+                        } else {
+                            let totalConverted = (stats.totalSpent + stats.totalRemaining) * secondaryRate
+                            Text(totalConverted, format: .currency(code: secondaryCurrency))
+                                .font(.headline)
+                                .foregroundColor(.primary.opacity(0.8))
+                        }
+                    }
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text("Pozostało")
+                            .font(.caption).foregroundColor(.secondary)
+                        
+                        if isFetching {
+                            ProgressView().scaleEffect(0.8)
+                        } else {
+                            let remainingConverted = stats.totalRemaining * secondaryRate
+                            Text(remainingConverted, format: .currency(code: secondaryCurrency))
+                                .font(.headline)
+                                .foregroundColor(.green.opacity(0.8))
+                        }
+                    }
+                }
+            }
+            
             ProgressView(value: stats.totalSpent, total: stats.totalSpent + stats.totalRemaining)
                 .tint(.purple)
+                .padding(.top, 5)
             
             HStack {
                 Text(start.formatted(date: .numeric, time: .omitted))
@@ -773,9 +814,24 @@ struct DailyHistoryCard: View {
                 .font(.caption)
                 .foregroundColor(.secondary)
             
+            Spacer()
+            
             Text(stat.spent, format: .currency(code: currency))
                 .font(.headline)
                 .foregroundColor(stat.spent > dailyBase ? .red : .primary)
+            
+            if !stat.spentOriginalCurrencies.isEmpty {
+                let originalAmounts = stat.spentOriginalCurrencies.map { curr, amount in
+                    "\(formatAmount(amount)) \(curr)"
+                }.joined(separator: " + ")
+                Text("Wydano: \(originalAmounts)")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.8)
+            }
+            
+            Spacer()
             
             if stat.spent > dailyBase {
                 Text("Nadwyżka")
@@ -788,7 +844,7 @@ struct DailyHistoryCard: View {
             }
         }
         .padding(12)
-        .frame(width: 110)
+        .frame(width: 130, height: 130) // Zwiększony rozmiar
         .background(Color(UIColor.secondarySystemGroupedBackground))
         .cornerRadius(12)
         .overlay(
@@ -804,6 +860,7 @@ struct BudgetSetupView: View {
     
     @State private var total: Double = 3000
     @State private var currency: String = "PLN"
+    @State private var secondaryCurrency: String = "THB"
     @State private var start: Date = Date()
     @State private var end: Date = Date().addingTimeInterval(86400 * 7)
     
@@ -842,9 +899,9 @@ struct BudgetSetupView: View {
                 if manager.isBudgetSet {
                     total = manager.totalBudget
                     currency = manager.budgetCurrency
+                    secondaryCurrency = manager.secondaryBudgetCurrency
                     start = manager.tripStartDate
                     end = manager.tripEndDate
-                    secondaryCurrency = manager.secondaryBudgetCurrency
                 }
             }
         }
@@ -859,7 +916,6 @@ struct ExpensesView: View {
     @State private var showDeleteConfirmation = false
     @State private var editingItem: ExpenseItem?
     
-    // Domyślna waluta podsumowania
     @State private var summaryCurrency: String = "PLN"
     
     var groupedExpenses: [(Date, [ExpenseItem])] {
@@ -869,7 +925,6 @@ struct ExpensesView: View {
         return grouped.sorted { $0.key > $1.key }
     }
     
-    // Znajdź wszystkie waluty użyte w wydatkach
     var availableCurrencies: [String] {
         let sourceCurrencies = Set(manager.expenses.map { $0.currency })
         let targetCurrencies = Set(manager.expenses.map { $0.targetCurrency })
@@ -957,7 +1012,7 @@ struct DailySummaryHeader: View {
             Text(date.formatted(date: .complete, time: .omitted))
                 .font(.headline).foregroundColor(.primary).textCase(nil)
             
-            // Oblicz sumę w wybranej walucie
+            // POPRAWKA: reduce(0.0)
             let totalInSelected = items.reduce(0.0) { sum, item in
                 if item.currency == displayCurrency {
                     return sum + item.amount
@@ -977,11 +1032,11 @@ struct DailySummaryHeader: View {
             }
             .textCase(nil)
             
-            // Jeśli wybrana waluta nie pokrywa wszystkich wydatków
             let otherCurrencies = Dictionary(grouping: items.filter { $0.currency != displayCurrency && $0.targetCurrency != displayCurrency }, by: { $0.currency })
             if !otherCurrencies.isEmpty {
                 let others = otherCurrencies.map { (curr, its) -> String in
-                    let s = its.reduce(0) { $0 + $1.amount }
+                    // POPRAWKA: reduce(0.0)
+                    let s = its.reduce(0.0) { $0 + $1.amount }
                     return "\(formatAmount(s)) \(curr)"
                 }.joined(separator: " + ")
                  Text("(+ inne: \(others))").font(.caption).foregroundColor(.secondary).textCase(nil)
