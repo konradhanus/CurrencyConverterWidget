@@ -337,8 +337,8 @@ struct LargeWidgetView: View {
     var entry: Provider.Entry
     
     var body: some View {
-        VStack(spacing: 12) {
-            VStack(alignment: .trailing, spacing: 4) {
+        VStack(spacing: 0) {
+            VStack(alignment: .trailing, spacing: 2) {
                 ZStack {
                     HStack {
                         Label(entry.from, systemImage: "arrow.up.circle.fill")
@@ -361,18 +361,18 @@ struct LargeWidgetView: View {
                 }
                 .font(.caption.weight(.bold))
                 
-                Divider().background(.white.opacity(0.2))
+                Divider().background(.white.opacity(0.2)).padding(.vertical, 4)
                 Spacer(minLength: 0)
                 
                 Text(formatAmount(entry.amount))
-                    .font(.system(size: 32, weight: .light, design: .monospaced))
+                    .font(.system(size: 28, weight: .light, design: .monospaced))
                     .foregroundStyle(.white.opacity(0.9))
                     .minimumScaleFactor(0.6)
                     .lineLimit(1)
                 
                 let result = entry.amount * entry.rate
                 Text(formatAmount(result))
-                    .font(.system(size: 52, weight: .bold, design: .rounded))
+                    .font(.system(size: 46, weight: .bold, design: .rounded))
                     .foregroundStyle(.white)
                     .minimumScaleFactor(0.5)
                     .lineLimit(1)
@@ -392,11 +392,13 @@ struct LargeWidgetView: View {
             .background(Color.black.opacity(0.3))
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .frame(maxHeight: .infinity)
+            .padding([.horizontal, .top], 12)
+            .padding(.bottom, 8)
             
-            KeypadView(buttonHeight: 45, fontSize: 24, spacing: 8, showSaveButton: true)
-                .padding(.bottom, 4)
+            KeypadView(buttonHeight: 38, fontSize: 22, spacing: 6, showSaveButton: true)
+                .padding(.horizontal, 12)
+                .padding(.bottom, 12)
         }
-        .padding(16)
         .widgetURL(URL(string: "currencyconverter://open"))
     }
 }
