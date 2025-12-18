@@ -13,27 +13,44 @@ struct ExpenseItem: Codable, Identifiable, Equatable {
     var note: String?
 }
 
+// Struktura reprezentująca zakończony lub zapisany wyjazd
+struct Trip: Codable, Identifiable, Equatable {
+    var id = UUID()
+    var name: String
+    var totalBudget: Double
+    var budgetCurrency: String
+    var secondaryBudgetCurrency: String
+    var startDate: Date
+    var endDate: Date
+    var expenses: [ExpenseItem]
+}
+
 class ExpenseManager: ObservableObject {
     static let shared = ExpenseManager()
     let suiteName = "group.com.currencyconverter.shared"
-    let expensesKey = "savedExpensesList"
     
-    // Klucze dla budżetu
+    // Klucze UserDefaults
+    let expensesKey = "savedExpensesList"
     let budgetTotalKey = "tripBudgetTotal"
     let budgetCurrencyKey = "tripBudgetCurrency"
     let secondaryBudgetCurrencyKey = "secondaryBudgetCurrency"
     let budgetStartKey = "tripStartDate"
     let budgetEndKey = "tripEndDate"
+    let tripNameKey = "tripName" // Nowy klucz
+    let archivedTripsKey = "archivedTrips" // Nowy klucz dla historii
     
+    // DANE AKTYWNEGO WYJAZDU
     @Published var expenses: [ExpenseItem] = []
-    
-    // Dane budżetu
+    @Published var tripName: String = ""
     @Published var totalBudget: Double = 0.0
     @Published var budgetCurrency: String = "PLN"
     @Published var secondaryBudgetCurrency: String = "THB"
     @Published var tripStartDate: Date = Date()
     @Published var tripEndDate: Date = Date().addingTimeInterval(86400 * 7)
     @Published var isBudgetSet: Bool = false
+    
+    // HISTORIA
+    @Published var archivedTrips: [Trip] = []
     
     static let allCurrencies = ["THB", "PLN", "USD", "EUR", "GBP", "CHF", "JPY", "CAD", "AUD", "CZK", "NOK", "SEK", "HUF", "DKK"]
     
@@ -42,18 +59,46 @@ class ExpenseManager: ObservableObject {
     }
     
     init() {
-        loadExpenses()
-        loadBudget()
+        loadActiveTrip()
+        loadArchivedTrips()
     }
     
-    // --- WYDATKI ---
+    // --- ZARZĄDZANIE AKTYWNYM WYJAZDEM ---
     
-    func loadExpenses() {
+    func loadActiveTrip() {
         if let data = defaults.data(forKey: expensesKey),
            let items = try? JSONDecoder().decode([ExpenseItem].self, from: data) {
             self.expenses = items.sorted(by: { $0.date > $1.date })
         }
+        
+        self.tripName = defaults.string(forKey: tripNameKey) ?? ""
+        self.totalBudget = defaults.double(forKey: budgetTotalKey)
+        self.budgetCurrency = defaults.string(forKey: budgetCurrencyKey) ?? "PLN"
+        self.secondaryBudgetCurrency = defaults.string(forKey: secondaryBudgetCurrencyKey) ?? "THB"
+        self.tripStartDate = defaults.object(forKey: budgetStartKey) as? Date ?? Date()
+        self.tripEndDate = defaults.object(forKey: budgetEndKey) as? Date ?? Date().addingTimeInterval(86400 * 7)
+        
+        self.isBudgetSet = self.totalBudget > 0
     }
+    
+    func saveActiveTripSettings(name: String, total: Double, currency: String, secondary: String, start: Date, end: Date) {
+        self.tripName = name
+        self.totalBudget = total
+        self.budgetCurrency = currency
+        self.secondaryBudgetCurrency = secondary
+        self.tripStartDate = start
+        self.tripEndDate = end
+        self.isBudgetSet = true
+        
+        defaults.set(name, forKey: tripNameKey)
+        defaults.set(total, forKey: budgetTotalKey)
+        defaults.set(currency, forKey: budgetCurrencyKey)
+        defaults.set(secondary, forKey: secondaryBudgetCurrencyKey)
+        defaults.set(start, forKey: budgetStartKey)
+        defaults.set(end, forKey: budgetEndKey)
+    }
+    
+    // --- WYDATKI (CRUD) ---
     
     func addExpense(_ expense: ExpenseItem) {
         expenses.append(expense)
@@ -81,38 +126,92 @@ class ExpenseManager: ObservableObject {
         }
     }
     
-    // --- BUDŻET ---
+    // --- ARCHIWIZACJA I HISTORIA ---
     
-    func loadBudget() {
-        self.totalBudget = defaults.double(forKey: budgetTotalKey)
-        self.budgetCurrency = defaults.string(forKey: budgetCurrencyKey) ?? "PLN"
-        self.secondaryBudgetCurrency = defaults.string(forKey: secondaryBudgetCurrencyKey) ?? "THB"
-        self.tripStartDate = defaults.object(forKey: budgetStartKey) as? Date ?? Date()
-        self.tripEndDate = defaults.object(forKey: budgetEndKey) as? Date ?? Date().addingTimeInterval(86400 * 7)
-        
-        self.isBudgetSet = self.totalBudget > 0
+    func loadArchivedTrips() {
+        if let data = defaults.data(forKey: archivedTripsKey),
+           let trips = try? JSONDecoder().decode([Trip].self, from: data) {
+            self.archivedTrips = trips.sorted(by: { $0.startDate > $1.startDate })
+        }
     }
     
-    func saveBudget(total: Double, currency: String, secondaryCurrency: String, start: Date, end: Date) {
-        self.totalBudget = total
-        self.budgetCurrency = currency
-        self.secondaryBudgetCurrency = secondaryCurrency
-        self.tripStartDate = start
-        self.tripEndDate = end
+    // Zakończ obecny wyjazd (przenieś do historii, wyczyść aktywny)
+    func finishCurrentTrip() {
+        guard isBudgetSet else { return }
+        
+        let tripToArchive = Trip(
+            id: UUID(),
+            name: tripName.isEmpty ? "Wyjazd bez nazwy" : tripName,
+            totalBudget: totalBudget,
+            budgetCurrency: budgetCurrency,
+            secondaryBudgetCurrency: secondaryBudgetCurrency,
+            startDate: tripStartDate,
+            endDate: tripEndDate,
+            expenses: expenses
+        )
+        
+        archivedTrips.insert(tripToArchive, at: 0) // Dodaj na początek
+        saveArchivedTrips()
+        
+        // Resetuj aktywny
+        clearActiveTrip()
+    }
+    
+    // Przywróć wyjazd z historii do edycji (zamienia się miejscami z obecnym, jeśli obecny nie jest pusty, to go archiwizuje)
+    func restoreTripToActive(_ trip: Trip) {
+        // Jeśli mamy teraz aktywny wyjazd z danymi, najpierw go zapiszmy!
+        if isBudgetSet && !expenses.isEmpty {
+            finishCurrentTrip()
+        }
+        
+        // Wczytaj dane z historii do "Active"
+        self.tripName = trip.name
+        self.totalBudget = trip.totalBudget
+        self.budgetCurrency = trip.budgetCurrency
+        self.secondaryBudgetCurrency = trip.secondaryBudgetCurrency
+        self.tripStartDate = trip.startDate
+        self.tripEndDate = trip.endDate
+        self.expenses = trip.expenses
         self.isBudgetSet = true
         
-        defaults.set(total, forKey: budgetTotalKey)
-        defaults.set(currency, forKey: budgetCurrencyKey)
-        defaults.set(secondaryCurrency, forKey: secondaryBudgetCurrencyKey)
-        defaults.set(start, forKey: budgetStartKey)
-        defaults.set(end, forKey: budgetEndKey)
+        // Zapisz nowy stan "Active"
+        saveActiveTripSettings(name: tripName, total: totalBudget, currency: budgetCurrency, secondary: secondaryBudgetCurrency, start: tripStartDate, end: tripEndDate)
+        saveExpenses()
+        
+        // Usuń przywrócony wyjazd z listy archiwalnej (bo teraz jest aktywny)
+        if let index = archivedTrips.firstIndex(where: { $0.id == trip.id }) {
+            archivedTrips.remove(at: index)
+            saveArchivedTrips()
+        }
     }
     
-    func clearBudget() {
-        self.totalBudget = 0
-        self.isBudgetSet = false
-        defaults.set(0, forKey: budgetTotalKey)
+    func deleteArchivedTrip(at offsets: IndexSet) {
+        archivedTrips.remove(atOffsets: offsets)
+        saveArchivedTrips()
     }
+    
+    private func saveArchivedTrips() {
+        if let encoded = try? JSONEncoder().encode(archivedTrips) {
+            defaults.set(encoded, forKey: archivedTripsKey)
+        }
+    }
+    
+    private func clearActiveTrip() {
+        self.tripName = ""
+        self.totalBudget = 0
+        self.expenses = []
+        self.isBudgetSet = false
+        self.tripStartDate = Date()
+        self.tripEndDate = Date().addingTimeInterval(86400 * 7)
+        
+        // Czyścimy UserDefaults
+        defaults.set("", forKey: tripNameKey)
+        defaults.set(0, forKey: budgetTotalKey)
+        defaults.removeObject(forKey: expensesKey)
+        WidgetCenter.shared.reloadAllTimelines()
+    }
+    
+    // --- API ---
     
     static func fetchExchangeRate(from fromCurrency: String, to toCurrency: String) async -> Double {
         if fromCurrency == toCurrency { return 1.0 }
@@ -384,6 +483,9 @@ struct CalculatorView: View {
 struct BudgetView: View {
     @EnvironmentObject var manager: ExpenseManager
     @State private var showSetupSheet = false
+    @State private var showHistorySheet = false // Nowy sheet dla historii
+    @State private var showFinishAlert = false // Alert kończenia wyjazdu
+    
     @State private var convertedSecondaryTotal: Double = 0.0
     @State private var secondaryRate: Double = 0.0
     @State private var isFetchingRate: Bool = false
@@ -412,11 +514,26 @@ struct BudgetView: View {
                         Button("Ustaw Budżet") { showSetupSheet = true }
                             .buttonStyle(.borderedProminent)
                             .tint(.purple)
+                        
+                        // Przycisk historii (gdy nie ma aktywnego budżetu)
+                        if !manager.archivedTrips.isEmpty {
+                            Button("Historia Wyjazdów") { showHistorySheet = true }
+                                .padding(.top, 10)
+                        }
                     }
                 } else {
                     ScrollView {
                         VStack(spacing: 20) {
-                            // 1. KARTA DZISIEJSZA (Główna) - TERAZ Z PARAMETRAMI
+                            
+                            // Nazwa wyjazdu (jeśli jest)
+                            if !manager.tripName.isEmpty {
+                                Text(manager.tripName.uppercased())
+                                    .font(.caption).fontWeight(.black)
+                                    .foregroundColor(.secondary)
+                                    .padding(.bottom, -10)
+                            }
+                            
+                            // 1. KARTA DZISIEJSZA
                             TodayBudgetCard(
                                 stats: stats,
                                 currency: manager.budgetCurrency,
@@ -425,7 +542,7 @@ struct BudgetView: View {
                                 isFetching: isFetchingRate
                             )
                             
-                            // 2. HISTORIA DZIENNA (Slider)
+                            // 2. HISTORIA DZIENNA
                             VStack(alignment: .leading, spacing: 10) {
                                 Text("Historia Wydatków")
                                     .font(.headline)
@@ -441,7 +558,6 @@ struct BudgetView: View {
                                         }
                                         .padding(.horizontal)
                                         .onAppear {
-                                            // Automatyczne przewijanie do ostatniego (najnowszego) dnia
                                             if let lastDay = stats.dailyHistory.last {
                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                                     withAnimation {
@@ -465,19 +581,78 @@ struct BudgetView: View {
                                 isFetching: isFetchingRate
                             )
                             
-                            // PRZYCISK EDYCJI
-                            Button("Edytuj ustawienia wyjazdu") { showSetupSheet = true }
-                                .font(.footnote)
-                                .foregroundColor(.secondary)
-                                .padding(.top, 10)
+                            // Sekcja zarządzania
+                            VStack(spacing: 15) {
+                                Button("Edytuj ustawienia wyjazdu") { showSetupSheet = true }
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                                
+                                Button(role: .destructive) {
+                                    showFinishAlert = true
+                                } label: {
+                                    Text("Zakończ wyjazd i zarchiwizuj")
+                                        .font(.subheadline.weight(.medium))
+                                        .padding(.vertical, 8)
+                                        .padding(.horizontal, 20)
+                                        .background(Color.red.opacity(0.1))
+                                        .cornerRadius(10)
+                                }
+                            }
+                            .padding(.top, 10)
                         }
                         .padding(.vertical)
                     }
                 }
             }
             .navigationTitle("Twój Budżet")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Menu {
+                        Button(action: { showHistorySheet = true }) {
+                            Label("Historia Wyjazdów", systemImage: "clock.arrow.circlepath")
+                        }
+                        
+                        if manager.isBudgetSet {
+                            Divider()
+                            Text("Waluta budżetu:")
+                            ForEach(ExpenseManager.allCurrencies, id: \.self) { currency in
+                                Button(action: {
+                                    manager.saveActiveTripSettings(
+                                        name: manager.tripName,
+                                        total: manager.totalBudget,
+                                        currency: currency,
+                                        secondary: manager.secondaryBudgetCurrency,
+                                        start: manager.tripStartDate,
+                                        end: manager.tripEndDate
+                                    )
+                                }) {
+                                    HStack {
+                                        Text(currency)
+                                        if manager.budgetCurrency == currency {
+                                            Image(systemName: "checkmark")
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "ellipsis.circle")
+                    }
+                }
+            }
             .sheet(isPresented: $showSetupSheet) {
                 BudgetSetupView(isPresented: $showSetupSheet)
+            }
+            .sheet(isPresented: $showHistorySheet) {
+                TripsHistoryView()
+            }
+            .confirmationDialog("Zakończyć wyjazd?", isPresented: $showFinishAlert, titleVisibility: .visible) {
+                Button("Zakończ i Archiwizuj", role: .destructive) {
+                    manager.finishCurrentTrip()
+                }
+                Button("Anuluj", role: .cancel) {}
+            } message: {
+                Text("Obecny wyjazd zostanie zapisany w historii, a ekran budżetu zostanie wyczyszczony.")
             }
             .task(id: manager.budgetCurrency + manager.secondaryBudgetCurrency) {
                 await fetchSecondaryRate()
@@ -497,26 +672,25 @@ struct BudgetView: View {
         let dayNum: Int
         let spent: Double
         let spentOriginalCurrencies: [String: Double]
+        let dailyLimit: Double
+        let rollover: Double
+        
+        var availableThatDay: Double { dailyLimit + rollover }
     }
     
     struct BudgetStats {
         let totalDays: Int
         let currentDayNum: Int
         let dailyBase: Double
-        
         let spentBeforeToday: Double
         let spentToday: Double
-        
         let shouldHaveSpentUntilYesterday: Double
         let savedFromPreviousDays: Double
-        
         let availableToday: Double
         let remainingToday: Double
-        
         let totalSpent: Double
         let totalRemaining: Double
         let progress: Double
-        
         let dailyHistory: [DailyHistoryItem]
     }
     
@@ -544,11 +718,10 @@ struct BudgetView: View {
         
         var currentDate = start
         var dayCounter = 1
+        var currentRollover: Double = 0.0
+        
         while currentDate <= endDateForHistory && currentDate <= end {
-            let dayExpenses = tripExpenses
-                .filter { calendar.isDate($0.date, inSameDayAs: currentDate) }
-            
-            // POPRAWKA: reduce(0.0)
+            let dayExpenses = tripExpenses.filter { calendar.isDate($0.date, inSameDayAs: currentDate) }
             let daySpent = dayExpenses.reduce(0.0) { $0 + $1.convertedAmount }
             
             var spentOriginals: [String: Double] = [:]
@@ -556,14 +729,24 @@ struct BudgetView: View {
                 spentOriginals[expense.currency, default: 0.0] += expense.amount
             }
             
-            history.append(DailyHistoryItem(date: currentDate, dayNum: dayCounter, spent: daySpent, spentOriginalCurrencies: spentOriginals))
+            history.append(DailyHistoryItem(
+                date: currentDate,
+                dayNum: dayCounter,
+                spent: daySpent,
+                spentOriginalCurrencies: spentOriginals,
+                dailyLimit: dailyBase,
+                rollover: currentRollover
+            ))
+            
+            let availableTodayInLoop = dailyBase + currentRollover
+            currentRollover = availableTodayInLoop - daySpent
+            
             currentDate = calendar.date(byAdding: .day, value: 1, to: currentDate) ?? currentDate
             dayCounter += 1
         }
         
         let spentToday: Double
         if today >= start && today <= end {
-            // POPRAWKA: reduce(0.0)
             spentToday = tripExpenses
                 .filter { calendar.isDate($0.date, inSameDayAs: today) }
                 .reduce(0.0) { $0 + $1.convertedAmount }
@@ -571,12 +754,10 @@ struct BudgetView: View {
             spentToday = 0
         }
             
-        // POPRAWKA: reduce(0.0)
         let spentBeforeToday = tripExpenses
             .filter { calendar.startOfDay(for: $0.date) < today }
             .reduce(0.0) { $0 + $1.convertedAmount }
             
-        // POPRAWKA: reduce(0.0)
         let totalSpent = tripExpenses.reduce(0.0) { $0 + $1.convertedAmount }
         let totalRemaining = manager.totalBudget - totalSpent
         
@@ -610,8 +791,7 @@ struct BudgetView: View {
     }
 }
 
-// Karty Widoku Budżetu
-
+// Karty Widoku Budżetu (BEZ ZMIAN)
 struct TodayBudgetCard: View {
     let stats: BudgetView.BudgetStats
     let currency: String
@@ -645,73 +825,42 @@ struct TodayBudgetCard: View {
                 }
             }
             
-            // Kołowy wykres
             ZStack {
-                Circle()
-                    .stroke(lineWidth: 20)
-                    .opacity(0.1)
-                    .foregroundColor(.secondary)
-                
-                Circle()
-                    .trim(from: 0.0, to: CGFloat(stats.progress))
+                Circle().stroke(lineWidth: 20).opacity(0.1).foregroundColor(.secondary)
+                Circle().trim(from: 0.0, to: CGFloat(stats.progress))
                     .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
                     .foregroundColor(getBarColor(progress: stats.progress))
                     .rotationEffect(Angle(degrees: 270.0))
                     .animation(.linear, value: stats.progress)
                 
                 VStack {
-                    Text("Zostało")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
+                    Text("Zostało").font(.caption2).foregroundColor(.secondary)
                     Text(stats.remainingToday, format: .currency(code: currency))
-                        .font(.title.weight(.bold))
-                        .foregroundColor(stats.remainingToday >= 0 ? .primary : .red)
-                    
-                    if isFetching {
-                        ProgressView().scaleEffect(0.8)
-                    } else if currency != secondaryCurrency {
+                        .font(.title.weight(.bold)).foregroundColor(stats.remainingToday >= 0 ? .primary : .red)
+                    if isFetching { ProgressView().scaleEffect(0.8) }
+                    else if currency != secondaryCurrency {
                         let remainingTodayConverted = stats.remainingToday * secondaryRate
-                        Text("≈ \(remainingTodayConverted, format: .currency(code: secondaryCurrency))")
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
+                        Text("≈ \(remainingTodayConverted, format: .currency(code: secondaryCurrency))").font(.caption2).foregroundColor(.secondary)
                     }
                 }
             }
-            .frame(height: 200)
-            .padding(.vertical, 10)
+            .frame(height: 200).padding(.vertical, 10)
             
-            // Legenda
             HStack(spacing: 30) {
                 VStack {
-                    Text("Wydano")
-                        .font(.caption).foregroundColor(.secondary)
-                    Text(stats.spentToday, format: .currency(code: currency))
-                        .fontWeight(.semibold)
-                        .foregroundColor(.red.opacity(0.8))
+                    Text("Wydano").font(.caption).foregroundColor(.secondary)
+                    Text(stats.spentToday, format: .currency(code: currency)).fontWeight(.semibold).foregroundColor(.red.opacity(0.8))
                 }
-                
                 Divider().frame(height: 30)
-                
                 VStack {
-                    Text(stats.savedFromPreviousDays >= 0 ? "Z przeniesienia" : "Nadwyżka z wczoraj")
-                        .font(.caption).foregroundColor(.secondary)
-                    Text(stats.savedFromPreviousDays, format: .currency(code: currency))
-                        .fontWeight(.semibold)
-                        .foregroundColor(stats.savedFromPreviousDays >= 0 ? .green : .red)
+                    Text(stats.savedFromPreviousDays >= 0 ? "Z przeniesienia" : "Nadwyżka").font(.caption).foregroundColor(.secondary)
+                    Text(stats.savedFromPreviousDays, format: .currency(code: currency)).fontWeight(.semibold).foregroundColor(stats.savedFromPreviousDays >= 0 ? .green : .red)
                 }
             }
         }
-        .padding(25)
-        .background(Color(UIColor.secondarySystemGroupedBackground))
-        .cornerRadius(25)
-        .shadow(color: Color.black.opacity(0.05), radius: 10, x: 0, y: 5)
+        .padding(25).background(Color(UIColor.secondarySystemGroupedBackground)).cornerRadius(25).shadow(color: Color.black.opacity(0.05), radius: 10, x: 0, y: 5)
     }
-    
-    func getBarColor(progress: Double) -> Color {
-        if progress < 0.5 { return .green }
-        if progress < 0.85 { return .orange }
-        return .red
-    }
+    func getBarColor(progress: Double) -> Color { if progress < 0.5 { return .green }; if progress < 0.85 { return .orange }; return .red }
 }
 
 struct TripSummaryCard: View {
@@ -725,76 +874,44 @@ struct TripSummaryCard: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
-            Text("Podsumowanie Wyjazdu")
-                .font(.headline)
-            
-            // Główny budżet
+            Text("Podsumowanie Wyjazdu").font(.headline)
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Całkowity budżet")
-                        .font(.caption).foregroundColor(.secondary)
-                    Text((stats.totalSpent + stats.totalRemaining), format: .currency(code: currency))
-                        .font(.title3.weight(.bold))
+                    Text("Całkowity budżet").font(.caption).foregroundColor(.secondary)
+                    Text((stats.totalSpent + stats.totalRemaining), format: .currency(code: currency)).font(.title3.weight(.bold))
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("Pozostało w sumie")
-                        .font(.caption).foregroundColor(.secondary)
-                    Text(stats.totalRemaining, format: .currency(code: currency))
-                        .font(.title3.weight(.bold))
-                        .foregroundColor(.green)
+                    Text("Pozostało w sumie").font(.caption).foregroundColor(.secondary)
+                    Text(stats.totalRemaining, format: .currency(code: currency)).font(.title3.weight(.bold)).foregroundColor(.green)
                 }
             }
-            
-            // Sekcja przeliczenia na walutę lokalną
             if currency != secondaryCurrency {
                 Divider().padding(.vertical, 5)
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("W walucie lokalnej (\(secondaryCurrency))")
-                            .font(.caption).foregroundColor(.secondary)
-                        
-                        if isFetching {
-                            ProgressView().scaleEffect(0.8)
-                        } else {
-                            let totalConverted = (stats.totalSpent + stats.totalRemaining) * secondaryRate
-                            Text(totalConverted, format: .currency(code: secondaryCurrency))
-                                .font(.headline)
-                                .foregroundColor(.primary.opacity(0.8))
+                        Text("W walucie lokalnej (\(secondaryCurrency))").font(.caption).foregroundColor(.secondary)
+                        if isFetching { ProgressView().scaleEffect(0.8) } else {
+                            Text((stats.totalSpent + stats.totalRemaining) * secondaryRate, format: .currency(code: secondaryCurrency)).font(.headline).foregroundColor(.primary.opacity(0.8))
                         }
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
-                        Text("Pozostało")
-                            .font(.caption).foregroundColor(.secondary)
-                        
-                        if isFetching {
-                            ProgressView().scaleEffect(0.8)
-                        } else {
-                            let remainingConverted = stats.totalRemaining * secondaryRate
-                            Text(remainingConverted, format: .currency(code: secondaryCurrency))
-                                .font(.headline)
-                                .foregroundColor(.green.opacity(0.8))
+                        Text("Pozostało").font(.caption).foregroundColor(.secondary)
+                        if isFetching { ProgressView().scaleEffect(0.8) } else {
+                            Text(stats.totalRemaining * secondaryRate, format: .currency(code: secondaryCurrency)).font(.headline).foregroundColor(.green.opacity(0.8))
                         }
                     }
                 }
             }
-            
-            ProgressView(value: stats.totalSpent, total: stats.totalSpent + stats.totalRemaining)
-                .tint(.purple)
-                .padding(.top, 5)
-            
+            ProgressView(value: stats.totalSpent, total: stats.totalSpent + stats.totalRemaining).tint(.purple).padding(.top, 5)
             HStack {
                 Text(start.formatted(date: .numeric, time: .omitted))
                 Spacer()
                 Text(end.formatted(date: .numeric, time: .omitted))
-            }
-            .font(.caption)
-            .foregroundColor(.secondary)
+            }.font(.caption).foregroundColor(.secondary)
         }
-        .padding(20)
-        .background(Color(UIColor.secondarySystemGroupedBackground))
-        .cornerRadius(20)
+        .padding(20).background(Color(UIColor.secondarySystemGroupedBackground)).cornerRadius(20)
     }
 }
 
@@ -802,55 +919,23 @@ struct DailyHistoryCard: View {
     let stat: BudgetView.DailyHistoryItem
     let currency: String
     let dailyBase: Double
-    
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text("Dzień \(stat.dayNum)")
-                .font(.caption2)
-                .fontWeight(.bold)
-                .foregroundColor(.secondary)
-            
-            Text(stat.date.formatted(.dateTime.day().month()))
-                .font(.caption)
-                .foregroundColor(.secondary)
-            
+        VStack(alignment: .leading, spacing: 4) {
+            HStack { Text("Dzień \(stat.dayNum)").font(.caption2).fontWeight(.bold); Spacer(); Text(stat.date.formatted(.dateTime.day().month())).font(.caption2).foregroundColor(.secondary) }
+            Divider().padding(.vertical, 2)
+            Text("Wydano:").font(.caption2).foregroundColor(.secondary)
+            Text(stat.spent, format: .currency(code: currency)).font(.subheadline).fontWeight(.bold).foregroundColor(stat.spent > stat.availableThatDay ? .red : .primary)
+            HStack(spacing: 2) { Text("Limit:").font(.caption2).foregroundColor(.secondary); Text(stat.dailyLimit, format: .currency(code: currency)).font(.caption2) }
+            if stat.rollover != 0 {
+                HStack(spacing: 2) { Image(systemName: stat.rollover > 0 ? "arrow.turn.right.down" : "arrow.turn.right.up").font(.caption2); Text(stat.rollover, format: .currency(code: currency)).font(.caption2).fontWeight(.semibold) }.foregroundColor(stat.rollover > 0 ? .green : .red)
+            } else { Text("Brak przeniesienia").font(.caption2).foregroundColor(.secondary).opacity(0.5) }
             Spacer()
-            
-            Text(stat.spent, format: .currency(code: currency))
-                .font(.headline)
-                .foregroundColor(stat.spent > dailyBase ? .red : .primary)
-            
             if !stat.spentOriginalCurrencies.isEmpty {
-                let originalAmounts = stat.spentOriginalCurrencies.map { curr, amount in
-                    "\(formatAmount(amount)) \(curr)"
-                }.joined(separator: " + ")
-                Text("Wydano: \(originalAmounts)")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.8)
-            }
-            
-            Spacer()
-            
-            if stat.spent > dailyBase {
-                Text("Nadwyżka")
-                    .font(.caption2)
-                    .foregroundColor(.red)
-            } else {
-                Text("W normie")
-                    .font(.caption2)
-                    .foregroundColor(.green)
+                let originalAmounts = stat.spentOriginalCurrencies.map { "\(formatAmount($1)) \($0)" }.joined(separator: "+")
+                Text(originalAmounts).font(.system(size: 8)).foregroundColor(.secondary).lineLimit(1)
             }
         }
-        .padding(12)
-        .frame(width: 130, height: 130) // Zwiększony rozmiar
-        .background(Color(UIColor.secondarySystemGroupedBackground))
-        .cornerRadius(12)
-        .overlay(
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(stat.spent > dailyBase ? Color.red.opacity(0.3) : Color.green.opacity(0.3), lineWidth: 1)
-        )
+        .padding(10).frame(width: 140, height: 140).background(Color(UIColor.secondarySystemGroupedBackground)).cornerRadius(12).overlay(RoundedRectangle(cornerRadius: 12).stroke(stat.spent > stat.availableThatDay ? Color.red.opacity(0.3) : Color.green.opacity(0.3), lineWidth: 1))
     }
 }
 
@@ -858,6 +943,7 @@ struct BudgetSetupView: View {
     @Binding var isPresented: Bool
     @EnvironmentObject var manager: ExpenseManager
     
+    @State private var name: String = ""
     @State private var total: Double = 3000
     @State private var currency: String = "PLN"
     @State private var secondaryCurrency: String = "THB"
@@ -867,36 +953,33 @@ struct BudgetSetupView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Finanse")) {
-                    TextField("Kwota budżetu", value: $total, format: .number)
-                        .keyboardType(.decimalPad)
-                    Picker("Waluta główna", selection: $currency) {
-                        ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) }
-                    }
-                    Picker("Waluta do przeliczenia", selection: $secondaryCurrency) {
-                        ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) }
-                    }
+                Section(header: Text("Informacje")) {
+                    TextField("Nazwa wyjazdu (np. Tajlandia)", text: $name)
                 }
                 
+                Section(header: Text("Finanse")) {
+                    TextField("Kwota budżetu", value: $total, format: .number).keyboardType(.decimalPad)
+                    Picker("Waluta główna", selection: $currency) { ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) } }
+                    Picker("Waluta do przeliczenia", selection: $secondaryCurrency) { ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) } }
+                }
                 Section(header: Text("Termin")) {
                     DatePicker("Początek", selection: $start, displayedComponents: .date)
                     DatePicker("Koniec", selection: $end, in: start..., displayedComponents: .date)
                 }
             }
-            .navigationTitle("Ustawienia Budżetu")
+            .navigationTitle(manager.isBudgetSet ? "Edycja Budżetu" : "Nowy Budżet")
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Zapisz") {
-                        manager.saveBudget(total: total, currency: currency, secondaryCurrency: secondaryCurrency, start: start, end: end)
+                        manager.saveActiveTripSettings(name: name, total: total, currency: currency, secondary: secondaryCurrency, start: start, end: end)
                         isPresented = false
                     }
                 }
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Anuluj") { isPresented = false }
-                }
+                ToolbarItem(placement: .cancellationAction) { Button("Anuluj") { isPresented = false } }
             }
             .onAppear {
                 if manager.isBudgetSet {
+                    name = manager.tripName
                     total = manager.totalBudget
                     currency = manager.budgetCurrency
                     secondaryCurrency = manager.secondaryBudgetCurrency
@@ -905,6 +988,86 @@ struct BudgetSetupView: View {
                 }
             }
         }
+    }
+}
+
+// --- NOWY WIDOK: HISTORIA WYJAZDÓW ---
+
+struct TripsHistoryView: View {
+    @EnvironmentObject var manager: ExpenseManager
+    @Environment(\.dismiss) var dismiss
+    
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(manager.archivedTrips) { trip in
+                    TripHistoryRow(trip: trip)
+                        .contentShape(Rectangle())
+                        .contextMenu {
+                            Button {
+                                manager.restoreTripToActive(trip)
+                                dismiss()
+                            } label: {
+                                Label("Przywróć do edycji", systemImage: "pencil")
+                            }
+                        }
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                if let index = manager.archivedTrips.firstIndex(of: trip) {
+                                    manager.deleteArchivedTrip(at: IndexSet(integer: index))
+                                }
+                            } label: {
+                                Label("Usuń", systemImage: "trash")
+                            }
+                            
+                            Button {
+                                manager.restoreTripToActive(trip)
+                                dismiss()
+                            } label: {
+                                Label("Przywróć", systemImage: "arrow.uturn.backward")
+                            }
+                            .tint(.orange)
+                        }
+                }
+                
+                if manager.archivedTrips.isEmpty {
+                    Text("Brak zakończonych wyjazdów.")
+                        .foregroundColor(.secondary)
+                        .padding()
+                }
+            }
+            .navigationTitle("Zakończone Wyjazdy")
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Zamknij") { dismiss() }
+                }
+            }
+        }
+    }
+}
+
+struct TripHistoryRow: View {
+    let trip: Trip
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(trip.name)
+                .font(.headline)
+            
+            HStack {
+                Text(trip.startDate.formatted(date: .numeric, time: .omitted) + " - " + trip.endDate.formatted(date: .numeric, time: .omitted))
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                
+                Spacer()
+                
+                let spent = trip.expenses.reduce(0.0) { $0 + $1.convertedAmount }
+                Text("Wydano: \(formatAmount(spent)) / \(formatAmount(trip.totalBudget)) \(trip.budgetCurrency)")
+                    .font(.subheadline)
+                    .foregroundColor(spent > trip.totalBudget ? .red : .green)
+            }
+        }
+        .padding(.vertical, 5)
     }
 }
 
