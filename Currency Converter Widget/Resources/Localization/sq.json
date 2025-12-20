@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "sq": "Konvertuesi i monedhave",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "sq": "Konvertues",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "sq": "Buxheti",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "sq": "Shpenzimet",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "sq": "Cilësimet",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "sq": "Shto përshkrim (p.sh. Taksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "sq": "Ruaj shpenzimin",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "sq": "U ruajt!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "sq": "Planifiko buxhetin",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "sq": "Vendosni një buxhet për të gjithë udhëtimin, ne do ta ndajmë në ditë dhe do të gjurmojmë shpenzimet tuaja.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "sq": "Vendos Buxhetin",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "sq": "Historiku i udhëtimeve",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "sq": "Buxheti Juaj",
+    "en": "Reference"
+  },
+  "today_header": {
+    "sq": "SOT (Dita %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "sq": "E disponueshme sot",
+    "en": "Reference"
+  },
+  "remaining": {
+    "sq": "E mbetur",
+    "en": "Reference"
+  },
+  "spent": {
+    "sq": "Shpenzuar",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "sq": "Bartje",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "sq": "Tejkalim",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "sq": "Historiku i shpenzimeve",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "sq": "Përmbledhje e udhëtimit",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "sq": "Buxheti total",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "sq": "Totali i mbetur",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "sq": "Në monedhën vendase (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "sq": "Ndrysho cilësimet",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "sq": "Përfundo dhe Arkivo",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "sq": "Të përfundoni udhëtimin?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "sq": "Udhëtimi aktual do të ruhet në historik dhe ekrani i buxhetit do të pastrohet.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "sq": "Përfundo dhe Arkivo",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "sq": "Anulo",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "sq": "Monedha e buxhetit:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "sq": "Dita %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "sq": "Limiti:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "sq": "S'ka bartje",
+    "en": "Reference"
+  },
+  "section_info": {
+    "sq": "Informacion",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "sq": "Emri i udhëtimit (p.sh. Tajlandë)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "sq": "Financat",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "sq": "Shuma e buxhetit",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "sq": "Monedha kryesore",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "sq": "Monedha e konvertimit",
+    "en": "Reference"
+  },
+  "section_term": {
+    "sq": "Afati",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "sq": "Fillimi",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "sq": "Fundi",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "sq": "Redakto Buxhetin",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "sq": "Buxhet i Ri",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "sq": "Ruaj",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "sq": "Rivendos për redaktim",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "sq": "Fshi",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "sq": "Rivendos",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "sq": "Asnjë udhëtim i përfunduar.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "sq": "Udhëtimet e Përfunduara",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "sq": "Mbyll",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "sq": "Shpenzuar: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "sq": "Shpenzimet e Mia",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "sq": "Shfaq totalet në:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "sq": "Totali:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "sq": "(+ të tjera: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "sq": "S'ka shpenzime",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "sq": "Shpenzimet tuaja të ruajtura do të shfaqen këtu.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "sq": "Pa përshkrim",
+    "en": "Reference"
+  },
+  "section_details": {
+    "sq": "Detajet",
+    "en": "Reference"
+  },
+  "label_description": {
+    "sq": "Përshkrimi",
+    "en": "Reference"
+  },
+  "label_date": {
+    "sq": "Data",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "sq": "Shumat dhe Monedhat",
+    "en": "Reference"
+  },
+  "label_result": {
+    "sq": "Rezultati",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "sq": "Redakto",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "sq": "U ruajt!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "sq": "Kursi:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "sq": "Gjuha",
+    "en": "Reference"
+  },
+  "language_system": {
+    "sq": "Sistemi",
+    "en": "Reference"
+  },
+  "language_english": {
+    "sq": "Anglisht",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "sq": "Polonisht",
+    "en": "Reference"
+  }
+}

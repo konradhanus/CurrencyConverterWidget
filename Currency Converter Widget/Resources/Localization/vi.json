@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "vi": "Chuyển đổi tiền tệ",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "vi": "Chuyển đổi",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "vi": "Ngân sách",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "vi": "Chi phí",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "vi": "Cài đặt",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "vi": "Thêm mô tả (vd: Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "vi": "Lưu chi phí",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "vi": "Đã lưu!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "vi": "Lập ngân sách",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "vi": "Thiết lập ngân sách cho cả chuyến đi, chúng tôi sẽ chia theo ngày và theo dõi chi tiêu của bạn.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "vi": "Đặt ngân sách",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "vi": "Lịch sử chuyến đi",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "vi": "Ngân sách của bạn",
+    "en": "Reference"
+  },
+  "today_header": {
+    "vi": "HÔM NAY (Ngày %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "vi": "Có sẵn hôm nay",
+    "en": "Reference"
+  },
+  "remaining": {
+    "vi": "Còn lại",
+    "en": "Reference"
+  },
+  "spent": {
+    "vi": "Đã chi",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "vi": "Chuyển sang",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "vi": "Vượt mức",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "vi": "Lịch sử chi tiêu",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "vi": "Tóm tắt chuyến đi",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "vi": "Tổng ngân sách",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "vi": "Tổng còn lại",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "vi": "Bằng nội tệ (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "vi": "Sửa cài đặt",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "vi": "Kết thúc & Lưu trữ",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "vi": "Kết thúc chuyến đi?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "vi": "Chuyến đi hiện tại sẽ được lưu vào lịch sử và màn hình ngân sách sẽ bị xóa.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "vi": "Kết thúc & Lưu trữ",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "vi": "Hủy",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "vi": "Tiền tệ ngân sách:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "vi": "Ngày %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "vi": "Hạn mức:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "vi": "Không chuyển sang",
+    "en": "Reference"
+  },
+  "section_info": {
+    "vi": "Thông tin",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "vi": "Tên chuyến đi (vd: Thái Lan)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "vi": "Tài chính",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "vi": "Số tiền ngân sách",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "vi": "Tiền tệ chính",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "vi": "Tiền tệ chuyển đổi",
+    "en": "Reference"
+  },
+  "section_term": {
+    "vi": "Thời hạn",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "vi": "Bắt đầu",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "vi": "Kết thúc",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "vi": "Sửa ngân sách",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "vi": "Ngân sách mới",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "vi": "Lưu",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "vi": "Khôi phục để sửa",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "vi": "Xóa",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "vi": "Khôi phục",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "vi": "Không có chuyến đi đã kết thúc.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "vi": "Chuyến đi đã xong",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "vi": "Đóng",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "vi": "Đã chi: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "vi": "Chi phí của tôi",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "vi": "Hiển thị tổng số bằng:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "vi": "Tổng:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "vi": "(+ khác: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "vi": "Không có chi phí",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "vi": "Chi phí đã lưu sẽ hiện ở đây.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "vi": "Không mô tả",
+    "en": "Reference"
+  },
+  "section_details": {
+    "vi": "Chi tiết",
+    "en": "Reference"
+  },
+  "label_description": {
+    "vi": "Mô tả",
+    "en": "Reference"
+  },
+  "label_date": {
+    "vi": "Ngày",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "vi": "Số tiền và Tiền tệ",
+    "en": "Reference"
+  },
+  "label_result": {
+    "vi": "Kết quả",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "vi": "Sửa",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "vi": "Đã lưu!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "vi": "Tỷ giá:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "vi": "Ngôn ngữ",
+    "en": "Reference"
+  },
+  "language_system": {
+    "vi": "Hệ thống",
+    "en": "Reference"
+  },
+  "language_english": {
+    "vi": "Tiếng Anh",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "vi": "Ba Lan",
+    "en": "Reference"
+  }
+}

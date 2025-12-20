@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "lt": "Valiutų keitiklis",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "lt": "Keitiklis",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "lt": "Biudžetas",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "lt": "Išlaidos",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "lt": "Nustatymai",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "lt": "Pridėti aprašymą (pvz., Taksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "lt": "Išsaugoti išlaidą",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "lt": "Išsaugota!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "lt": "Planuoti biudžetą",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "lt": "Nustatykite biudžetą visai kelionei, mes jį padalinsime dienomis ir stebėsime jūsų išlaidas.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "lt": "Nustatyti biudžetą",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "lt": "Kelionių istorija",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "lt": "Jūsų biudžetas",
+    "en": "Reference"
+  },
+  "today_header": {
+    "lt": "ŠIANDIEN (%@/%@ d.)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "lt": "Prieinama šiandien",
+    "en": "Reference"
+  },
+  "remaining": {
+    "lt": "Liko",
+    "en": "Reference"
+  },
+  "spent": {
+    "lt": "Išleista",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "lt": "Perkėlimas",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "lt": "Viršyta",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "lt": "Išlaidų istorija",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "lt": "Kelionės santrauka",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "lt": "Bendras biudžetas",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "lt": "Iš viso liko",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "lt": "Vietine valiuta (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "lt": "Redaguoti nustatymus",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "lt": "Baigti ir archyvuoti",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "lt": "Baigti kelionę?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "lt": "Dabartinė kelionė bus išsaugota istorijoje, o biudžeto ekranas bus išvalytas.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "lt": "Baigti ir archyvuoti",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "lt": "Atšaukti",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "lt": "Biudžeto valiuta:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "lt": "%@ diena",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "lt": "Limitas:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "lt": "Nėra perkėlimo",
+    "en": "Reference"
+  },
+  "section_info": {
+    "lt": "Informacija",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "lt": "Kelionės pavadinimas (pvz., Tailandas)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "lt": "Finansai",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "lt": "Biudžeto suma",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "lt": "Pagrindinė valiuta",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "lt": "Konvertavimo valiuta",
+    "en": "Reference"
+  },
+  "section_term": {
+    "lt": "Laikotarpis",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "lt": "Pradžia",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "lt": "Pabaiga",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "lt": "Redaguoti biudžetą",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "lt": "Naujas biudžetas",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "lt": "Išsaugoti",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "lt": "Atkurti redagavimui",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "lt": "Ištrinti",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "lt": "Atkurti",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "lt": "Nėra baigtų kelionių.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "lt": "Baigtos kelionės",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "lt": "Uždaryti",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "lt": "Išleista: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "lt": "Mano išlaidos",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "lt": "Rodyti sumas:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "lt": "Iš viso:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "lt": "(+ kiti: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "lt": "Nėra išlaidų",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "lt": "Jūsų išsaugotos išlaidos bus rodomos čia.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "lt": "Nėra aprašymo",
+    "en": "Reference"
+  },
+  "section_details": {
+    "lt": "Detalės",
+    "en": "Reference"
+  },
+  "label_description": {
+    "lt": "Aprašymas",
+    "en": "Reference"
+  },
+  "label_date": {
+    "lt": "Data",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "lt": "Sumos ir valiutos",
+    "en": "Reference"
+  },
+  "label_result": {
+    "lt": "Rezultatas",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "lt": "Redaguoti",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "lt": "Išsaugota!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "lt": "Kursas:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "lt": "Kalba",
+    "en": "Reference"
+  },
+  "language_system": {
+    "lt": "Sistema",
+    "en": "Reference"
+  },
+  "language_english": {
+    "lt": "Anglų",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "lt": "Lenkų",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "tr": "Döviz Çevirici",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "tr": "Çevirici",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "tr": "Bütçe",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "tr": "Giderler",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "tr": "Ayarlar",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "tr": "Açıklama ekle (örn. Taksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "tr": "Gideri Kaydet",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "tr": "Kaydedildi!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "tr": "Bütçe Planla",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "tr": "Tüm seyahat için bir bütçe belirleyin, günlere bölelim ve harcamalarınızı takip edelim.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "tr": "Bütçe Ayarla",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "tr": "Seyahat Geçmişi",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "tr": "Bütçeniz",
+    "en": "Reference"
+  },
+  "today_header": {
+    "tr": "BUGÜN (Gün %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "tr": "Bugün kullanılabilir",
+    "en": "Reference"
+  },
+  "remaining": {
+    "tr": "Kalan",
+    "en": "Reference"
+  },
+  "spent": {
+    "tr": "Harcanan",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "tr": "Devreden",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "tr": "Aşım",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "tr": "Harcama Geçmişi",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "tr": "Seyahat Özeti",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "tr": "Toplam bütçe",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "tr": "Toplam kalan",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "tr": "Yerel para birimi (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "tr": "Ayarları düzenle",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "tr": "Bitir ve Arşivle",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "tr": "Seyahati bitir?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "tr": "Mevcut seyahat geçmişe kaydedilecek ve bütçe ekranı temizlenecek.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "tr": "Bitir ve Arşivle",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "tr": "İptal",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "tr": "Bütçe para birimi:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "tr": "Gün %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "tr": "Limit:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "tr": "Devir yok",
+    "en": "Reference"
+  },
+  "section_info": {
+    "tr": "Bilgi",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "tr": "Seyahat adı (örn. Tayland)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "tr": "Finans",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "tr": "Bütçe tutarı",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "tr": "Ana para birimi",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "tr": "Dönüştürülecek para birimi",
+    "en": "Reference"
+  },
+  "section_term": {
+    "tr": "Dönem",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "tr": "Başlangıç",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "tr": "Bitiş",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "tr": "Bütçeyi Düzenle",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "tr": "Yeni Bütçe",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "tr": "Kaydet",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "tr": "Düzenlemek için geri yükle",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "tr": "Sil",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "tr": "Geri yükle",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "tr": "Tamamlanan seyahat yok.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "tr": "Tamamlanan Seyahatler",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "tr": "Kapat",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "tr": "Harcanan: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "tr": "Harcamalarım",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "tr": "Toplamları şurada göster:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "tr": "Toplam:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "tr": "(+ diğer: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "tr": "Harcama yok",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "tr": "Kaydedilen harcamalarınız burada görünecek.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "tr": "Açıklama yok",
+    "en": "Reference"
+  },
+  "section_details": {
+    "tr": "Detaylar",
+    "en": "Reference"
+  },
+  "label_description": {
+    "tr": "Açıklama",
+    "en": "Reference"
+  },
+  "label_date": {
+    "tr": "Tarih",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "tr": "Tutarlar ve Para Birimleri",
+    "en": "Reference"
+  },
+  "label_result": {
+    "tr": "Sonuç",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "tr": "Düzenle",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "tr": "Kaydedildi!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "tr": "Kur:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "tr": "Dil",
+    "en": "Reference"
+  },
+  "language_system": {
+    "tr": "Sistem",
+    "en": "Reference"
+  },
+  "language_english": {
+    "tr": "İngilizce",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "tr": "Lehçe",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ko": "환율 계산기",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ko": "변환기",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ko": "예산",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ko": "지출",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ko": "설정",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ko": "설명 추가 (예: 택시)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ko": "지출 저장",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ko": "저장됨!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ko": "예산 계획",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ko": "전체 여행 예산을 설정하면 일별로 나누어 지출을 추적합니다.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ko": "예산 설정",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ko": "여행 기록",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ko": "나의 예산",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ko": "오늘 (%@/%@일차)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ko": "오늘 사용 가능",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ko": "남음",
+    "en": "Reference"
+  },
+  "spent": {
+    "ko": "지출됨",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ko": "이월",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ko": "초과",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ko": "지출 내역",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ko": "여행 요약",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ko": "총 예산",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ko": "총 잔액",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ko": "현지 통화 (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ko": "설정 편집",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ko": "종료 및 보관",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ko": "여행을 종료하시겠습니까?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ko": "현재 여행이 기록에 저장되고 예산 화면이 초기화됩니다.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ko": "종료 및 보관",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ko": "취소",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ko": "예산 통화:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ko": "%@일차",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ko": "한도:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ko": "이월 없음",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ko": "정보",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ko": "여행 이름 (예: 태국)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ko": "재정",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ko": "예산 금액",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ko": "주 통화",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ko": "변환 통화",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ko": "기간",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ko": "시작",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ko": "종료",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ko": "예산 편집",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ko": "새 예산",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ko": "저장",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ko": "편집 복원",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ko": "삭제",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ko": "복원",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ko": "완료된 여행 없음.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ko": "완료된 여행",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ko": "닫기",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ko": "지출: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ko": "나의 지출",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ko": "합계 표시:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ko": "합계:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ko": "(+ 기타: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ko": "지출 없음",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ko": "저장된 지출이 여기에 표시됩니다.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ko": "설명 없음",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ko": "세부 정보",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ko": "설명",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ko": "날짜",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ko": "금액 및 통화",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ko": "결과",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ko": "편집",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ko": "저장됨!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ko": "환율:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ko": "언어",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ko": "시스템",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ko": "영어",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ko": "폴란드어",
+    "en": "Reference"
+  }
+}

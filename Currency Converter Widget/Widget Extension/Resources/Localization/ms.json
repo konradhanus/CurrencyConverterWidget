@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ms": "Penukar Mata Wang",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ms": "Penukar",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ms": "Belanjawan",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ms": "Perbelanjaan",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ms": "Tetapan",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ms": "Tambah huraian (cth. Teksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ms": "Simpan Perbelanjaan",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ms": "Disimpan!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ms": "Rancang Belanjawan",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ms": "Tetapkan belanjawan untuk keseluruhan perjalanan, kami akan membahagikannya kepada hari dan menjejaki perbelanjaan anda.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ms": "Tetapkan Belanjawan",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ms": "Sejarah Perjalanan",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ms": "Belanjawan Anda",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ms": "HARI INI (Hari %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ms": "Tersedia hari ini",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ms": "Baki",
+    "en": "Reference"
+  },
+  "spent": {
+    "ms": "Dibelanjakan",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ms": "Bawa ke hadapan",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ms": "Berlebihan",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ms": "Sejarah Perbelanjaan",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ms": "Ringkasan Perjalanan",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ms": "Jumlah belanjawan",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ms": "Jumlah baki",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ms": "Dalam mata wang tempatan (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ms": "Edit tetapan",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ms": "Selesai & Arkib",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ms": "Tamatkan perjalanan?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ms": "Perjalanan semasa akan disimpan dalam sejarah, dan skrin belanjawan akan dikosongkan.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ms": "Selesai & Arkib",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ms": "Batal",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ms": "Mata wang belanjawan:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ms": "Hari %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ms": "Had:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ms": "Tiada bawa ke hadapan",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ms": "Maklumat",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ms": "Nama perjalanan (cth. Thailand)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ms": "Kewangan",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ms": "Jumlah belanjawan",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ms": "Mata wang utama",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ms": "Mata wang tukaran",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ms": "Tempoh",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ms": "Mula",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ms": "Tamat",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ms": "Edit Belanjawan",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ms": "Belanjawan Baru",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ms": "Simpan",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ms": "Pulihkan untuk edit",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ms": "Padam",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ms": "Pulihkan",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ms": "Tiada perjalanan tamat.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ms": "Perjalanan Tamat",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ms": "Tutup",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ms": "Dibelanjakan: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ms": "Perbelanjaan Saya",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ms": "Tunjukkan jumlah dalam:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ms": "Jumlah:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ms": "(+ lain: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ms": "Tiada perbelanjaan",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ms": "Perbelanjaan tersimpan anda akan muncul di sini.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ms": "Tiada huraian",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ms": "Butiran",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ms": "Huraian",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ms": "Tarikh",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ms": "Jumlah dan Mata Wang",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ms": "Keputusan",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ms": "Edit",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ms": "Disimpan!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ms": "Kadar:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ms": "Bahasa",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ms": "Sistem",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ms": "Inggeris",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ms": "Poland",
+    "en": "Reference"
+  }
+}

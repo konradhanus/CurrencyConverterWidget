@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ca": "Conversor de divises",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ca": "Conversor",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ca": "Pressupost",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ca": "Despeses",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ca": "Configuració",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ca": "Afegeix descripció (p. ex. Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ca": "Desa la despesa",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ca": "Desat!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ca": "Planifica el pressupost",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ca": "Estableix un pressupost per a tot el viatge, el dividirem en dies i farem un seguiment de les teves despeses.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ca": "Estableix pressupost",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ca": "Historial de viatges",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ca": "El teu pressupost",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ca": "AVUI (Dia %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ca": "Disponible avui",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ca": "Restant",
+    "en": "Reference"
+  },
+  "spent": {
+    "ca": "Gastat",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ca": "Romanent",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ca": "Excés",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ca": "Historial de despeses",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ca": "Resum del viatge",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ca": "Pressupost total",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ca": "Total restant",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ca": "En moneda local (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ca": "Edita configuració",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ca": "Finalitza i arxiva",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ca": "Finalitzar viatge?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ca": "El viatge actual es desarà a l'historial i la pantalla del pressupost s'esborrarà.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ca": "Finalitza i Arxiva",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ca": "Cancel·la",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ca": "Moneda del pressupost:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ca": "Dia %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ca": "Límit:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ca": "Sense romanent",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ca": "Informació",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ca": "Nom del viatge (p. ex. Tailàndia)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ca": "Finances",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ca": "Import del pressupost",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ca": "Moneda principal",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ca": "Moneda de conversió",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ca": "Període",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ca": "Inici",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ca": "Fi",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ca": "Edita pressupost",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ca": "Nou pressupost",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ca": "Desa",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ca": "Restaura per editar",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ca": "Elimina",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ca": "Restaura",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ca": "Cap viatge finalitzat.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ca": "Viatges finalitzats",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ca": "Tanca",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ca": "Gastat: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ca": "Les meves despeses",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ca": "Mostra totals en:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ca": "Total:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ca": "(+ altres: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ca": "Sense despeses",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ca": "Les teves despeses desades apareixeran aquí.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ca": "Sense descripció",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ca": "Detalls",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ca": "Descripció",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ca": "Data",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ca": "Imports i monedes",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ca": "Resultat",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ca": "Edita",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ca": "Desat!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ca": "Taxa:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ca": "Idioma",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ca": "Sistema",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ca": "Anglès",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ca": "Polonès",
+    "en": "Reference"
+  }
+}

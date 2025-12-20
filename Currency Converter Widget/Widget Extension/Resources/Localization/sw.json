@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "sw": "Kigeuzi Sarafu",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "sw": "Kigeuzi",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "sw": "Bajeti",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "sw": "Matumizi",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "sw": "Mipangilio",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "sw": "Ongeza maelezo (k.m. Teksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "sw": "Hifadhi Matumizi",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "sw": "Imehifadhiwa!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "sw": "Panga Bajeti",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "sw": "Weka bajeti ya safari nzima, tutaigawa kwa siku na kufuatilia matumizi yako.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "sw": "Weka Bajeti",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "sw": "Historia ya Safari",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "sw": "Bajeti Yako",
+    "en": "Reference"
+  },
+  "today_header": {
+    "sw": "LEO (Siku %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "sw": "Inapatikana leo",
+    "en": "Reference"
+  },
+  "remaining": {
+    "sw": "Iliyobaki",
+    "en": "Reference"
+  },
+  "spent": {
+    "sw": "Imetumika",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "sw": "Baki",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "sw": "Ziada",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "sw": "Historia ya Matumizi",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "sw": "Muhtasari wa Safari",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "sw": "Bajeti yote",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "sw": "Jumla iliyobaki",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "sw": "Kwa sarafu ya ndani (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "sw": "Hariri mipangilio",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "sw": "Maliza na Hifadhi",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "sw": "Maliza safari?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "sw": "Safari ya sasa itahifadhiwa kwenye historia, na skrini ya bajeti itafutwa.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "sw": "Maliza na Hifadhi",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "sw": "Ghairi",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "sw": "Sarafu ya bajeti:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "sw": "Siku %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "sw": "Kikomo:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "sw": "Hakuna baki",
+    "en": "Reference"
+  },
+  "section_info": {
+    "sw": "Taarifa",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "sw": "Jina la safari (k.m. Thailand)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "sw": "Fedha",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "sw": "Kiasi cha bajeti",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "sw": "Sarafu kuu",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "sw": "Sarafu ya kugeuza",
+    "en": "Reference"
+  },
+  "section_term": {
+    "sw": "Muda",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "sw": "Anza",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "sw": "Mwisho",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "sw": "Hariri Bajeti",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "sw": "Bajeti Mpya",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "sw": "Hifadhi",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "sw": "Rejesha ili kuhariri",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "sw": "Futa",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "sw": "Rejesha",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "sw": "Hakuna safari zilizokamilika.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "sw": "Safari Zilizokamilika",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "sw": "Funga",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "sw": "Imetumika: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "sw": "Matumizi Yangu",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "sw": "Onyesha jumla katika:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "sw": "Jumla:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "sw": "(+ mengine: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "sw": "Hakuna matumizi",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "sw": "Matumizi yako yaliyohifadhiwa yataonekana hapa.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "sw": "Hakuna maelezo",
+    "en": "Reference"
+  },
+  "section_details": {
+    "sw": "Maelezo",
+    "en": "Reference"
+  },
+  "label_description": {
+    "sw": "Maelezo",
+    "en": "Reference"
+  },
+  "label_date": {
+    "sw": "Tarehe",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "sw": "Viasi na Sarafu",
+    "en": "Reference"
+  },
+  "label_result": {
+    "sw": "Matokeo",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "sw": "Hariri",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "sw": "Imehifadhiwa!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "sw": "Kiwango:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "sw": "Lugha",
+    "en": "Reference"
+  },
+  "language_system": {
+    "sw": "Mfumo",
+    "en": "Reference"
+  },
+  "language_english": {
+    "sw": "Kiingereza",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "sw": "Kipolishi",
+    "en": "Reference"
+  }
+}

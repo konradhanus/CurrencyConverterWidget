@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "sl": "Pretvornik valut",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "sl": "Pretvornik",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "sl": "Proračun",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "sl": "Stroški",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "sl": "Nastavitve",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "sl": "Dodaj opis (npr. Taksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "sl": "Shrani strošek",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "sl": "Shranjeno!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "sl": "Načrtuj proračun",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "sl": "Določite proračun za celotno potovanje, razdelili ga bomo na dneve in spremljali vaše stroške.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "sl": "Določi proračun",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "sl": "Zgodovina potovanj",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "sl": "Vaš proračun",
+    "en": "Reference"
+  },
+  "today_header": {
+    "sl": "DANES (Dan %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "sl": "Na voljo danes",
+    "en": "Reference"
+  },
+  "remaining": {
+    "sl": "Preostalo",
+    "en": "Reference"
+  },
+  "spent": {
+    "sl": "Porabljeno",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "sl": "Prenos",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "sl": "Prekoračitev",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "sl": "Zgodovina stroškov",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "sl": "Povzetek potovanja",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "sl": "Skupni proračun",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "sl": "Skupaj preostalo",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "sl": "V lokalni valuti (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "sl": "Uredi nastavitve",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "sl": "Končaj in arhiviraj",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "sl": "Končati potovanje?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "sl": "Trenutno potovanje bo shranjeno v zgodovino, zaslon proračuna pa bo počiščen.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "sl": "Končaj in arhiviraj",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "sl": "Prekliči",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "sl": "Valuta proračuna:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "sl": "Dan %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "sl": "Limit:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "sl": "Ni prenosa",
+    "en": "Reference"
+  },
+  "section_info": {
+    "sl": "Informacije",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "sl": "Ime potovanja (npr. Tajska)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "sl": "Finance",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "sl": "Znesek proračuna",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "sl": "Glavna valuta",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "sl": "Valuta za pretvorbo",
+    "en": "Reference"
+  },
+  "section_term": {
+    "sl": "Obdobje",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "sl": "Začetek",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "sl": "Konec",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "sl": "Uredi proračun",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "sl": "Nov proračun",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "sl": "Shrani",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "sl": "Obnovi za urejanje",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "sl": "Izbriši",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "sl": "Obnovi",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "sl": "Ni končanih potovanj.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "sl": "Končana potovanja",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "sl": "Zapri",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "sl": "Porabljeno: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "sl": "Moji stroški",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "sl": "Prikaži vsote v:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "sl": "Skupaj:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "sl": "(+ drugo: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "sl": "Ni stroškov",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "sl": "Tukaj bodo prikazani vaši shranjeni stroški.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "sl": "Ni opisa",
+    "en": "Reference"
+  },
+  "section_details": {
+    "sl": "Podrobnosti",
+    "en": "Reference"
+  },
+  "label_description": {
+    "sl": "Opis",
+    "en": "Reference"
+  },
+  "label_date": {
+    "sl": "Datum",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "sl": "Zneski in valute",
+    "en": "Reference"
+  },
+  "label_result": {
+    "sl": "Rezultat",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "sl": "Uredi",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "sl": "Shranjeno!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "sl": "Tečaj:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "sl": "Jezik",
+    "en": "Reference"
+  },
+  "language_system": {
+    "sl": "Sistem",
+    "en": "Reference"
+  },
+  "language_english": {
+    "sl": "Angleščina",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "sl": "Poljščina",
+    "en": "Reference"
+  }
+}

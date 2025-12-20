@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "lv": "Valūtas konvertētājs",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "lv": "Konvertētājs",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "lv": "Budžets",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "lv": "Izdevumi",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "lv": "Iestatījumi",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "lv": "Pievienot aprakstu (piem. Taksometrs)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "lv": "Saglabāt izdevumu",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "lv": "Saglabāts!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "lv": "Plānot budžetu",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "lv": "Iestatiet budžetu visam ceļojumam, mēs to sadalīsim pa dienām un sekosim līdzi jūsu izdevumiem.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "lv": "Iestatīt budžetu",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "lv": "Ceļojumu vēsture",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "lv": "Tavs budžets",
+    "en": "Reference"
+  },
+  "today_header": {
+    "lv": "ŠODIEN (%@. diena/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "lv": "Pieejams šodien",
+    "en": "Reference"
+  },
+  "remaining": {
+    "lv": "Atlicis",
+    "en": "Reference"
+  },
+  "spent": {
+    "lv": "Iztērēts",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "lv": "Pārnese",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "lv": "Pārsniegums",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "lv": "Izdevumu vēsture",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "lv": "Ceļojuma kopsavilkums",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "lv": "Kopējais budžets",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "lv": "Kopā atlicis",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "lv": "Vietējā valūtā (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "lv": "Rediģēt iestatījumus",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "lv": "Pabeigt un arhivēt",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "lv": "Pabeigt ceļojumu?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "lv": "Pašreizējais ceļojums tiks saglabāts vēsturē, un budžeta ekrāns tiks notīrīts.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "lv": "Pabeigt un arhivēt",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "lv": "Atcelt",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "lv": "Budžeta valūta:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "lv": "%@. diena",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "lv": "Limits:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "lv": "Nav pārneses",
+    "en": "Reference"
+  },
+  "section_info": {
+    "lv": "Informācija",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "lv": "Ceļojuma nosaukums (piem. Taizeme)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "lv": "Finanses",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "lv": "Budžeta summa",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "lv": "Galvenā valūta",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "lv": "Konvertējamā valūta",
+    "en": "Reference"
+  },
+  "section_term": {
+    "lv": "Termiņš",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "lv": "Sākums",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "lv": "Beigas",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "lv": "Rediģēt budžetu",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "lv": "Jauns budžets",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "lv": "Saglabāt",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "lv": "Atjaunot rediģēšanai",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "lv": "Dzēst",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "lv": "Atjaunot",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "lv": "Nav pabeigtu ceļojumu.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "lv": "Pabeigtie ceļojumi",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "lv": "Aizvērt",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "lv": "Iztērēts: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "lv": "Mani izdevumi",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "lv": "Rādīt kopsummas:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "lv": "Kopā:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "lv": "(+ citi: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "lv": "Nav izdevumu",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "lv": "Šeit parādīsies jūsu saglabātie izdevumi.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "lv": "Nav apraksta",
+    "en": "Reference"
+  },
+  "section_details": {
+    "lv": "Detaļas",
+    "en": "Reference"
+  },
+  "label_description": {
+    "lv": "Apraksts",
+    "en": "Reference"
+  },
+  "label_date": {
+    "lv": "Datums",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "lv": "Summas un valūtas",
+    "en": "Reference"
+  },
+  "label_result": {
+    "lv": "Rezultāts",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "lv": "Rediģēt",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "lv": "Saglabāts!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "lv": "Kurss:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "lv": "Valoda",
+    "en": "Reference"
+  },
+  "language_system": {
+    "lv": "Sistēma",
+    "en": "Reference"
+  },
+  "language_english": {
+    "lv": "Angļu",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "lv": "Poļu",
+    "en": "Reference"
+  }
+}

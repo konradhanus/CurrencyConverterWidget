@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "bg": "Конвертор на валути",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "bg": "Конвертор",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "bg": "Бюджет",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "bg": "Разходи",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "bg": "Настройки",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "bg": "Добави описание (напр. Такси)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "bg": "Запази разход",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "bg": "Запазено!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "bg": "Планирай бюджет",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "bg": "Задайте бюджет за цялото пътуване, ние ще го разделим по дни и ще следим разходите ви.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "bg": "Задай бюджет",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "bg": "История на пътуванията",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "bg": "Вашият бюджет",
+    "en": "Reference"
+  },
+  "today_header": {
+    "bg": "ДНЕС (Ден %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "bg": "Налично днес",
+    "en": "Reference"
+  },
+  "remaining": {
+    "bg": "Остава",
+    "en": "Reference"
+  },
+  "spent": {
+    "bg": "Похарчено",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "bg": "Прехвърляне",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "bg": "Надвишение",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "bg": "История на разходите",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "bg": "Обобщение на пътуването",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "bg": "Общ бюджет",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "bg": "Общо остава",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "bg": "В местна валута (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "bg": "Редактирай настройки",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "bg": "Приключи и архивирай",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "bg": "Край на пътуването?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "bg": "Текущото пътуване ще бъде запазено в историята и екранът за бюджет ще бъде изчистен.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "bg": "Приключи и архивирай",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "bg": "Отказ",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "bg": "Валута на бюджета:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "bg": "Ден %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "bg": "Лимит:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "bg": "Няма прехвърляне",
+    "en": "Reference"
+  },
+  "section_info": {
+    "bg": "Информация",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "bg": "Име на пътуването (напр. Тайланд)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "bg": "Финанси",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "bg": "Сума на бюджета",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "bg": "Основна валута",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "bg": "Валута за преобразуване",
+    "en": "Reference"
+  },
+  "section_term": {
+    "bg": "Период",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "bg": "Начало",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "bg": "Край",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "bg": "Редактирай бюджет",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "bg": "Нов бюджет",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "bg": "Запази",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "bg": "Възстанови за редакция",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "bg": "Изтрий",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "bg": "Възстанови",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "bg": "Няма завършени пътувания.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "bg": "Завършени пътувания",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "bg": "Затвори",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "bg": "Похарчено: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "bg": "Моите разходи",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "bg": "Покажи суми в:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "bg": "Общо:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "bg": "(+ други: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "bg": "Няма разходи",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "bg": "Вашите запазени разходи ще се появят тук.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "bg": "Няма описание",
+    "en": "Reference"
+  },
+  "section_details": {
+    "bg": "Детайли",
+    "en": "Reference"
+  },
+  "label_description": {
+    "bg": "Описание",
+    "en": "Reference"
+  },
+  "label_date": {
+    "bg": "Дата",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "bg": "Суми и валути",
+    "en": "Reference"
+  },
+  "label_result": {
+    "bg": "Резултат",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "bg": "Редакция",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "bg": "Запазено!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "bg": "Курс:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "bg": "Език",
+    "en": "Reference"
+  },
+  "language_system": {
+    "bg": "Система",
+    "en": "Reference"
+  },
+  "language_english": {
+    "bg": "Английски",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "bg": "Полски",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "et": "Valuutakonverter",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "et": "Konverter",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "et": "Eelarve",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "et": "Kulud",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "et": "Seaded",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "et": "Lisa kirjeldus (nt Takso)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "et": "Salvesta kulu",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "et": "Salvestatud!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "et": "Planeeri eelarve",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "et": "Määra kogu reisi eelarve, jagame selle päevadeks ja jälgime sinu kulusid.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "et": "Määra eelarve",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "et": "Reisiajalugu",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "et": "Sinu eelarve",
+    "en": "Reference"
+  },
+  "today_header": {
+    "et": "TÄNA (Päev %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "et": "Täna saadaval",
+    "en": "Reference"
+  },
+  "remaining": {
+    "et": "Järelejäänud",
+    "en": "Reference"
+  },
+  "spent": {
+    "et": "Kulutatud",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "et": "Ülekandmine",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "et": "Ületamine",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "et": "Kulude ajalugu",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "et": "Reisi kokkuvõte",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "et": "Kogueelarve",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "et": "Kokku järelejäänud",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "et": "Kohalikus valuutas (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "et": "Muuda seadeid",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "et": "Lõpeta ja arhiveeri",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "et": "Lõpeta reis?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "et": "Praegune reis salvestatakse ajalukku ja eelarve ekraan tühjendatakse.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "et": "Lõpeta ja arhiveeri",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "et": "Tühista",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "et": "Eelarve valuuta:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "et": "Päev %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "et": "Limiit:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "et": "Ülekannet pole",
+    "en": "Reference"
+  },
+  "section_info": {
+    "et": "Info",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "et": "Reisi nimi (nt Tai)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "et": "Rahandus",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "et": "Eelarve summa",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "et": "Põhivaluuta",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "et": "Konverteeritav valuuta",
+    "en": "Reference"
+  },
+  "section_term": {
+    "et": "Periood",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "et": "Algus",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "et": "Lõpp",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "et": "Muuda eelarvet",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "et": "Uus eelarve",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "et": "Salvesta",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "et": "Taasta muutmiseks",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "et": "Kustuta",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "et": "Taasta",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "et": "Lõpetatud reise pole.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "et": "Lõpetatud reisid",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "et": "Sulge",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "et": "Kulutatud: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "et": "Minu kulud",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "et": "Kuva kogusummad:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "et": "Kokku:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "et": "(+ muud: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "et": "Kulusid pole",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "et": "Siin kuvatakse sinu salvestatud kulud.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "et": "Kirjeldus puudub",
+    "en": "Reference"
+  },
+  "section_details": {
+    "et": "Üksikasjad",
+    "en": "Reference"
+  },
+  "label_description": {
+    "et": "Kirjeldus",
+    "en": "Reference"
+  },
+  "label_date": {
+    "et": "Kuupäev",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "et": "Summad ja valuutad",
+    "en": "Reference"
+  },
+  "label_result": {
+    "et": "Tulemus",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "et": "Muuda",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "et": "Salvestatud!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "et": "Kurss:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "et": "Keel",
+    "en": "Reference"
+  },
+  "language_system": {
+    "et": "Süsteem",
+    "en": "Reference"
+  },
+  "language_english": {
+    "et": "Inglise",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "et": "Poola",
+    "en": "Reference"
+  }
+}

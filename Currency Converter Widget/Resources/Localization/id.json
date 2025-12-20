@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "id": "Konverter Mata Uang",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "id": "Konverter",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "id": "Anggaran",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "id": "Pengeluaran",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "id": "Pengaturan",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "id": "Tambahkan deskripsi (mis. Taksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "id": "Simpan Pengeluaran",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "id": "Tersimpan!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "id": "Rencanakan Anggaran",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "id": "Tetapkan anggaran untuk seluruh perjalanan, kami akan membaginya menjadi beberapa hari dan melacak pengeluaran Anda.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "id": "Atur Anggaran",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "id": "Riwayat Perjalanan",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "id": "Anggaran Anda",
+    "en": "Reference"
+  },
+  "today_header": {
+    "id": "HARI INI (Hari %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "id": "Tersedia hari ini",
+    "en": "Reference"
+  },
+  "remaining": {
+    "id": "Sisa",
+    "en": "Reference"
+  },
+  "spent": {
+    "id": "Terpakai",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "id": "Rollover",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "id": "Berlebih",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "id": "Riwayat Pengeluaran",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "id": "Ringkasan Perjalanan",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "id": "Total anggaran",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "id": "Total sisa",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "id": "Dalam mata uang lokal (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "id": "Edit pengaturan",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "id": "Selesai & Arsipkan",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "id": "Akhiri perjalanan?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "id": "Perjalanan saat ini akan disimpan di riwayat, dan layar anggaran akan dibersihkan.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "id": "Selesai & Arsipkan",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "id": "Batal",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "id": "Mata uang anggaran:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "id": "Hari %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "id": "Batas:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "id": "Tidak ada rollover",
+    "en": "Reference"
+  },
+  "section_info": {
+    "id": "Informasi",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "id": "Nama perjalanan (mis. Thailand)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "id": "Keuangan",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "id": "Jumlah anggaran",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "id": "Mata uang utama",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "id": "Mata uang konversi",
+    "en": "Reference"
+  },
+  "section_term": {
+    "id": "Periode",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "id": "Mulai",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "id": "Selesai",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "id": "Edit Anggaran",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "id": "Anggaran Baru",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "id": "Simpan",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "id": "Pulihkan untuk diedit",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "id": "Hapus",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "id": "Pulihkan",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "id": "Tidak ada perjalanan selesai.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "id": "Perjalanan Selesai",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "id": "Tutup",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "id": "Terpakai: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "id": "Pengeluaran Saya",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "id": "Tampilkan total dalam:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "id": "Total:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "id": "(+ lainnya: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "id": "Tidak ada pengeluaran",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "id": "Pengeluaran tersimpan Anda akan muncul di sini.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "id": "Tidak ada deskripsi",
+    "en": "Reference"
+  },
+  "section_details": {
+    "id": "Detail",
+    "en": "Reference"
+  },
+  "label_description": {
+    "id": "Deskripsi",
+    "en": "Reference"
+  },
+  "label_date": {
+    "id": "Tanggal",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "id": "Jumlah dan Mata Uang",
+    "en": "Reference"
+  },
+  "label_result": {
+    "id": "Hasil",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "id": "Edit",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "id": "Tersimpan!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "id": "Kurs:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "id": "Bahasa",
+    "en": "Reference"
+  },
+  "language_system": {
+    "id": "Sistem",
+    "en": "Reference"
+  },
+  "language_english": {
+    "id": "Inggris",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "id": "Polandia",
+    "en": "Reference"
+  }
+}

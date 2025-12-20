@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "he": "ממיר מטבע",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "he": "ממיר",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "he": "תקציב",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "he": "הוצאות",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "he": "הגדרות",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "he": "הוסף תיאור (למשל מונית)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "he": "שמור הוצאה",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "he": "נשמר!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "he": "תכנן תקציב",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "he": "הגדר תקציב לכל הטיול, אנו נחלק אותו לימים ונבצע מעקב אחר ההוצאות שלך.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "he": "הגדר תקציב",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "he": "היסטוריית טיולים",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "he": "התקציב שלך",
+    "en": "Reference"
+  },
+  "today_header": {
+    "he": "היום (יום %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "he": "זמין להיום",
+    "en": "Reference"
+  },
+  "remaining": {
+    "he": "נותר",
+    "en": "Reference"
+  },
+  "spent": {
+    "he": "בוזבז",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "he": "העברה",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "he": "חריגה",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "he": "היסטוריית הוצאות",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "he": "סיכום טיול",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "he": "תקציב כולל",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "he": "סך הכל נותר",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "he": "במטבע מקומי (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "he": "ערוך הגדרות",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "he": "סיים ואחסן בארכיון",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "he": "לסיים טיול?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "he": "הטיול הנוכחי יישמר בהיסטוריה, ומסך התקציב ינוקה.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "he": "סיים ואחסן",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "he": "ביטול",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "he": "מטבע תקציב:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "he": "יום %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "he": "מגבלה:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "he": "אין העברה",
+    "en": "Reference"
+  },
+  "section_info": {
+    "he": "מידע",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "he": "שם הטיול (למשל תאילנד)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "he": "כספים",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "he": "סכום התקציב",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "he": "מטבע ראשי",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "he": "מטבע להמרה",
+    "en": "Reference"
+  },
+  "section_term": {
+    "he": "תקופה",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "he": "התחלה",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "he": "סיום",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "he": "ערוך תקציב",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "he": "תקציב חדש",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "he": "שמור",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "he": "שחזר לעריכה",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "he": "מחק",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "he": "שחזר",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "he": "אין טיולים שהסתיימו.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "he": "טיולים שהסתיימו",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "he": "סגור",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "he": "בוזבז: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "he": "ההוצאות שלי",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "he": "הצג סכומים ב:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "he": "סך הכל:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "he": "(+ אחרים: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "he": "אין הוצאות",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "he": "ההוצאות השמורות שלך יופיעו כאן.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "he": "אין תיאור",
+    "en": "Reference"
+  },
+  "section_details": {
+    "he": "פרטים",
+    "en": "Reference"
+  },
+  "label_description": {
+    "he": "תיאור",
+    "en": "Reference"
+  },
+  "label_date": {
+    "he": "תאריך",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "he": "סכומים ומטבעות",
+    "en": "Reference"
+  },
+  "label_result": {
+    "he": "תוצאה",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "he": "ערוך",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "he": "נשמר!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "he": "שער:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "he": "שפה",
+    "en": "Reference"
+  },
+  "language_system": {
+    "he": "מערכת",
+    "en": "Reference"
+  },
+  "language_english": {
+    "he": "אנגלית",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "he": "פולנית",
+    "en": "Reference"
+  }
+}

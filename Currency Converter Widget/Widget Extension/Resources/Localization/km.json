@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "km": "កម្មវិធីបម្លែងរូបិយប័ណ្ណ",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "km": "ការបម្លែង",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "km": "ថវិកា",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "km": "ចំណាយ",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "km": "ការកំណត់",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "km": "បន្ថែមការពិពណ៌នា (ឧ. តាក់ស៊ី)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "km": "រក្សាទុកការចំណាយ",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "km": "បានរក្សាទុក!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "km": "រៀបចំផែនការថវិកា",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "km": "កំណត់ថវិកាសម្រាប់ការធ្វើដំណើរទាំងមូល យើងនឹងបែងចែកវាជាថ្ងៃ និងតាមដានការចំណាយរបស់អ្នក។",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "km": "កំណត់ថវិកា",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "km": "ប្រវត្តិការធ្វើដំណើរ",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "km": "ថវិការបស់អ្នក",
+    "en": "Reference"
+  },
+  "today_header": {
+    "km": "ថ្ងៃនេះ (ថ្ងៃទី %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "km": "មានថ្ងៃនេះ",
+    "en": "Reference"
+  },
+  "remaining": {
+    "km": "នៅសល់",
+    "en": "Reference"
+  },
+  "spent": {
+    "km": "បានចំណាយ",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "km": "រំកិល",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "km": "លើស",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "km": "ប្រវត្តិចំណាយ",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "km": "សង្ខេបការធ្វើដំណើរ",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "km": "ថវិកាសរុប",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "km": "នៅសល់សរុប",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "km": "ជារូបិយប័ណ្ណក្នុងស្រុក (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "km": "កែសម្រួលការកំណត់",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "km": "បញ្ចប់ និងរក្សាទុក",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "km": "បញ្ចប់ការធ្វើដំណើរ?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "km": "ការធ្វើដំណើរបច្ចុប្បន្ននឹងត្រូវបានរក្សាទុកក្នុងប្រវត្តិ ហើយអេក្រង់ថវិកានឹងត្រូវបានសម្អាត។",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "km": "បញ្ចប់ និងរក្សាទុក",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "km": "បោះបង់",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "km": "រូបិយប័ណ្ណថវិកា៖",
+    "en": "Reference"
+  },
+  "day_label": {
+    "km": "ថ្ងៃទី %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "km": "ដែនកំណត់៖",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "km": "គ្មានការរំកិល",
+    "en": "Reference"
+  },
+  "section_info": {
+    "km": "ព័ត៌មាន",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "km": "ឈ្មោះការធ្វើដំណើរ (ឧ. ថៃ)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "km": "ហិរញ្ញវត្ថុ",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "km": "ចំនួនថវិកា",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "km": "រូបិយប័ណ្ណចម្បង",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "km": "រូបិយប័ណ្ណបម្លែង",
+    "en": "Reference"
+  },
+  "section_term": {
+    "km": "រយៈពេល",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "km": "ចាប់ផ្តើម",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "km": "បញ្ចប់",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "km": "កែសម្រួលថវិកា",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "km": "ថវិកាថ្មី",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "km": "រក្សាទុក",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "km": "ស្តារដើម្បីកែសម្រួល",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "km": "លុប",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "km": "ស្តារ",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "km": "គ្មានការធ្វើដំណើរដែលបានបញ្ចប់ទេ។",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "km": "ការធ្វើដំណើរដែលបានបញ្ចប់",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "km": "បិទ",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "km": "បានចំណាយ៖ %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "km": "ការចំណាយរបស់ខ្ញុំ",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "km": "បង្ហាញសរុបជា៖",
+    "en": "Reference"
+  },
+  "total_label": {
+    "km": "សរុប៖",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "km": "(+ ផ្សេងទៀត៖ %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "km": "គ្មានការចំណាយ",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "km": "ការចំណាយដែលបានរក្សាទុករបស់អ្នកនឹងបង្ហាញនៅទីនេះ។",
+    "en": "Reference"
+  },
+  "no_description": {
+    "km": "គ្មានការពិពណ៌នា",
+    "en": "Reference"
+  },
+  "section_details": {
+    "km": "ព័ត៌មានលម្អិត",
+    "en": "Reference"
+  },
+  "label_description": {
+    "km": "ការពិពណ៌នា",
+    "en": "Reference"
+  },
+  "label_date": {
+    "km": "កាលបរិច្ឆេទ",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "km": "ចំនួនទឹកប្រាក់ និងរូបិយប័ណ្ណ",
+    "en": "Reference"
+  },
+  "label_result": {
+    "km": "លទ្ធផល",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "km": "កែសម្រួល",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "km": "បានរក្សាទុក!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "km": "អត្រា៖",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "km": "ភាសា",
+    "en": "Reference"
+  },
+  "language_system": {
+    "km": "ប្រព័ន្ធ",
+    "en": "Reference"
+  },
+  "language_english": {
+    "km": "អង់គ្លេស",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "km": "ប៉ូឡូញ",
+    "en": "Reference"
+  }
+}

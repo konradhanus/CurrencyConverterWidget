@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "af": "Valuta-omskakelaar",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "af": "Omskakelaar",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "af": "Begroting",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "af": "Uitgawes",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "af": "Instellings",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "af": "Voeg beskrywing by (bv. Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "af": "Stoor Uitgawe",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "af": "Gestoor!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "af": "Beplan Begroting",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "af": "Stel 'n begroting vir die hele reis, ons sal dit in dae verdeel en jou uitgawes dophou.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "af": "Stel Begroting",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "af": "Reisgeskiedenis",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "af": "Jou Begroting",
+    "en": "Reference"
+  },
+  "today_header": {
+    "af": "VANDAG (Dag %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "af": "Beskikbaar vandag",
+    "en": "Reference"
+  },
+  "remaining": {
+    "af": "Oorblywende",
+    "en": "Reference"
+  },
+  "spent": {
+    "af": "Spandeer",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "af": "Oordrag",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "af": "Oorskryding",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "af": "Uitgawe Geskiedenis",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "af": "Reis Opsomming",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "af": "Totale begroting",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "af": "Totaal oorblywende",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "af": "In plaaslike geldeenheid (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "af": "Wysig instellings",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "af": "Voltooi en Argiveer",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "af": "Voltooi reis?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "af": "Die huidige reis sal in die geskiedenis gestoor word, en die begrotingskerm sal skoongemaak word.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "af": "Voltooi en Argiveer",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "af": "Kanselleer",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "af": "Begrotingsgeldeenheid:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "af": "Dag %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "af": "Limiet:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "af": "Geen oordrag",
+    "en": "Reference"
+  },
+  "section_info": {
+    "af": "Inligting",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "af": "Reisnaam (bv. Thailand)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "af": "Finansies",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "af": "Begrotingsbedrag",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "af": "Hoofgeldeenheid",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "af": "Geldeenheid om om te skakel",
+    "en": "Reference"
+  },
+  "section_term": {
+    "af": "Termyn",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "af": "Begin",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "af": "Einde",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "af": "Wysig Begroting",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "af": "Nuwe Begroting",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "af": "Stoor",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "af": "Herstel om te wysig",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "af": "Vee uit",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "af": "Herstel",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "af": "Geen voltooide reise nie.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "af": "Voltooide Reise",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "af": "Maak toe",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "af": "Spandeer: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "af": "My Uitgawes",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "af": "Wys totale in:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "af": "Totaal:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "af": "(+ ander: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "af": "Geen uitgawes",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "af": "Jou gestoorde uitgawes sal hier verskyn.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "af": "Geen beskrywing",
+    "en": "Reference"
+  },
+  "section_details": {
+    "af": "Besonderhede",
+    "en": "Reference"
+  },
+  "label_description": {
+    "af": "Beskrywing",
+    "en": "Reference"
+  },
+  "label_date": {
+    "af": "Datum",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "af": "Bedrae en Geldeenhede",
+    "en": "Reference"
+  },
+  "label_result": {
+    "af": "Resultaat",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "af": "Wysig",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "af": "Gestoor!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "af": "Koers:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "af": "Taal",
+    "en": "Reference"
+  },
+  "language_system": {
+    "af": "Stelsel",
+    "en": "Reference"
+  },
+  "language_english": {
+    "af": "Engels",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "af": "ools",
+    "en": "Reference"
+  }
+}

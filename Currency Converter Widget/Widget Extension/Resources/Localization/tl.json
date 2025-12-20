@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "tl": "Converter ng Pera",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "tl": "Converter",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "tl": "Badyet",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "tl": "Mga Gastusin",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "tl": "Mga Setting",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "tl": "Magdagdag ng paglalarawan (hal. Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "tl": "I-save ang Gastos",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "tl": "Na-save!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "tl": "Magplano ng Badyet",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "tl": "Magtakda ng badyet para sa buong biyahe, hahatiin namin ito sa mga araw at susubaybayan ang iyong mga gastos.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "tl": "Itakda ang Badyet",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "tl": "Kasaysayan ng Biyahe",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "tl": "Ang Iyong Badyet",
+    "en": "Reference"
+  },
+  "today_header": {
+    "tl": "NGAYON (Araw %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "tl": "Available ngayon",
+    "en": "Reference"
+  },
+  "remaining": {
+    "tl": "Natitira",
+    "en": "Reference"
+  },
+  "spent": {
+    "tl": "Naggastos",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "tl": "Rollover",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "tl": "Sobra",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "tl": "Kasaysayan ng Gastos",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "tl": "Buod ng Biyahe",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "tl": "Kabuuang badyet",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "tl": "Kabuuang natitira",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "tl": "Sa lokal na pera (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "tl": "I-edit ang mga setting",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "tl": "Tapusin at I-archive",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "tl": "Tapusin ang biyahe?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "tl": "Ang kasalukuyang biyahe ay ise-save sa kasaysayan, at ang screen ng badyet ay lilinisin.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "tl": "Tapusin at I-archive",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "tl": "Kanselahin",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "tl": "Pera ng badyet:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "tl": "Araw %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "tl": "Limit:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "tl": "Walang rollover",
+    "en": "Reference"
+  },
+  "section_info": {
+    "tl": "Impormasyon",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "tl": "Pangalan ng biyahe (hal. Thailand)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "tl": "Pananalapi",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "tl": "Halaga ng badyet",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "tl": "Pangunahing pera",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "tl": "Pera para i-convert",
+    "en": "Reference"
+  },
+  "section_term": {
+    "tl": "Termino",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "tl": "Simula",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "tl": "Wakas",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "tl": "I-edit ang Badyet",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "tl": "Bagong Badyet",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "tl": "I-save",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "tl": "I-restore para i-edit",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "tl": "Tanggalin",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "tl": "I-restore",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "tl": "Walang natapos na biyahe.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "tl": "Natapos na mga Biyahe",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "tl": "Isara",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "tl": "Naggastos: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "tl": "Aking mga Gastos",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "tl": "Ipakita ang kabuuan sa:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "tl": "Kabuuan:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "tl": "(+ iba pa: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "tl": "Walang gastos",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "tl": "Ang iyong na-save na mga gastos ay lalabas dito.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "tl": "Walang paglalarawan",
+    "en": "Reference"
+  },
+  "section_details": {
+    "tl": "Detalye",
+    "en": "Reference"
+  },
+  "label_description": {
+    "tl": "Paglalarawan",
+    "en": "Reference"
+  },
+  "label_date": {
+    "tl": "Petsa",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "tl": "Halaga at Pera",
+    "en": "Reference"
+  },
+  "label_result": {
+    "tl": "Resulta",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "tl": "I-edit",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "tl": "Na-save!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "tl": "Rate:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "tl": "Wika",
+    "en": "Reference"
+  },
+  "language_system": {
+    "tl": "Sistema",
+    "en": "Reference"
+  },
+  "language_english": {
+    "tl": "Ingles",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "tl": "Polish",
+    "en": "Reference"
+  }
+}

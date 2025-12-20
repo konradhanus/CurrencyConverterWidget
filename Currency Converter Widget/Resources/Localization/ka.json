@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ka": "ვალუტის კონვერტორი",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ka": "კონვერტორი",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ka": "ბიუჯეტი",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ka": "ხარჯები",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ka": "პარამეტრები",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ka": "დაამატე აღწერა (მაგ. ტაქსი)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ka": "ხარჯის შენახვა",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ka": "შენახულია!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ka": "ბიუჯეტის დაგეგმვა",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ka": "განსაზღვრეთ ბიუჯეტი მთელი მოგზაურობისთვის, ჩვენ მას დღეებზე გავანაწილებთ და თვალს მივადევნებთ თქვენს ხარჯებს.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ka": "ბიუჯეტის დაყენება",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ka": "მოგზაურობის ისტორია",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ka": "თქვენი ბიუჯეტი",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ka": "დღეს (დღე %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ka": "ხელმისაწვდომია დღეს",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ka": "დარჩენილი",
+    "en": "Reference"
+  },
+  "spent": {
+    "ka": "დახარჯული",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ka": "გადატანა",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ka": "გადაxarჯვა",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ka": "ხარჯების ისტორია",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ka": "მოგზაურობის შეჯამება",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ka": "მთლიანი ბიუჯეტი",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ka": "სულ დარჩენილი",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ka": "ადგილობრივ ვალუტაში (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ka": "პარამეტრების რედაქტირება",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ka": "დასრულება და არქივირება",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ka": "დაასრულოთ მოგზაურობა?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ka": "მიმდინარე მოგზაურობა შეინახება ისტორიაში და ბიუჯეტის ეკრანი გასუფთავდება.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ka": "დასრულება და არქივირება",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ka": "გაუქმება",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ka": "ბიუჯეტის ვალუტა:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ka": "დღე %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ka": "ლიმიტი:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ka": "გადატანა ar aris",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ka": "ინფორმაცია",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ka": "მოგზაურობის სახელი (მაგ. ტაილანდი)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ka": "ფინანსები",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ka": "ბიუჯეტის თანხა",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ka": "მთავარი ვალუტა",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ka": "კონვერტაციის ვალუტა",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ka": "პერიოდი",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ka": "დასაწყისი",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ka": "დასასრული",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ka": "ბიუჯეტის რედაქტირება",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ka": "ახალი ბიუჯეტი",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ka": "შენახვა",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ka": "აღდგენა რედაქტირებისთვის",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ka": "წაშლა",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ka": "აღდგენა",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ka": "დასრულებული მოგზაურობები არ არის.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ka": "დასრულებული მოგზაურობები",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ka": "დახურვა",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ka": "დახარჯული: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ka": "ჩემი ხარჯები",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ka": "ჯამების ჩვენება:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ka": "სულ:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ka": "(+ სხვა: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ka": "ხარჯები არ არის",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ka": "თქვენი შენახული ხარჯები აქ გამოჩნდება.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ka": "აღწერის გარეშე",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ka": "დეტალები",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ka": "აღწერა",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ka": "თარიღი",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ka": "თანხები და ვალუტები",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ka": "შედეგი",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ka": "რედაქტირება",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ka": "შენახულია!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ka": "კურსი:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ka": "ენა",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ka": "სისტემა",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ka": "ინგლისური",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ka": "პოლონური",
+    "en": "Reference"
+  }
+}
