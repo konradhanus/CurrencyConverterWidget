@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "uk": "Конвертер Валют"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "uk": "Конвертер"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "uk": "Бюджет"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "uk": "Витрати"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "uk": "Налаштування"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "uk": "Додати опис (напр. Таксі)"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "uk": "Зберегти Витрату"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "uk": "Збережено!"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "uk": "Планувати Бюджет"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "uk": "Встановіть бюджет на всю поїздку, ми розділимо його на дні та будемо відстежувати ваші витрати."
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "uk": "Встановити Бюджет"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "uk": "Історія Поїздок"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "uk": "Ваш Бюджет"
+  },
+  "today_header": {
+    "en": "Reference",
+    "uk": "СЬОГОДНІ (День %@/%@)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "uk": "Доступно сьогодні"
+  },
+  "remaining": {
+    "en": "Reference",
+    "uk": "Залишилось"
+  },
+  "spent": {
+    "en": "Reference",
+    "uk": "Витрачено"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "uk": "Перенесення"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "uk": "Перевитрата"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "uk": "Історія Витрат"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "uk": "Підсумок Поїздки"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "uk": "Загальний бюджет"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "uk": "Всього залишилось"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "uk": "У місцевій валюті (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "uk": "Змінити налаштування"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "uk": "Завершити та архівувати"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "uk": "Завершити поїздку?"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "uk": "Поточна поїздка буде збережена в історії, а екран бюджету буде очищений."
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "uk": "Завершити та Архів"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "uk": "Скасувати"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "uk": "Валюта бюджету:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "uk": "День %@"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "uk": "Ліміт:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "uk": "Немає перенесення"
+  },
+  "section_info": {
+    "en": "Reference",
+    "uk": "Інформація"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "uk": "Назва (напр. Таїланд)"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "uk": "Фінанси"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "uk": "Сума бюджету"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "uk": "Основна валюта"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "uk": "Валюта для конвертації"
+  },
+  "section_term": {
+    "en": "Reference",
+    "uk": "Термін"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "uk": "Початок"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "uk": "Кінець"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "uk": "Редагувати Бюджет"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "uk": "Новий Бюджет"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "uk": "Зберегти"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "uk": "Відновити для редагування"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "uk": "Видалити"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "uk": "Відновити"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "uk": "Немає завершених поїздок."
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "uk": "Завершені Поїздки"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "uk": "Закрити"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "uk": "Витрачено: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "uk": "Мої Витрати"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "uk": "Показати суми в:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "uk": "Всього:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "uk": "(+ інші: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "uk": "Немає витрат"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "uk": "Ваші збережені витрати з'являться тут."
+  },
+  "no_description": {
+    "en": "Reference",
+    "uk": "Без опису"
+  },
+  "section_details": {
+    "en": "Reference",
+    "uk": "Деталі"
+  },
+  "label_description": {
+    "en": "Reference",
+    "uk": "Опис"
+  },
+  "label_date": {
+    "en": "Reference",
+    "uk": "Дата"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "uk": "Суми та Валюти"
+  },
+  "label_result": {
+    "en": "Reference",
+    "uk": "Результат"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "uk": "Редагувати"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "uk": "Збережено!"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "uk": "Курс:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "uk": "Мова"
+  },
+  "language_system": {
+    "en": "Reference",
+    "uk": "Система"
+  },
+  "language_english": {
+    "en": "Reference",
+    "uk": "Англійська"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "uk": "Польська"
+  }
+}

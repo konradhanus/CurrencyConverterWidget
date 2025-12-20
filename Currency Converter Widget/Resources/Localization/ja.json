@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "ja": "通貨コンバーター"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "ja": "変換"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "ja": "予算"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "ja": "経費"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "ja": "設定"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "ja": "説明を追加（例：タクシー）"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "ja": "経費を保存"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "ja": "保存しました！"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "ja": "予算を計画"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "ja": "旅行全体の予算を設定すると、日数で分割して経費を追跡します。"
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "ja": "予算を設定"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "ja": "旅行履歴"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "ja": "あなたの予算"
+  },
+  "today_header": {
+    "en": "Reference",
+    "ja": "今日 (%@/%@ 日目)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "ja": "今日使用可能"
+  },
+  "remaining": {
+    "en": "Reference",
+    "ja": "残り"
+  },
+  "spent": {
+    "en": "Reference",
+    "ja": "使用済み"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "ja": "繰越"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "ja": "超過"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "ja": "経費履歴"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "ja": "旅行概要"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "ja": "総予算"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "ja": "総残り"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "ja": "現地通貨 (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "ja": "設定を編集"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "ja": "旅行を終了してアーカイブ"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "ja": "旅行を終了しますか？"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "ja": "現在の旅行は履歴に保存され、予算画面はクリアされます。"
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "ja": "終了してアーカイブ"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "ja": "キャンセル"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "ja": "予算通貨:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "ja": "%@ 日目"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "ja": "制限:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "ja": "繰越なし"
+  },
+  "section_info": {
+    "en": "Reference",
+    "ja": "情報"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "ja": "旅行名（例：タイ）"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "ja": "財政"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "ja": "予算額"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "ja": "主要通貨"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "ja": "換算通貨"
+  },
+  "section_term": {
+    "en": "Reference",
+    "ja": "期間"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "ja": "開始"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "ja": "終了"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "ja": "予算を編集"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "ja": "新しい予算"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "ja": "保存"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "ja": "編集用に復元"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "ja": "削除"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "ja": "復元"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "ja": "終了した旅行はありません。"
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "ja": "終了した旅行"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "ja": "閉じる"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "ja": "支出: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "ja": "私の経費"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "ja": "合計を表示:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "ja": "合計:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "ja": "(+ その他: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "ja": "経費なし"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "ja": "保存された経費はここに表示されます。"
+  },
+  "no_description": {
+    "en": "Reference",
+    "ja": "説明なし"
+  },
+  "section_details": {
+    "en": "Reference",
+    "ja": "詳細"
+  },
+  "label_description": {
+    "en": "Reference",
+    "ja": "説明"
+  },
+  "label_date": {
+    "en": "Reference",
+    "ja": "日付"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "ja": "金額と通貨"
+  },
+  "label_result": {
+    "en": "Reference",
+    "ja": "結果"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "ja": "編集"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "ja": "保存しました！"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "ja": "レート:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "ja": "言語"
+  },
+  "language_system": {
+    "en": "Reference",
+    "ja": "システム"
+  },
+  "language_english": {
+    "en": "Reference",
+    "ja": "英語"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "ja": "ポーランド語"
+  }
+}

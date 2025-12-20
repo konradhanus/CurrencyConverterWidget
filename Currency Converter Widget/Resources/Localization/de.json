@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "de": "Währungsrechner"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "de": "Rechner"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "de": "Budget"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "de": "Ausgaben"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "de": "Einstellungen"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "de": "Beschreibung hinzufügen (z.B. Taxi)"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "de": "Ausgabe Speichern"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "de": "Gespeichert!"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "de": "Budget Planen"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "de": "Legen Sie ein Budget für die gesamte Reise fest, wir teilen es in Tage auf und verfolgen Ihre Ausgaben."
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "de": "Budget Festlegen"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "de": "Reiseverlauf"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "de": "Ihr Budget"
+  },
+  "today_header": {
+    "en": "Reference",
+    "de": "HEUTE (Tag %@/%@)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "de": "Heute verfügbar"
+  },
+  "remaining": {
+    "en": "Reference",
+    "de": "Verbleibend"
+  },
+  "spent": {
+    "en": "Reference",
+    "de": "Ausgegeben"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "de": "Übertrag"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "de": "Überzogen"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "de": "Ausgabenverlauf"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "de": "Reisezusammenfassung"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "de": "Gesamtbudget"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "de": "Gesamt verbleibend"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "de": "In Landeswährung (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "de": "Einstellungen bearbeiten"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "de": "Reise beenden & archivieren"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "de": "Reise beenden?"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "de": "Die aktuelle Reise wird im Verlauf gespeichert und der Budget-Bildschirm wird geleert."
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "de": "Beenden & Archivieren"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "de": "Abbrechen"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "de": "Budgetwährung:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "de": "Tag %@"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "de": "Limit:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "de": "Kein Übertrag"
+  },
+  "section_info": {
+    "en": "Reference",
+    "de": "Information"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "de": "Reisename (z.B. Thailand)"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "de": "Finanzen"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "de": "Budgetbetrag"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "de": "Hauptwährung"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "de": "Währung zum Umrechnen"
+  },
+  "section_term": {
+    "en": "Reference",
+    "de": "Zeitraum"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "de": "Start"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "de": "Ende"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "de": "Budget Bearbeiten"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "de": "Neues Budget"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "de": "Speichern"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "de": "Zum Bearbeiten wiederherstellen"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "de": "Löschen"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "de": "Wiederherstellen"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "de": "Keine beendeten Reisen."
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "de": "Beendete Reisen"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "de": "Schließen"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "de": "Ausgegeben: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "de": "Meine Ausgaben"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "de": "Summen anzeigen in:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "de": "Gesamt:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "de": "(+ andere: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "de": "Keine Ausgaben"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "de": "Ihre gespeicherten Ausgaben erscheinen hier."
+  },
+  "no_description": {
+    "en": "Reference",
+    "de": "Keine Beschreibung"
+  },
+  "section_details": {
+    "en": "Reference",
+    "de": "Details"
+  },
+  "label_description": {
+    "en": "Reference",
+    "de": "Beschreibung"
+  },
+  "label_date": {
+    "en": "Reference",
+    "de": "Datum"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "de": "Beträge und Währungen"
+  },
+  "label_result": {
+    "en": "Reference",
+    "de": "Ergebnis"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "de": "Bearbeiten"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "de": "Gespeichert!"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "de": "Kurs:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "de": "Sprache"
+  },
+  "language_system": {
+    "en": "Reference",
+    "de": "System"
+  },
+  "language_english": {
+    "en": "Reference",
+    "de": "Englisch"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "de": "Polnisch"
+  }
+}

@@ -235,6 +235,7 @@ struct WidgetExtensionEntryView : View {
 }
 
 struct SuccessOverlay: View {
+    @EnvironmentObject var loc: LocalizationManager
     var body: some View {
         ZStack {
             Color.black.opacity(0.7)
@@ -242,7 +243,7 @@ struct SuccessOverlay: View {
                 Image(systemName: "checkmark.circle.fill")
                     .font(.system(size: 40))
                     .foregroundColor(.green)
-                Text("Zapisano!")
+                Text(loc.localized("saved_success"))
                     .font(.headline)
                     .foregroundColor(.white)
             }
@@ -335,6 +336,7 @@ struct MediumWidgetView: View {
 
 struct LargeWidgetView: View {
     var entry: Provider.Entry
+    @EnvironmentObject var loc: LocalizationManager
     
     var body: some View {
         VStack(spacing: 0) {
@@ -380,7 +382,7 @@ struct LargeWidgetView: View {
                 Spacer(minLength: 0)
                 HStack {
                     Spacer()
-                    Text("Kurs: \(String(format: "%.4f", entry.rate))")
+                    Text("\(loc.localized("rate_label")) \(String(format: "%.4f", entry.rate))")
                         .font(.caption2)
                         .padding(4)
                         .background(.white.opacity(0.1))
@@ -446,6 +448,7 @@ struct KeypadView: View {
     var fontSize: CGFloat
     var spacing: CGFloat
     var showSaveButton: Bool
+    @EnvironmentObject var loc: LocalizationManager
     
     let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
@@ -473,7 +476,7 @@ struct KeypadView: View {
                         HStack(spacing: 4) {
                             Image(systemName: "square.and.arrow.down")
                                 .font(.system(size: fontSize * 0.6, weight: .bold))
-                            Text("Zapisz")
+                            Text(loc.localized("btn_save"))
                                 .font(.system(size: fontSize * 0.4, weight: .bold))
                         }
                         .foregroundStyle(Color.black.opacity(0.7))
@@ -639,6 +642,8 @@ struct WidgetExtensionWidget: Widget {
                 .containerBackground(for: .widget) {
                     LinearGradient(colors: [Color(red: 0.1, green: 0.1, blue: 0.15), Color(red: 0.05, green: 0.05, blue: 0.1)], startPoint: .topLeading, endPoint: .bottomTrailing)
                 }
+                .environmentObject(LocalizationManager.shared)
+                .environment(\.locale, LocalizationManager.shared.appLocale)
         }
         .configurationDisplayName("Kalkulator Walut")
         .description("Przeliczaj waluty błyskawicznie.")

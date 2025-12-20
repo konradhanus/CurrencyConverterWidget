@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "sr": "Конвертор Валута"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "sr": "Конвертор"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "sr": "Буџет"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "sr": "Трошкови"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "sr": "Подешавања"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "sr": "Додај опис (нпр. Такси)"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "sr": "Сачувај трошак"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "sr": "Сачувано!"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "sr": "Планирај буџет"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "sr": "Поставите буџет за цело путовање, поделићемо га на дане и пратити ваше трошкове."
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "sr": "Постави буџет"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "sr": "Историја путовања"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "sr": "Ваш буџет"
+  },
+  "today_header": {
+    "en": "Reference",
+    "sr": "ДАНАС (Дан %@/%@)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "sr": "Доступно данас"
+  },
+  "remaining": {
+    "en": "Reference",
+    "sr": "Преостало"
+  },
+  "spent": {
+    "en": "Reference",
+    "sr": "Потрошено"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "sr": "Пренос"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "sr": "Прекорачење"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "sr": "Историја трошкова"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "sr": "Сажетак путовања"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "sr": "Укупан буџет"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "sr": "Укупно преостало"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "sr": "У локалној валути (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "sr": "Измени подешавања"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "sr": "Заврши и архивирај"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "sr": "Завршити путовање?"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "sr": "Тренутно путовање ће бити сачувано у историји, а екран буџета ће бити очишћен."
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "sr": "Заврши и Архивирај"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "sr": "Откажи"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "sr": "Валута буџета:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "sr": "Дан %@"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "sr": "Лимит:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "sr": "Нема преноса"
+  },
+  "section_info": {
+    "en": "Reference",
+    "sr": "Информације"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "sr": "Назив (нпр. Тајланд)"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "sr": "Финансије"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "sr": "Износ буџета"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "sr": "Главна валута"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "sr": "Валута за конверзију"
+  },
+  "section_term": {
+    "en": "Reference",
+    "sr": "Период"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "sr": "Почетак"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "sr": "Крај"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "sr": "Уреди буџет"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "sr": "Нови буџет"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "sr": "Сачувај"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "sr": "Врати за уређивање"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "sr": "Обриши"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "sr": "Врати"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "sr": "Нема завршених путовања."
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "sr": "Завршена путовања"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "sr": "Затвори"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "sr": "Потрошено: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "sr": "Моји трошкови"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "sr": "Прикажи укупно у:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "sr": "Укупно:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "sr": "(+ остало: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "sr": "Нема трошкова"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "sr": "Ваши сачувани трошкови ће се појавити овде."
+  },
+  "no_description": {
+    "en": "Reference",
+    "sr": "Без описа"
+  },
+  "section_details": {
+    "en": "Reference",
+    "sr": "Детаљи"
+  },
+  "label_description": {
+    "en": "Reference",
+    "sr": "Опис"
+  },
+  "label_date": {
+    "en": "Reference",
+    "sr": "Датум"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "sr": "Износи и валуте"
+  },
+  "label_result": {
+    "en": "Reference",
+    "sr": "Резултат"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "sr": "Уреди"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "sr": "Сачувано!"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "sr": "Курс:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "sr": "Језик"
+  },
+  "language_system": {
+    "en": "Reference",
+    "sr": "Систем"
+  },
+  "language_english": {
+    "en": "Reference",
+    "sr": "Енглески"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "sr": "Пољски"
+  }
+}

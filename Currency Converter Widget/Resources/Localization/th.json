@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "th": "แปลงค่าเงิน"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "th": "ตัวแปลง"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "th": "งบประมาณ"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "th": "ค่าใช้จ่าย"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "th": "การตั้งค่า"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "th": "เพิ่มคำอธิบาย (เช่น แท็กซี่)"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "th": "บันทึกค่าใช้จ่าย"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "th": "บันทึกแล้ว!"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "th": "วางแผนงบประมาณ"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "th": "ตั้งงบประมาณสำหรับการเดินทางทั้งหมด เราจะแบ่งเป็นรายวันและติดตามค่าใช้จ่ายของคุณ"
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "th": "ตั้งงบประมาณ"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "th": "ประวัติการเดินทาง"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "th": "งบประมาณของคุณ"
+  },
+  "today_header": {
+    "en": "Reference",
+    "th": "วันนี้ (วันที่ %@/%@)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "th": "ใช้ได้วันนี้"
+  },
+  "remaining": {
+    "en": "Reference",
+    "th": "เหลือ"
+  },
+  "spent": {
+    "en": "Reference",
+    "th": "ใช้ไป"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "th": "ยกยอด"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "th": "เกินงบ"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "th": "ประวัติค่าใช้จ่าย"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "th": "สรุปการเดินทาง"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "th": "งบประมาณทั้งหมด"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "th": "เหลือทั้งหมด"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "th": "ในสกุลเงินท้องถิ่น (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "th": "แก้ไขการตั้งค่า"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "th": "จบการเดินทางและเก็บถาวร"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "th": "จบการเดินทาง?"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "th": "การเดินทางปัจจุบันจะถูกบันทึกในประวัติ และหน้างบประมาณจะถูกล้าง"
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "th": "จบและเก็บถาวร"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "th": "ยกเลิก"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "th": "สกุลเงินงบประมาณ:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "th": "วันที่ %@"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "th": "จำกัด:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "th": "ไม่มีการยกยอด"
+  },
+  "section_info": {
+    "en": "Reference",
+    "th": "ข้อมูล"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "th": "ชื่อการเดินทาง (เช่น ไทย)"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "th": "การเงิน"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "th": "จำนวนงบประมาณ"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "th": "สกุลเงินหลัก"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "th": "สกุลเงินที่จะแปลง"
+  },
+  "section_term": {
+    "en": "Reference",
+    "th": "ระยะเวลา"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "th": "เริ่ม"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "th": "สิ้นสุด"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "th": "แก้ไขงบประมาณ"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "th": "งบประมาณใหม่"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "th": "บันทึก"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "th": "กู้คืนเพื่อแก้ไข"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "th": "ลบ"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "th": "กู้คืน"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "th": "ไม่มีการเดินทางที่สิ้นสุด"
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "th": "การเดินทางที่สิ้นสุด"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "th": "ปิด"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "th": "ใช้ไป: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "th": "ค่าใช้จ่ายของฉัน"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "th": "แสดงยอดรวมใน:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "th": "รวม:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "th": "(+ อื่นๆ: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "th": "ไม่มีค่าใช้จ่าย"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "th": "ค่าใช้จ่ายที่บันทึกไว้จะแสดงที่นี่"
+  },
+  "no_description": {
+    "en": "Reference",
+    "th": "ไม่มีคำอธิบาย"
+  },
+  "section_details": {
+    "en": "Reference",
+    "th": "รายละเอียด"
+  },
+  "label_description": {
+    "en": "Reference",
+    "th": "คำอธิบาย"
+  },
+  "label_date": {
+    "en": "Reference",
+    "th": "วันที่"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "th": "จำนวนเงินและสกุลเงิน"
+  },
+  "label_result": {
+    "en": "Reference",
+    "th": "ผลลัพธ์"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "th": "แก้ไข"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "th": "บันทึกแล้ว!"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "th": "อัตรา:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "th": "ภาษา"
+  },
+  "language_system": {
+    "en": "Reference",
+    "th": "ระบบ"
+  },
+  "language_english": {
+    "en": "Reference",
+    "th": "อังกฤษ"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "th": "โปแลนด์"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ro": "Convertor Valutar",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ro": "Convertor",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ro": "Buget",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ro": "Cheltuieli",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ro": "Setări",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ro": "Adaugă descriere (ex. Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ro": "Salvează",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ro": "Salvat!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ro": "Planifică Bugetul",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ro": "Setați un buget pentru întreaga călătorie, îl vom împărți pe zile și vom urmări cheltuielile dvs.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ro": "Setează Buget",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ro": "Istoric Călătorii",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ro": "Bugetul Tău",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ro": "AZI (Ziua %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ro": "Disponibil azi",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ro": "Rămas",
+    "en": "Reference"
+  },
+  "spent": {
+    "ro": "Cheltuit",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ro": "Report",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ro": "Depășire",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ro": "Istoric Cheltuieli",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ro": "Rezumat Călătorie",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ro": "Buget total",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ro": "Total rămas",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ro": "În moneda locală (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ro": "Editează setările",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ro": "Termină și Arhivează",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ro": "Termini călătoria?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ro": "Călătoria curentă va fi salvată în istoric, iar ecranul bugetului va fi șters.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ro": "Termină și Arhivează",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ro": "Anulează",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ro": "Moneda bugetului:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ro": "Ziua %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ro": "Limită:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ro": "Fără report",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ro": "Informații",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ro": "Nume călătorie (ex. Thailanda)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ro": "Finanțe",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ro": "Suma bugetului",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ro": "Moneda principală",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ro": "Moneda de conversie",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ro": "Perioadă",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ro": "Start",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ro": "Sfârșit",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ro": "Editează Buget",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ro": "Buget Nou",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ro": "Salvează",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ro": "Restaurează pentru editare",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ro": "Șterge",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ro": "Restaurează",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ro": "Nicio călătorie terminată.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ro": "Călătorii Terminate",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ro": "Închide",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ro": "Cheltuit: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ro": "Cheltuielile Mele",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ro": "Arată totalurile în:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ro": "Total:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ro": "(+ altele: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ro": "Fără cheltuieli",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ro": "Cheltuielile salvate vor apărea aici.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ro": "Fără descriere",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ro": "Detalii",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ro": "Descriere",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ro": "Data",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ro": "Sume și Monede",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ro": "Rezultat",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ro": "Editează",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ro": "Salvat!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ro": "Curs:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ro": "Limbă",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ro": "Sistem",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ro": "Engleză",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ro": "Poloneză",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "no": "Valutakalkulator",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "no": "Kalkulator",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "no": "Budsjett",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "no": "Utgifter",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "no": "Innstillinger",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "no": "Legg til beskrivelse (f.eks. Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "no": "Lagre utgift",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "no": "Lagret!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "no": "Planlegg budsjett",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "no": "Angi et budsjett for hele turen, vi deler det opp i dager og sporer utgiftene dine.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "no": "Angi budsjett",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "no": "Reisehistorikk",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "no": "Ditt budsjett",
+    "en": "Reference"
+  },
+  "today_header": {
+    "no": "I DAG (Dag %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "no": "Tilgjengelig i dag",
+    "en": "Reference"
+  },
+  "remaining": {
+    "no": "Gjenstår",
+    "en": "Reference"
+  },
+  "spent": {
+    "no": "Brukt",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "no": "Overføring",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "no": "Overskridelse",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "no": "Utgiftshistorikk",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "no": "Reisesammendrag",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "no": "Totalt budsjett",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "no": "Totalt gjenstående",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "no": "I lokal valuta (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "no": "Rediger innstillinger",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "no": "Avslutt og arkiver",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "no": "Avslutte reisen?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "no": "Den gjeldende turen lagres i loggen, og budsjettskjermen tømmes.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "no": "Avslutt og arkiver",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "no": "Avbryt",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "no": "Budsjettvaluta:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "no": "Dag %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "no": "Grense:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "no": "Ingen overføring",
+    "en": "Reference"
+  },
+  "section_info": {
+    "no": "Informasjon",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "no": "Reisenavn (f.eks. Thailand)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "no": "Finans",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "no": "Budsjettbeløp",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "no": "Hovedvaluta",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "no": "Valuta for omregning",
+    "en": "Reference"
+  },
+  "section_term": {
+    "no": "Periode",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "no": "Start",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "no": "Slutt",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "no": "Rediger budsjett",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "no": "Nytt budsjett",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "no": "Lagre",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "no": "Gjenopprett for redigering",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "no": "Slett",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "no": "Gjenopprett",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "no": "Ingen fullførte turer.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "no": "Fullførte turer",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "no": "Lukk",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "no": "Brukt: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "no": "Mine utgifter",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "no": "Vis totaler i:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "no": "Totalt:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "no": "(+ andre: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "no": "Ingen utgifter",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "no": "Dine lagrede utgifter vises her.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "no": "Ingen beskrivelse",
+    "en": "Reference"
+  },
+  "section_details": {
+    "no": "Detaljer",
+    "en": "Reference"
+  },
+  "label_description": {
+    "no": "Beskrivelse",
+    "en": "Reference"
+  },
+  "label_date": {
+    "no": "Dato",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "no": "Beløp og Valutaer",
+    "en": "Reference"
+  },
+  "label_result": {
+    "no": "Resultat",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "no": "Rediger",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "no": "Lagret!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "no": "Kurs:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "no": "Språk",
+    "en": "Reference"
+  },
+  "language_system": {
+    "no": "System",
+    "en": "Reference"
+  },
+  "language_english": {
+    "no": "Engelsk",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "no": "Polsk",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "mn": "Валют хөрвүүлэгч",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "mn": "Хөрвүүлэгч",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "mn": "Төсөв",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "mn": "Зардал",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "mn": "Тохиргоо",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "mn": "Тайлбар нэмэх (ж.нь Такси)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "mn": "Зардал хадгалах",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "mn": "Хадгалагдсан!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "mn": "Төсөв төлөвлөх",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "mn": "Аяллын нийт төсвөө тохируулна уу, бид үүнийг өдрүүдэд хувааж, таны зардлыг хянах болно.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "mn": "Төсөв тохируулах",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "mn": "Аяллын түүх",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "mn": "Таны төсөв",
+    "en": "Reference"
+  },
+  "today_header": {
+    "mn": "ӨНӨӨДӨР (Өдөр %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "mn": "Өнөөдөр боломжтой",
+    "en": "Reference"
+  },
+  "remaining": {
+    "mn": "Үлдсэн",
+    "en": "Reference"
+  },
+  "spent": {
+    "mn": "Заруулсан",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "mn": "Шилжүүлэг",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "mn": "Хэтрэлт",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "mn": "Зардлын түүх",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "mn": "Аяллын хураангуй",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "mn": "Нийт төсөв",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "mn": "Нийт үлдсэн",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "mn": "Орон нутгийн валютаар (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "mn": "Тохиргоо засах",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "mn": "Дуусгах ба архивлах",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "mn": "Аяллыг дуусгах уу?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "mn": "Одоогийн аялал түүхэнд хадгалагдаж, төсвийн дэлгэц цэвэрлэгдэх болно.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "mn": "Дуусгах ба архивлах",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "mn": "Цуцлах",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "mn": "Төсвийн валют:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "mn": "Өдөр %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "mn": "Хязгаар:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "mn": "Шилжүүлэг байхгүй",
+    "en": "Reference"
+  },
+  "section_info": {
+    "mn": "Мэдээлэл",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "mn": "Аяллын нэр (ж.нь Тайланд)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "mn": "Санхүү",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "mn": "Төсвийн дүн",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "mn": "Үндсэн валют",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "mn": "Хөрвүүлэх валют",
+    "en": "Reference"
+  },
+  "section_term": {
+    "mn": "Хугацаа",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "mn": "Эхлэх",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "mn": "Дуусах",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "mn": "Төсөв засах",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "mn": "Шинэ төсөв",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "mn": "Хадгалах",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "mn": "Засахаар сэргээх",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "mn": "Устгах",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "mn": "Сэргээх",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "mn": "Дууссан аялал байхгүй.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "mn": "Дууссан аяллууд",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "mn": "Хаах",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "mn": "Заруулсан: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "mn": "Миний зардал",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "mn": "Нийт дүнг харуулах:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "mn": "Нийт:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "mn": "(+ бусад: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "mn": "Зардал байхгүй",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "mn": "Таны хадгалсан зардал энд харагдана.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "mn": "Тайлбар байхгүй",
+    "en": "Reference"
+  },
+  "section_details": {
+    "mn": "Дэлгэрэнгүй",
+    "en": "Reference"
+  },
+  "label_description": {
+    "mn": "Тайлбар",
+    "en": "Reference"
+  },
+  "label_date": {
+    "mn": "Огноо",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "mn": "Дүн ба Валют",
+    "en": "Reference"
+  },
+  "label_result": {
+    "mn": "Үр дүн",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "mn": "Засах",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "mn": "Хадгалагдсан!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "mn": "Ханш:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "mn": "Хэл",
+    "en": "Reference"
+  },
+  "language_system": {
+    "mn": "Систем",
+    "en": "Reference"
+  },
+  "language_english": {
+    "mn": "Англи",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "mn": "Польш",
+    "en": "Reference"
+  }
+}

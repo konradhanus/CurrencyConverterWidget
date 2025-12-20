@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "hu": "Valutaváltó",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "hu": "Átváltó",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "hu": "Költségvetés",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "hu": "Kiadások",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "hu": "Beállítások",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "hu": "Leírás hozzáadása (pl. Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "hu": "Kiadás mentése",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "hu": "Mentve!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "hu": "Költségvetés tervezése",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "hu": "Állítson be egy költségvetést az egész útra, mi felosztjuk napokra és nyomon követjük kiadásait.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "hu": "Költségvetés beállítása",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "hu": "Utazási előzmények",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "hu": "Az Ön költségvetése",
+    "en": "Reference"
+  },
+  "today_header": {
+    "hu": "MA (%@/%@. nap)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "hu": "Ma elérhető",
+    "en": "Reference"
+  },
+  "remaining": {
+    "hu": "Fennmaradó",
+    "en": "Reference"
+  },
+  "spent": {
+    "hu": "Elköltött",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "hu": "Áthozat",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "hu": "Túllépés",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "hu": "Kiadási előzmények",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "hu": "Utazás összegzése",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "hu": "Teljes költségvetés",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "hu": "Teljes fennmaradó",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "hu": "Helyi pénznemben (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "hu": "Beállítások szerkesztése",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "hu": "Befejezés és archiválás",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "hu": "Utazás befejezése?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "hu": "Az aktuális utazás mentésre kerül az előzményekbe, és a költségvetés képernyő törlődik.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "hu": "Befejezés és archiválás",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "hu": "Mégse",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "hu": "Költségvetés pénzneme:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "hu": "%@. nap",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "hu": "Limit:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "hu": "Nincs áthozat",
+    "en": "Reference"
+  },
+  "section_info": {
+    "hu": "Információ",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "hu": "Utazás neve (pl. Thaiföld)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "hu": "Pénzügyek",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "hu": "Költségvetés összege",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "hu": "Fő pénznem",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "hu": "Átváltási pénznem",
+    "en": "Reference"
+  },
+  "section_term": {
+    "hu": "Időtartam",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "hu": "Kezdet",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "hu": "Vége",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "hu": "Költségvetés szerkesztése",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "hu": "Új költségvetés",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "hu": "Mentés",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "hu": "Visszaállítás szerkesztésre",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "hu": "Törlés",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "hu": "Visszaállítás",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "hu": "Nincsenek befejezett utazások.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "hu": "Befejezett utazások",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "hu": "Bezárás",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "hu": "Elköltött: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "hu": "Kiadásaim",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "hu": "Összegek megjelenítése ebben:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "hu": "Összesen:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "hu": "(+ egyéb: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "hu": "Nincsenek kiadások",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "hu": "A mentett kiadásai itt jelennek meg.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "hu": "Nincs leírás",
+    "en": "Reference"
+  },
+  "section_details": {
+    "hu": "Részletek",
+    "en": "Reference"
+  },
+  "label_description": {
+    "hu": "Leírás",
+    "en": "Reference"
+  },
+  "label_date": {
+    "hu": "Dátum",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "hu": "Összegek és Pénznemek",
+    "en": "Reference"
+  },
+  "label_result": {
+    "hu": "Eredmény",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "hu": "Szerkesztés",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "hu": "Mentve!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "hu": "Árfolyam:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "hu": "Nyelv",
+    "en": "Reference"
+  },
+  "language_system": {
+    "hu": "Rendszer",
+    "en": "Reference"
+  },
+  "language_english": {
+    "hu": "Angol",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "hu": "Lengyel",
+    "en": "Reference"
+  }
+}

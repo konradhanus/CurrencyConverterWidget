@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "sv": "Valutaomvandlare",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "sv": "Omvandlare",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "sv": "Budget",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "sv": "Utgifter",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "sv": "Inställningar",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "sv": "Lägg till beskrivning (t.ex. Taxi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "sv": "Spara utgift",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "sv": "Sparat!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "sv": "Planera budget",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "sv": "Ange en budget för hela resan, vi delar upp den i dagar och spårar dina utgifter.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "sv": "Ange budget",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "sv": "Resehistorik",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "sv": "Din budget",
+    "en": "Reference"
+  },
+  "today_header": {
+    "sv": "IDAG (Dag %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "sv": "Tillgängligt idag",
+    "en": "Reference"
+  },
+  "remaining": {
+    "sv": "Kvarstår",
+    "en": "Reference"
+  },
+  "spent": {
+    "sv": "Spenderat",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "sv": "Överföring",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "sv": "Överskridande",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "sv": "Utgiftshistorik",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "sv": "Resesammanfattning",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "sv": "Total budget",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "sv": "Totalt kvarvarande",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "sv": "I lokal valuta (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "sv": "Redigera inställningar",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "sv": "Avsluta och arkivera",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "sv": "Avsluta resan?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "sv": "Den aktuella resan sparas i historiken och budgetskärmen rensas.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "sv": "Avsluta och arkivera",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "sv": "Avbryt",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "sv": "Budgetvaluta:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "sv": "Dag %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "sv": "Gräns:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "sv": "Ingen överföring",
+    "en": "Reference"
+  },
+  "section_info": {
+    "sv": "Information",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "sv": "Resanamn (t.ex. Thailand)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "sv": "Finans",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "sv": "Budgetbelopp",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "sv": "Huvudvaluta",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "sv": "Valuta för omvandling",
+    "en": "Reference"
+  },
+  "section_term": {
+    "sv": "Period",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "sv": "Start",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "sv": "Slut",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "sv": "Redigera budget",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "sv": "Ny budget",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "sv": "Spara",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "sv": "Återställ för redigering",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "sv": "Ta bort",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "sv": "Återställ",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "sv": "Inga avslutade resor.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "sv": "Avslutade resor",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "sv": "Stäng",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "sv": "Spenderat: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "sv": "Mina utgifter",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "sv": "Visa totaler i:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "sv": "Totalt:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "sv": "(+ andra: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "sv": "Inga utgifter",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "sv": "Dina sparade utgifter visas här.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "sv": "Ingen beskrivning",
+    "en": "Reference"
+  },
+  "section_details": {
+    "sv": "Detaljer",
+    "en": "Reference"
+  },
+  "label_description": {
+    "sv": "Beskrivning",
+    "en": "Reference"
+  },
+  "label_date": {
+    "sv": "Datum",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "sv": "Belopp och Valutor",
+    "en": "Reference"
+  },
+  "label_result": {
+    "sv": "Resultat",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "sv": "Redigera",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "sv": "Sparat!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "sv": "Kurs:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "sv": "Språk",
+    "en": "Reference"
+  },
+  "language_system": {
+    "sv": "System",
+    "en": "Reference"
+  },
+  "language_english": {
+    "sv": "Engelska",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "sv": "Polska",
+    "en": "Reference"
+  }
+}

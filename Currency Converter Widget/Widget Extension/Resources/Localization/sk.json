@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "sk": "Prevodník Mien"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "sk": "Prevodník"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "sk": "Rozpočet"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "sk": "Výdavky"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "sk": "Nastavenia"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "sk": "Pridať popis (napr. Taxi)"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "sk": "Uložiť výdavok"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "sk": "Uložené!"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "sk": "Naplánovať rozpočet"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "sk": "Nastavte rozpočet na celú cestu, rozdelíme ho na dni a budeme sledovať vaše výdavky."
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "sk": "Nastaviť rozpočet"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "sk": "História ciest"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "sk": "Váš rozpočet"
+  },
+  "today_header": {
+    "en": "Reference",
+    "sk": "DNES (Deň %@/%@)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "sk": "Dnes k dispozícii"
+  },
+  "remaining": {
+    "en": "Reference",
+    "sk": "Zostáva"
+  },
+  "spent": {
+    "en": "Reference",
+    "sk": "Minuté"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "sk": "Prevod"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "sk": "Prečerpanie"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "sk": "História výdavkov"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "sk": "Súhrn cesty"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "sk": "Celkový rozpočet"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "sk": "Celkom zostáva"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "sk": "V miestnej mene (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "sk": "Upraviť nastavenia"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "sk": "Ukončiť a archivovať"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "sk": "Ukončiť cestu?"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "sk": "Aktuálna cesta bude uložená do histórie a obrazovka rozpočtu bude vymazaná."
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "sk": "Ukončiť a Archivovať"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "sk": "Zrušiť"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "sk": "Mena rozpočtu:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "sk": "Deň %@"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "sk": "Limit:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "sk": "Žiadny prevod"
+  },
+  "section_info": {
+    "en": "Reference",
+    "sk": "Informácie"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "sk": "Názov cesty (napr. Thajsko)"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "sk": "Financie"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "sk": "Suma rozpočtu"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "sk": "Hlavná mena"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "sk": "Mena na prevod"
+  },
+  "section_term": {
+    "en": "Reference",
+    "sk": "Termín"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "sk": "Začiatok"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "sk": "Koniec"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "sk": "Upraviť rozpočet"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "sk": "Nový rozpočet"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "sk": "Uložiť"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "sk": "Obnoviť na úpravy"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "sk": "Zmazať"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "sk": "Obnoviť"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "sk": "Žiadne ukončené cesty."
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "sk": "Ukončené cesty"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "sk": "Zavrieť"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "sk": "Minuté: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "sk": "Moje výdavky"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "sk": "Zobraziť súčty v:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "sk": "Celkom:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "sk": "(+ iné: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "sk": "Žiadne výdavky"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "sk": "Vaše uložené výdavky sa tu zobrazia."
+  },
+  "no_description": {
+    "en": "Reference",
+    "sk": "Bez popisu"
+  },
+  "section_details": {
+    "en": "Reference",
+    "sk": "Podrobnosti"
+  },
+  "label_description": {
+    "en": "Reference",
+    "sk": "Popis"
+  },
+  "label_date": {
+    "en": "Reference",
+    "sk": "Dátum"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "sk": "Sumy a meny"
+  },
+  "label_result": {
+    "en": "Reference",
+    "sk": "Výsledok"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "sk": "Upraviť"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "sk": "Uložené!"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "sk": "Kurz:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "sk": "Jazyk"
+  },
+  "language_system": {
+    "en": "Reference",
+    "sk": "Systém"
+  },
+  "language_english": {
+    "en": "Reference",
+    "sk": "Angličtina"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "sk": "Poľština"
+  }
+}

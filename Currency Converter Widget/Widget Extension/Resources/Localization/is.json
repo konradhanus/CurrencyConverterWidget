@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "is": "Gengisreiknivél",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "is": "Reiknivél",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "is": "Fjárhagsáætlun",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "is": "Útgjöld",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "is": "Stillingar",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "is": "Bæta við lýsingu (t.d. Leigubíll)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "is": "Vista útgjöld",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "is": "Vistað!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "is": "Skipuleggja fjárhag",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "is": "Settu fjárhagsáætlun fyrir alla ferðina, við skiptum henni niður á daga og fylgjumst með útgjöldum þínum.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "is": "Setja fjárhagsáætlun",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "is": "Ferðasaga",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "is": "Þín fjárhagsáætlun",
+    "en": "Reference"
+  },
+  "today_header": {
+    "is": "Í DAG (Dagur %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "is": "Laust í dag",
+    "en": "Reference"
+  },
+  "remaining": {
+    "is": "Eftir",
+    "en": "Reference"
+  },
+  "spent": {
+    "is": "Eytt",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "is": "Flutningur",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "is": "Umfram",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "is": "Útgjaldasaga",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "is": "Samantekt ferðar",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "is": "Heildar fjárhagsáætlun",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "is": "Samtals eftir",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "is": "Í staðbundinni mynt (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "is": "Breyta stillingum",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "is": "Ljúka og setja í geymslu",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "is": "Ljúka ferð?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "is": "Núverandi ferð verður vistuð í sögu og fjárhagsáætlunarskjárinn verður hreinsaður.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "is": "Ljúka og geyma",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "is": "Hætta við",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "is": "Gjaldmiðill áætlunar:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "is": "Dagur %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "is": "Hámark:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "is": "Enginn flutningur",
+    "en": "Reference"
+  },
+  "section_info": {
+    "is": "Upplýsingar",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "is": "Nafn ferðar (t.d. Taíland)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "is": "Fjármál",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "is": "Upphæð áætlunar",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "is": "Aðal gjaldmiðill",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "is": "Gjaldmiðill til umreiknings",
+    "en": "Reference"
+  },
+  "section_term": {
+    "is": "Tímabil",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "is": "Byrjun",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "is": "Endir",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "is": "Breyta fjárhagsáætlun",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "is": "Ný fjárhagsáætlun",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "is": "Vista",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "is": "Endurheimta til breytinga",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "is": "Eyða",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "is": "Endurheimta",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "is": "Engar loknar ferðir.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "is": "Loknar ferðir",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "is": "Loka",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "is": "Eytt: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "is": "Mín útgjöld",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "is": "Sýna samtals í:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "is": "Samtals:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "is": "(+ aðrir: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "is": "Engin útgjöld",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "is": "Vistuð útgjöld þín munu birtast hér.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "is": "Engin lýsing",
+    "en": "Reference"
+  },
+  "section_details": {
+    "is": "Upplýsingar",
+    "en": "Reference"
+  },
+  "label_description": {
+    "is": "Lýsing",
+    "en": "Reference"
+  },
+  "label_date": {
+    "is": "Dagsetning",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "is": "Upphæðir og Myntir",
+    "en": "Reference"
+  },
+  "label_result": {
+    "is": "Niðurstaða",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "is": "Breyta",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "is": "Vistað!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "is": "Gengi:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "is": "Tungumál",
+    "en": "Reference"
+  },
+  "language_system": {
+    "is": "Kerfi",
+    "en": "Reference"
+  },
+  "language_english": {
+    "is": "Enska",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "is": "Pólska",
+    "en": "Reference"
+  }
+}

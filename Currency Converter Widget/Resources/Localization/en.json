@@ -1,0 +1,362 @@
+{
+  "app_name": {
+    "en": "Currency Converter",
+    "pl": "Konwerter Walut",
+    "description": "App title"
+  },
+  "tab_converter": {
+    "en": "Converter",
+    "pl": "Przelicznik",
+    "description": "Tab bar title for converter"
+  },
+  "tab_budget": {
+    "en": "Budget",
+    "pl": "Budżet",
+    "description": "Tab bar title for budget"
+  },
+  "tab_expenses": {
+    "en": "Expenses",
+    "pl": "Wydatki",
+    "description": "Tab bar title for expenses"
+  },
+  "tab_settings": {
+    "en": "Settings",
+    "pl": "Ustawienia",
+    "description": "Tab bar title for settings"
+  },
+  "input_placeholder_desc": {
+    "en": "Add description (e.g. Taxi)",
+    "pl": "Dodaj opis (np. Taxi)",
+    "description": "Placeholder for expense note"
+  },
+  "save_expense_button": {
+    "en": "Save Expense",
+    "pl": "Zapisz Wydatek",
+    "description": "Button to save expense"
+  },
+  "saved_success": {
+    "en": "Saved!",
+    "pl": "Zapisano!",
+    "description": "Success message after saving"
+  },
+  "budget_setup_empty_title": {
+    "en": "Plan Budget",
+    "pl": "Zaplanuj Budżet",
+    "description": "Title when no budget is set"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Set a budget for the entire trip, and we will divide it into days and track your expenses.",
+    "pl": "Ustaw budżet na cały wyjazd, a my podzielimy go na dni i będziemy śledzić Twoje wydatki.",
+    "description": "Description for budget setup"
+  },
+  "btn_set_budget": {
+    "en": "Set Budget",
+    "pl": "Ustaw Budżet",
+    "description": "Button to open budget setup"
+  },
+  "btn_trip_history": {
+    "en": "Trip History",
+    "pl": "Historia Wyjazdów",
+    "description": "Button to view history"
+  },
+  "budget_screen_title": {
+    "en": "Your Budget",
+    "pl": "Twój Budżet",
+    "description": "Navigation title for budget screen"
+  },
+  "today_header": {
+    "en": "TODAY (Day %@/%@)",
+    "pl": "DZISIAJ (Dzień %@/%@)",
+    "description": "Header for today's budget card"
+  },
+  "available_today": {
+    "en": "Available today",
+    "pl": "Dostępne na dziś",
+    "description": "Label for available funds"
+  },
+  "remaining": {
+    "en": "Remaining",
+    "pl": "Zostało",
+    "description": "Label for remaining funds"
+  },
+  "spent": {
+    "en": "Spent",
+    "pl": "Wydano",
+    "description": "Label for spent funds"
+  },
+  "rollover_positive": {
+    "en": "Rollover",
+    "pl": "Z przeniesienia",
+    "description": "Label for positive rollover from previous days"
+  },
+  "rollover_negative": {
+    "en": "Overspent",
+    "pl": "Nadwyżka",
+    "description": "Label for negative rollover (deficit)"
+  },
+  "history_expenses_title": {
+    "en": "Expense History",
+    "pl": "Historia Wydatków",
+    "description": "Title for daily history section"
+  },
+  "trip_summary_title": {
+    "en": "Trip Summary",
+    "pl": "Podsumowanie Wyjazdu",
+    "description": "Title for summary card"
+  },
+  "total_budget_label": {
+    "en": "Total budget",
+    "pl": "Całkowity budżet",
+    "description": "Label for total budget"
+  },
+  "total_remaining_label": {
+    "en": "Total remaining",
+    "pl": "Pozostało w sumie",
+    "description": "Label for total remaining funds"
+  },
+  "local_currency_label": {
+    "en": "In local currency (%@)",
+    "pl": "W walucie lokalnej (%@)",
+    "description": "Label for secondary currency conversion"
+  },
+  "btn_edit_settings": {
+    "en": "Edit trip settings",
+    "pl": "Edytuj ustawienia wyjazdu",
+    "description": "Button to edit settings"
+  },
+  "btn_finish_trip": {
+    "en": "End trip and archive",
+    "pl": "Zakończ wyjazd i zarchiwizuj",
+    "description": "Button to finish trip"
+  },
+  "alert_finish_title": {
+    "en": "End trip?",
+    "pl": "Zakończyć wyjazd?",
+    "description": "Alert title for finishing trip"
+  },
+  "alert_finish_message": {
+    "en": "The current trip will be saved in history, and the budget screen will be cleared.",
+    "pl": "Obecny wyjazd zostanie zapisany w historii, a ekran budżetu zostanie wyczyszczony.",
+    "description": "Alert message for finishing trip"
+  },
+  "btn_finish_archive": {
+    "en": "End and Archive",
+    "pl": "Zakończ i Archiwizuj",
+    "description": "Destructive button in alert"
+  },
+  "btn_cancel": {
+    "en": "Cancel",
+    "pl": "Anuluj",
+    "description": "Cancel button"
+  },
+  "menu_budget_currency": {
+    "en": "Budget currency:",
+    "pl": "Waluta budżetu:",
+    "description": "Menu label"
+  },
+  "day_label": {
+    "en": "Day %@",
+    "pl": "Dzień %@",
+    "description": "Label for day number"
+  },
+  "limit_label": {
+    "en": "Limit:",
+    "pl": "Limit:",
+    "description": "Daily limit label"
+  },
+  "no_rollover": {
+    "en": "No rollover",
+    "pl": "Brak przeniesienia",
+    "description": "Label when rollover is 0"
+  },
+  "section_info": {
+    "en": "Information",
+    "pl": "Informacje",
+    "description": "Form section header"
+  },
+  "trip_name_placeholder": {
+    "en": "Trip name (e.g. Thailand)",
+    "pl": "Nazwa wyjazdu (np. Tajlandia)",
+    "description": "Placeholder for trip name"
+  },
+  "section_finance": {
+    "en": "Finance",
+    "pl": "Finanse",
+    "description": "Form section header"
+  },
+  "budget_amount_label": {
+    "en": "Budget amount",
+    "pl": "Kwota budżetu",
+    "description": "Label for amount input"
+  },
+  "primary_currency_label": {
+    "en": "Main currency",
+    "pl": "Waluta główna",
+    "description": "Label for primary currency picker"
+  },
+  "secondary_currency_label": {
+    "en": "Currency to convert",
+    "pl": "Waluta do przeliczenia",
+    "description": "Label for secondary currency picker"
+  },
+  "section_term": {
+    "en": "Term",
+    "pl": "Termin",
+    "description": "Form section header"
+  },
+  "start_date_label": {
+    "en": "Start",
+    "pl": "Początek",
+    "description": "Date picker label"
+  },
+  "end_date_label": {
+    "en": "End",
+    "pl": "Koniec",
+    "description": "Date picker label"
+  },
+  "edit_budget_title": {
+    "en": "Edit Budget",
+    "pl": "Edycja Budżetu",
+    "description": "Title for edit mode"
+  },
+  "new_budget_title": {
+    "en": "New Budget",
+    "pl": "Nowy Budżet",
+    "description": "Title for new mode"
+  },
+  "btn_save": {
+    "en": "Save",
+    "pl": "Zapisz",
+    "description": "Save button"
+  },
+  "restore_edit_action": {
+    "en": "Restore to edit",
+    "pl": "Przywróć do edycji",
+    "description": "Swipe action"
+  },
+  "delete_action": {
+    "en": "Delete",
+    "pl": "Usuń",
+    "description": "Swipe action"
+  },
+  "restore_action": {
+    "en": "Restore",
+    "pl": "Przywróć",
+    "description": "Swipe action"
+  },
+  "no_finished_trips": {
+    "en": "No finished trips.",
+    "pl": "Brak zakończonych wyjazdów.",
+    "description": "Empty state for history"
+  },
+  "finished_trips_title": {
+    "en": "Finished Trips",
+    "pl": "Zakończone Wyjazdy",
+    "description": "Title for history view"
+  },
+  "btn_close": {
+    "en": "Close",
+    "pl": "Zamknij",
+    "description": "Close button"
+  },
+  "spent_total_label": {
+    "en": "Spent: %@ / %@ %@",
+    "pl": "Wydano: %@ / %@ %@",
+    "description": "History row spent label"
+  },
+  "my_expenses_title": {
+    "en": "My Expenses",
+    "pl": "Moje Wydatki",
+    "description": "Expenses view title"
+  },
+  "show_totals_in": {
+    "en": "Show totals in:",
+    "pl": "Pokaż sumy w:",
+    "description": "Menu title"
+  },
+  "total_label": {
+    "en": "Total:",
+    "pl": "Łącznie:",
+    "description": "Daily summary total"
+  },
+  "plus_others": {
+    "en": "(+ others: %@)",
+    "pl": "(+ inne: %@)",
+    "description": "Other currencies in summary"
+  },
+  "no_expenses_title": {
+    "en": "No expenses",
+    "pl": "Brak wydatków",
+    "description": "Empty state title"
+  },
+  "no_expenses_desc": {
+    "en": "Your saved expenses will appear here.",
+    "pl": "Twoje zapisane wydatki pojawią się tutaj.",
+    "description": "Empty state description"
+  },
+  "no_description": {
+    "en": "No description",
+    "pl": "Bez opisu",
+    "description": "Placeholder when no note"
+  },
+  "section_details": {
+    "en": "Details",
+    "pl": "Szczegóły",
+    "description": "Section header"
+  },
+  "label_description": {
+    "en": "Description",
+    "pl": "Opis",
+    "description": "Label for description"
+  },
+  "label_date": {
+    "en": "Date",
+    "pl": "Data",
+    "description": "Label for date"
+  },
+  "section_amounts_currencies": {
+    "en": "Amounts and Currencies",
+    "pl": "Kwoty i Waluty",
+    "description": "Section header"
+  },
+  "label_result": {
+    "en": "Result",
+    "pl": "Wynik",
+    "description": "Label for result"
+  },
+  "title_edit": {
+    "en": "Edit",
+    "pl": "Edycja",
+    "description": "Title for edit view"
+  },
+  "widget_saved": {
+    "en": "Saved!",
+    "pl": "Zapisano!",
+    "description": "Widget success overlay"
+  },
+  "rate_label": {
+    "en": "Rate:",
+    "pl": "Kurs:",
+    "description": "Exchange rate label"
+  },
+  "language_settings_title": {
+    "en": "Language",
+    "pl": "Język",
+    "description": "Language settings title"
+  },
+  "language_system": {
+    "en": "System",
+    "pl": "Systemowy",
+    "description": "System language option"
+  },
+  "language_english": {
+    "en": "English",
+    "pl": "Angielski",
+    "description": "English language option"
+  },
+  "language_polish": {
+    "en": "Polish",
+    "pl": "Polski",
+    "description": "Polish language option"
+  }
+}

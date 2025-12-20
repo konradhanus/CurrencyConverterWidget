@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ar": "محول العملات",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ar": "محول",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ar": "الميزانية",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ar": "النفقات",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ar": "الإعدادات",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ar": "أضف وصفاً (مثلاً: تاكسي)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ar": "حفظ المصروف",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ar": "تم الحفظ!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ar": "تخطيط الميزانية",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ar": "حدد ميزانية للرحلة بأكملها، وسنقسمها على الأيام ونتتبع نفقاتك.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ar": "تحديد الميزانية",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ar": "تاريخ الرحلات",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ar": "ميزانيتك",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ar": "اليوم (يوم %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ar": "متاح اليوم",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ar": "المتبقي",
+    "en": "Reference"
+  },
+  "spent": {
+    "ar": "المصروف",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ar": "مرحل",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ar": "تجاوز",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ar": "تاريخ المصروفات",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ar": "ملخص الرحلة",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ar": "الميزانية الإجمالية",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ar": "إجمالي المتبقي",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ar": "بالعملة المحلية (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ar": "تعديل الإعدادات",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ar": "إنهاء وأرشفة",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ar": "إنهاء الرحلة؟",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ar": "سيتم حفظ الرحلة الحالية في السجل وسيتم مسح شاشة الميزانية.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ar": "إنهاء وأرشفة",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ar": "إلغاء",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ar": "عملة الميزانية:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ar": "يوم %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ar": "الحد:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ar": "لا يوجد ترحيل",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ar": "معلومات",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ar": "اسم الرحلة (مثلاً: تايلاند)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ar": "المالية",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ar": "مبلغ الميزانية",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ar": "العملة الرئيسية",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ar": "عملة التحويل",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ar": "المدة",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ar": "البدء",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ar": "النهاية",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ar": "تعديل الميزانية",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ar": "ميزانية جديدة",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ar": "حفظ",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ar": "استعادة للتعديل",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ar": "حذف",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ar": "استعادة",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ar": "لا توجد رحلات منتهية.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ar": "الرحلات المنتهية",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ar": "إغلاق",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ar": "المصروف: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ar": "نفقاتي",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ar": "إظهار الإجماليات بـ:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ar": "الإجمالي:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ar": "(+ آخرين: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ar": "لا توجد نفقات",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ar": "ستظهر نفقاتك المحفوظة هنا.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ar": "بدون وصف",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ar": "التفاصيل",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ar": "الوصف",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ar": "التاريخ",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ar": "المبالغ والعملات",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ar": "النتيجة",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ar": "تعديل",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ar": "تم الحفظ!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ar": "السعر:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ar": "اللغة",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ar": "النظام",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ar": "الإنجليزية",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ar": "البولندية",
+    "en": "Reference"
+  }
+}

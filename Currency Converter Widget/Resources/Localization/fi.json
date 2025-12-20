@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "fi": "Valuuttamuunnin",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "fi": "Muunnin",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "fi": "Budjetti",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "fi": "Menot",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "fi": "Asetukset",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "fi": "Lisää kuvaus (esim. Taksi)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "fi": "Tallenna meno",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "fi": "Tallennettu!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "fi": "Suunnittele budjetti",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "fi": "Aseta budjetti koko matkalle, jaamme sen päiville ja seuraamme menojasi.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "fi": "Aseta budjetti",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "fi": "Matkahistoria",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "fi": "Sinun budjettisi",
+    "en": "Reference"
+  },
+  "today_header": {
+    "fi": "TÄNÄÄN (Päivä %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "fi": "Käytettävissä tänään",
+    "en": "Reference"
+  },
+  "remaining": {
+    "fi": "Jäljellä",
+    "en": "Reference"
+  },
+  "spent": {
+    "fi": "Käytetty",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "fi": "Siirto",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "fi": "Ylitys",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "fi": "Menohistoria",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "fi": "Matkan yhteenveto",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "fi": "Kokonaisbudjetti",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "fi": "Yhteensä jäljellä",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "fi": "Paikallisessa valuutassa (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "fi": "Muokkaa asetuksia",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "fi": "Lopeta ja arkistoi",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "fi": "Lopeta matka?",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "fi": "Nykyinen matka tallennetaan historiaan ja budjettinäyttö tyhjennetään.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "fi": "Lopeta ja arkistoi",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "fi": "Peruuta",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "fi": "Budjetin valuutta:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "fi": "Päivä %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "fi": "Raja:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "fi": "Ei siirtoa",
+    "en": "Reference"
+  },
+  "section_info": {
+    "fi": "Tiedot",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "fi": "Matkan nimi (esim. Thaimaa)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "fi": "Talous",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "fi": "Budjetin summa",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "fi": "Päävaluutta",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "fi": "Muunnosvaluutta",
+    "en": "Reference"
+  },
+  "section_term": {
+    "fi": "Ajanjakso",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "fi": "Alku",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "fi": "Loppu",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "fi": "Muokkaa budjettia",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "fi": "Uusi budjetti",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "fi": "Tallenna",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "fi": "Palauta muokattavaksi",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "fi": "Poista",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "fi": "Palauta",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "fi": "Ei päättyneitä matkoja.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "fi": "Päättyneet matkat",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "fi": "Sulje",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "fi": "Käytetty: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "fi": "Minun menot",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "fi": "Näytä yhteissummat:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "fi": "Yhteensä:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "fi": "(+ muut: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "fi": "Ei menoja",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "fi": "Tallennetut menosi näkyvät tässä.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "fi": "Ei kuvausta",
+    "en": "Reference"
+  },
+  "section_details": {
+    "fi": "Tiedot",
+    "en": "Reference"
+  },
+  "label_description": {
+    "fi": "Kuvaus",
+    "en": "Reference"
+  },
+  "label_date": {
+    "fi": "Päivämäärä",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "fi": "Summat ja Valuutat",
+    "en": "Reference"
+  },
+  "label_result": {
+    "fi": "Tulos",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "fi": "Muokkaa",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "fi": "Tallennettu!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "fi": "Kurssi:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "fi": "Kieli",
+    "en": "Reference"
+  },
+  "language_system": {
+    "fi": "Järjestelmä",
+    "en": "Reference"
+  },
+  "language_english": {
+    "fi": "Englanti",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "fi": "Puola",
+    "en": "Reference"
+  }
+}

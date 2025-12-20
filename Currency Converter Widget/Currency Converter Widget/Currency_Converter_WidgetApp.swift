@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Currency_Converter_WidgetApp: App {
+    @StateObject private var localizationManager = LocalizationManager.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(localizationManager)
         }
     }
 }

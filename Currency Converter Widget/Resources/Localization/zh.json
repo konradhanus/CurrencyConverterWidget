@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "zh": "货币转换器"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "zh": "转换"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "zh": "预算"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "zh": "支出"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "zh": "设置"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "zh": "添加描述（例如 出租车）"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "zh": "保存支出"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "zh": "已保存！"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "zh": "计划预算"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "zh": "为整个行程设定预算，我们将将其按天分配并跟踪您的支出。"
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "zh": "设定预算"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "zh": "行程历史"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "zh": "您的预算"
+  },
+  "today_header": {
+    "en": "Reference",
+    "zh": "今天 (第 %@/%@ 天)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "zh": "今日可用"
+  },
+  "remaining": {
+    "en": "Reference",
+    "zh": "剩余"
+  },
+  "spent": {
+    "en": "Reference",
+    "zh": "已花费"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "zh": "结转"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "zh": "超支"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "zh": "支出历史"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "zh": "行程总结"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "zh": "总预算"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "zh": "总剩余"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "zh": "当地货币 (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "zh": "编辑设置"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "zh": "结束行程并归档"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "zh": "结束行程？"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "zh": "当前行程将保存在历史记录中，预算屏幕将被清除。"
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "zh": "结束并归档"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "zh": "取消"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "zh": "预算货币:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "zh": "第 %@ 天"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "zh": "限额:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "zh": "无结转"
+  },
+  "section_info": {
+    "en": "Reference",
+    "zh": "信息"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "zh": "行程名称（例如 泰国）"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "zh": "财务"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "zh": "预算金额"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "zh": "主要货币"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "zh": "转换货币"
+  },
+  "section_term": {
+    "en": "Reference",
+    "zh": "期限"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "zh": "开始"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "zh": "结束"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "zh": "编辑预算"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "zh": "新预算"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "zh": "保存"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "zh": "恢复编辑"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "zh": "删除"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "zh": "恢复"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "zh": "无已结束的行程。"
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "zh": "已结束的行程"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "zh": "关闭"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "zh": "花费: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "zh": "我的支出"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "zh": "显示总计于:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "zh": "总计:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "zh": "(+ 其他: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "zh": "无支出"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "zh": "您保存的支出将显示在这里。"
+  },
+  "no_description": {
+    "en": "Reference",
+    "zh": "无描述"
+  },
+  "section_details": {
+    "en": "Reference",
+    "zh": "详情"
+  },
+  "label_description": {
+    "en": "Reference",
+    "zh": "描述"
+  },
+  "label_date": {
+    "en": "Reference",
+    "zh": "日期"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "zh": "金额和货币"
+  },
+  "label_result": {
+    "en": "Reference",
+    "zh": "结果"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "zh": "编辑"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "zh": "已保存！"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "zh": "汇率:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "zh": "语言"
+  },
+  "language_system": {
+    "en": "Reference",
+    "zh": "系统"
+  },
+  "language_english": {
+    "en": "Reference",
+    "zh": "英语"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "zh": "波兰语"
+  }
+}

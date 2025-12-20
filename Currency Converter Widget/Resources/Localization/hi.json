@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "en": "Reference",
+    "hi": "मुद्रा परिवर्तक"
+  },
+  "tab_converter": {
+    "en": "Reference",
+    "hi": "परिवर्तक"
+  },
+  "tab_budget": {
+    "en": "Reference",
+    "hi": "बजट"
+  },
+  "tab_expenses": {
+    "en": "Reference",
+    "hi": "व्यय"
+  },
+  "tab_settings": {
+    "en": "Reference",
+    "hi": "सेटिंग्स"
+  },
+  "input_placeholder_desc": {
+    "en": "Reference",
+    "hi": "विवरण जोड़ें (जैसे टैक्सी)"
+  },
+  "save_expense_button": {
+    "en": "Reference",
+    "hi": "व्यय सहेजें"
+  },
+  "saved_success": {
+    "en": "Reference",
+    "hi": "सहेजा गया!"
+  },
+  "budget_setup_empty_title": {
+    "en": "Reference",
+    "hi": "बजट योजना"
+  },
+  "budget_setup_empty_desc": {
+    "en": "Reference",
+    "hi": "पूri यात्रा के लिए बजट निर्धारित करें, हम इसे दिनों में विभाजित करेंगे और आपके खर्चों को ट्रैक करेंगे।"
+  },
+  "btn_set_budget": {
+    "en": "Reference",
+    "hi": "बजट सेट करें"
+  },
+  "btn_trip_history": {
+    "en": "Reference",
+    "hi": "यात्रा इतिहास"
+  },
+  "budget_screen_title": {
+    "en": "Reference",
+    "hi": "आपका बजट"
+  },
+  "today_header": {
+    "en": "Reference",
+    "hi": "आज (दिन %@/%@)"
+  },
+  "available_today": {
+    "en": "Reference",
+    "hi": "आज उपलब्ध"
+  },
+  "remaining": {
+    "en": "Reference",
+    "hi": "शेष"
+  },
+  "spent": {
+    "en": "Reference",
+    "hi": "खर्च किया"
+  },
+  "rollover_positive": {
+    "en": "Reference",
+    "hi": "रोलओवर"
+  },
+  "rollover_negative": {
+    "en": "Reference",
+    "hi": "अधिक खर्च"
+  },
+  "history_expenses_title": {
+    "en": "Reference",
+    "hi": "व्यय इतिहास"
+  },
+  "trip_summary_title": {
+    "en": "Reference",
+    "hi": "यात्रा सारांश"
+  },
+  "total_budget_label": {
+    "en": "Reference",
+    "hi": "कुल बजट"
+  },
+  "total_remaining_label": {
+    "en": "Reference",
+    "hi": "कुल शेष"
+  },
+  "local_currency_label": {
+    "en": "Reference",
+    "hi": "स्थानीय मुद्रा में (%@)"
+  },
+  "btn_edit_settings": {
+    "en": "Reference",
+    "hi": "सेटिंग्स संपादित करें"
+  },
+  "btn_finish_trip": {
+    "en": "Reference",
+    "hi": "यात्रा समाप्त करें और पुरालेख करें"
+  },
+  "alert_finish_title": {
+    "en": "Reference",
+    "hi": "यात्रा समाप्त करें?"
+  },
+  "alert_finish_message": {
+    "en": "Reference",
+    "hi": "वर्तमान यात्रा इतिहास में सहेजी जाएगी, और बजट स्क्रीन साफ़ कर दी जाएगी।"
+  },
+  "btn_finish_archive": {
+    "en": "Reference",
+    "hi": "समाप्त और पुरालेख"
+  },
+  "btn_cancel": {
+    "en": "Reference",
+    "hi": "रद्द करें"
+  },
+  "menu_budget_currency": {
+    "en": "Reference",
+    "hi": "बजट मुद्रा:"
+  },
+  "day_label": {
+    "en": "Reference",
+    "hi": "दिन %@"
+  },
+  "limit_label": {
+    "en": "Reference",
+    "hi": "सीमा:"
+  },
+  "no_rollover": {
+    "en": "Reference",
+    "hi": "कोई रोलओवर नहीं"
+  },
+  "section_info": {
+    "en": "Reference",
+    "hi": "जानकारी"
+  },
+  "trip_name_placeholder": {
+    "en": "Reference",
+    "hi": "यात्रा का नाम (जैसे थाईलैंड)"
+  },
+  "section_finance": {
+    "en": "Reference",
+    "hi": "वित्त"
+  },
+  "budget_amount_label": {
+    "en": "Reference",
+    "hi": "बजट राशि"
+  },
+  "primary_currency_label": {
+    "en": "Reference",
+    "hi": "मुख्य मुद्रा"
+  },
+  "secondary_currency_label": {
+    "en": "Reference",
+    "hi": "परिवर्तित करने के लिए मुद्रा"
+  },
+  "section_term": {
+    "en": "Reference",
+    "hi": "अवधि"
+  },
+  "start_date_label": {
+    "en": "Reference",
+    "hi": "आरंभ"
+  },
+  "end_date_label": {
+    "en": "Reference",
+    "hi": "समाप्त"
+  },
+  "edit_budget_title": {
+    "en": "Reference",
+    "hi": "बजट संपादित करें"
+  },
+  "new_budget_title": {
+    "en": "Reference",
+    "hi": "नया बजट"
+  },
+  "btn_save": {
+    "en": "Reference",
+    "hi": "सहेजें"
+  },
+  "restore_edit_action": {
+    "en": "Reference",
+    "hi": "संपादन के लिए पुनर्स्थापित करें"
+  },
+  "delete_action": {
+    "en": "Reference",
+    "hi": "हटाएं"
+  },
+  "restore_action": {
+    "en": "Reference",
+    "hi": "पुनर्स्थापित करें"
+  },
+  "no_finished_trips": {
+    "en": "Reference",
+    "hi": "कोई समाप्त यात्राएं नहीं।"
+  },
+  "finished_trips_title": {
+    "en": "Reference",
+    "hi": "समाप्त यात्राएं"
+  },
+  "btn_close": {
+    "en": "Reference",
+    "hi": "बंद करें"
+  },
+  "spent_total_label": {
+    "en": "Reference",
+    "hi": "खर्च: %@ / %@ %@"
+  },
+  "my_expenses_title": {
+    "en": "Reference",
+    "hi": "मेरे खर्च"
+  },
+  "show_totals_in": {
+    "en": "Reference",
+    "hi": "कुल दिखाएं:"
+  },
+  "total_label": {
+    "en": "Reference",
+    "hi": "कुल:"
+  },
+  "plus_others": {
+    "en": "Reference",
+    "hi": "(+ अन्य: %@)"
+  },
+  "no_expenses_title": {
+    "en": "Reference",
+    "hi": "कोई खर्च नहीं"
+  },
+  "no_expenses_desc": {
+    "en": "Reference",
+    "hi": "आपके सहेजे गए खर्च यहां दिखाई देंगे।"
+  },
+  "no_description": {
+    "en": "Reference",
+    "hi": "कोई विवरण नहीं"
+  },
+  "section_details": {
+    "en": "Reference",
+    "hi": "विवरण"
+  },
+  "label_description": {
+    "en": "Reference",
+    "hi": "विवरण"
+  },
+  "label_date": {
+    "en": "Reference",
+    "hi": "तारीख"
+  },
+  "section_amounts_currencies": {
+    "en": "Reference",
+    "hi": "राशियाँ और मुद्राएं"
+  },
+  "label_result": {
+    "en": "Reference",
+    "hi": "परिणाम"
+  },
+  "title_edit": {
+    "en": "Reference",
+    "hi": "संपादित करें"
+  },
+  "widget_saved": {
+    "en": "Reference",
+    "hi": "सहेजा गया!"
+  },
+  "rate_label": {
+    "en": "Reference",
+    "hi": "दर:"
+  },
+  "language_settings_title": {
+    "en": "Reference",
+    "hi": "भाषा"
+  },
+  "language_system": {
+    "en": "Reference",
+    "hi": "सिस्टम"
+  },
+  "language_english": {
+    "en": "Reference",
+    "hi": "अंग्रेजी"
+  },
+  "language_polish": {
+    "en": "Reference",
+    "hi": "पोलिश"
+  }
+}

@@ -300,6 +300,7 @@ class ExchangeRateViewModel: ObservableObject {
 
 struct ContentView: View {
     @StateObject private var expenseManager = ExpenseManager()
+    @EnvironmentObject var loc: LocalizationManager
     
     init() {
         let appearance = UITabBarAppearance()
@@ -314,22 +315,56 @@ struct ContentView: View {
             CalculatorView()
                 .environmentObject(expenseManager)
                 .tabItem {
-                    Label("Przelicznik", systemImage: "arrow.triangle.2.circlepath")
+                    Label(loc.localized("tab_converter"), systemImage: "arrow.triangle.2.circlepath")
                 }
             
             BudgetView()
                 .environmentObject(expenseManager)
                 .tabItem {
-                    Label("Budżet", systemImage: "chart.pie.fill")
+                    Label(loc.localized("tab_budget"), systemImage: "chart.pie.fill")
                 }
             
             ExpensesView()
                 .environmentObject(expenseManager)
                 .tabItem {
-                    Label("Wydatki", systemImage: "list.bullet.rectangle.portrait")
+                    Label(loc.localized("tab_expenses"), systemImage: "list.bullet.rectangle.portrait")
+                }
+            
+            SettingsView()
+                .environmentObject(expenseManager) // Pass just in case, or for uniformity
+                .tabItem {
+                    Label(loc.localized("tab_settings"), systemImage: "gearshape.fill")
                 }
         }
+        .environment(\.locale, loc.appLocale)
         .accentColor(.purple)
+    }
+}
+
+// --- ZAKŁADKA 4: USTAWIENIA ---
+struct SettingsView: View {
+    @EnvironmentObject var loc: LocalizationManager
+    
+    var body: some View {
+        NavigationView {
+            Form {
+                Section(header: Text(loc.localized("language_settings_title"))) {
+                    Picker(loc.localized("language_settings_title"), selection: $loc.currentLanguage) {
+                        ForEach(LocalizationManager.Language.allCases) { lang in
+                            Text(lang.displayName).tag(lang)
+                        }
+                    }
+                    .pickerStyle(.inline)
+                }
+                
+                Section {
+                    Text("Version 1.0.0")
+                        .foregroundColor(.secondary)
+                        .font(.caption)
+                }
+            }
+            .navigationTitle(loc.localized("tab_settings"))
+        }
     }
 }
 
@@ -338,6 +373,7 @@ struct ContentView: View {
 struct CalculatorView: View {
     @StateObject private var viewModel = ExchangeRateViewModel()
     @EnvironmentObject var expenseManager: ExpenseManager
+    @EnvironmentObject var loc: LocalizationManager
     @State private var showSaveConfirmation: Bool = false
     @State private var note: String = ""
     @State private var inputString: String = "0"
@@ -350,7 +386,7 @@ struct CalculatorView: View {
             VStack(spacing: 0) {
                 ScrollView {
                     VStack(spacing: 20) {
-                        Text("Konwerter Walut")
+                        Text(loc.localized("app_name"))
                             .font(.headline)
                             .foregroundColor(.white.opacity(0.8))
                             .padding(.top, 10)
@@ -393,7 +429,7 @@ struct CalculatorView: View {
                             CurrencyPill(currency: $viewModel.toCurrency, all: viewModel.allCurrencies)
                         }
                         
-                        TextField("Dodaj opis (np. Taxi)", text: $note)
+                        TextField(loc.localized("input_placeholder_desc"), text: $note)
                             .padding(12)
                             .background(Color.white.opacity(0.15))
                             .cornerRadius(12)
@@ -402,13 +438,13 @@ struct CalculatorView: View {
                             .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.white.opacity(0.2), lineWidth: 1))
                             .padding(.horizontal, 30)
                             .placeholder(when: note.isEmpty) {
-                                Text("Dodaj opis (np. Taxi)").foregroundColor(.white.opacity(0.5)).padding(.leading, 42)
+                                Text(loc.localized("input_placeholder_desc")).foregroundColor(.white.opacity(0.5)).padding(.leading, 42)
                             }
 
                         Button(action: saveExpense) {
                             HStack {
                                 Image(systemName: "square.and.arrow.down.fill")
-                                Text("Zapisz Wydatek")
+                                Text(loc.localized("save_expense_button"))
                             }
                             .font(.headline)
                             .foregroundColor(.black)
@@ -482,6 +518,7 @@ struct CalculatorView: View {
 
 struct BudgetView: View {
     @EnvironmentObject var manager: ExpenseManager
+    @EnvironmentObject var loc: LocalizationManager
     @State private var showSetupSheet = false
     @State private var showHistorySheet = false // Nowy sheet dla historii
     @State private var showFinishAlert = false // Alert kończenia wyjazdu
@@ -504,20 +541,20 @@ struct BudgetView: View {
                         Image(systemName: "airplane.departure")
                             .font(.system(size: 60))
                             .foregroundColor(.purple)
-                        Text("Zaplanuj Budżet")
+                        Text(loc.localized("budget_setup_empty_title"))
                             .font(.title2.weight(.bold))
-                        Text("Ustaw budżet na cały wyjazd, a my podzielimy go na dni i będziemy śledzić Twoje wydatki.")
+                        Text(loc.localized("budget_setup_empty_desc"))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
                             .foregroundColor(.secondary)
                         
-                        Button("Ustaw Budżet") { showSetupSheet = true }
+                        Button(loc.localized("btn_set_budget")) { showSetupSheet = true }
                             .buttonStyle(.borderedProminent)
                             .tint(.purple)
                         
                         // Przycisk historii (gdy nie ma aktywnego budżetu)
                         if !manager.archivedTrips.isEmpty {
-                            Button("Historia Wyjazdów") { showHistorySheet = true }
+                            Button(loc.localized("btn_trip_history")) { showHistorySheet = true }
                                 .padding(.top, 10)
                         }
                     }
@@ -544,7 +581,7 @@ struct BudgetView: View {
                             
                             // 2. HISTORIA DZIENNA
                             VStack(alignment: .leading, spacing: 10) {
-                                Text("Historia Wydatków")
+                                Text(loc.localized("history_expenses_title"))
                                     .font(.headline)
                                     .padding(.horizontal)
                                 
@@ -583,14 +620,14 @@ struct BudgetView: View {
                             
                             // Sekcja zarządzania
                             VStack(spacing: 15) {
-                                Button("Edytuj ustawienia wyjazdu") { showSetupSheet = true }
+                                Button(loc.localized("btn_edit_settings")) { showSetupSheet = true }
                                     .font(.footnote)
                                     .foregroundColor(.secondary)
                                 
                                 Button(role: .destructive) {
                                     showFinishAlert = true
                                 } label: {
-                                    Text("Zakończ wyjazd i zarchiwizuj")
+                                    Text(loc.localized("btn_finish_trip"))
                                         .font(.subheadline.weight(.medium))
                                         .padding(.vertical, 8)
                                         .padding(.horizontal, 20)
@@ -604,17 +641,17 @@ struct BudgetView: View {
                     }
                 }
             }
-            .navigationTitle("Twój Budżet")
+            .navigationTitle(loc.localized("budget_screen_title"))
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Menu {
                         Button(action: { showHistorySheet = true }) {
-                            Label("Historia Wyjazdów", systemImage: "clock.arrow.circlepath")
+                            Label(loc.localized("btn_trip_history"), systemImage: "clock.arrow.circlepath")
                         }
                         
                         if manager.isBudgetSet {
                             Divider()
-                            Text("Waluta budżetu:")
+                            Text(loc.localized("menu_budget_currency"))
                             ForEach(ExpenseManager.allCurrencies, id: \.self) { currency in
                                 Button(action: {
                                     manager.saveActiveTripSettings(
@@ -646,13 +683,13 @@ struct BudgetView: View {
             .sheet(isPresented: $showHistorySheet) {
                 TripsHistoryView()
             }
-            .confirmationDialog("Zakończyć wyjazd?", isPresented: $showFinishAlert, titleVisibility: .visible) {
-                Button("Zakończ i Archiwizuj", role: .destructive) {
+            .confirmationDialog(loc.localized("alert_finish_title"), isPresented: $showFinishAlert, titleVisibility: .visible) {
+                Button(loc.localized("btn_finish_archive"), role: .destructive) {
                     manager.finishCurrentTrip()
                 }
-                Button("Anuluj", role: .cancel) {}
+                Button(loc.localized("btn_cancel"), role: .cancel) {}
             } message: {
-                Text("Obecny wyjazd zostanie zapisany w historii, a ekran budżetu zostanie wyczyszczony.")
+                Text(loc.localized("alert_finish_message"))
             }
             .task(id: manager.budgetCurrency + manager.secondaryBudgetCurrency) {
                 await fetchSecondaryRate()
@@ -798,14 +835,15 @@ struct TodayBudgetCard: View {
     let secondaryCurrency: String
     let secondaryRate: Double
     let isFetching: Bool
+    @EnvironmentObject var loc: LocalizationManager
     
     var body: some View {
         VStack(spacing: 20) {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("DZISIAJ (Dzień \(stats.currentDayNum)/\(stats.totalDays))")
+                    Text(loc.localized("today_header", String(stats.currentDayNum), String(stats.totalDays)))
                         .font(.caption).fontWeight(.bold).foregroundColor(.secondary)
-                    Text("Dostępne na dziś")
+                    Text(loc.localized("available_today"))
                         .font(.headline)
                 }
                 Spacer()
@@ -834,7 +872,7 @@ struct TodayBudgetCard: View {
                     .animation(.linear, value: stats.progress)
                 
                 VStack {
-                    Text("Zostało").font(.caption2).foregroundColor(.secondary)
+                    Text(loc.localized("remaining")).font(.caption2).foregroundColor(.secondary)
                     Text(stats.remainingToday, format: .currency(code: currency))
                         .font(.title.weight(.bold)).foregroundColor(stats.remainingToday >= 0 ? .primary : .red)
                     if isFetching { ProgressView().scaleEffect(0.8) }
@@ -848,12 +886,12 @@ struct TodayBudgetCard: View {
             
             HStack(spacing: 30) {
                 VStack {
-                    Text("Wydano").font(.caption).foregroundColor(.secondary)
+                    Text(loc.localized("spent")).font(.caption).foregroundColor(.secondary)
                     Text(stats.spentToday, format: .currency(code: currency)).fontWeight(.semibold).foregroundColor(.red.opacity(0.8))
                 }
                 Divider().frame(height: 30)
                 VStack {
-                    Text(stats.savedFromPreviousDays >= 0 ? "Z przeniesienia" : "Nadwyżka").font(.caption).foregroundColor(.secondary)
+                    Text(stats.savedFromPreviousDays >= 0 ? loc.localized("rollover_positive") : loc.localized("rollover_negative")).font(.caption).foregroundColor(.secondary)
                     Text(stats.savedFromPreviousDays, format: .currency(code: currency)).fontWeight(.semibold).foregroundColor(stats.savedFromPreviousDays >= 0 ? .green : .red)
                 }
             }
@@ -871,18 +909,19 @@ struct TripSummaryCard: View {
     let secondaryCurrency: String
     let secondaryRate: Double
     let isFetching: Bool
+    @EnvironmentObject var loc: LocalizationManager
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
-            Text("Podsumowanie Wyjazdu").font(.headline)
+            Text(loc.localized("trip_summary_title")).font(.headline)
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Całkowity budżet").font(.caption).foregroundColor(.secondary)
+                    Text(loc.localized("total_budget_label")).font(.caption).foregroundColor(.secondary)
                     Text((stats.totalSpent + stats.totalRemaining), format: .currency(code: currency)).font(.title3.weight(.bold))
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("Pozostało w sumie").font(.caption).foregroundColor(.secondary)
+                    Text(loc.localized("total_remaining_label")).font(.caption).foregroundColor(.secondary)
                     Text(stats.totalRemaining, format: .currency(code: currency)).font(.title3.weight(.bold)).foregroundColor(.green)
                 }
             }
@@ -890,14 +929,14 @@ struct TripSummaryCard: View {
                 Divider().padding(.vertical, 5)
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("W walucie lokalnej (\(secondaryCurrency))").font(.caption).foregroundColor(.secondary)
+                        Text(loc.localized("local_currency_label", secondaryCurrency)).font(.caption).foregroundColor(.secondary)
                         if isFetching { ProgressView().scaleEffect(0.8) } else {
                             Text((stats.totalSpent + stats.totalRemaining) * secondaryRate, format: .currency(code: secondaryCurrency)).font(.headline).foregroundColor(.primary.opacity(0.8))
                         }
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
-                        Text("Pozostało").font(.caption).foregroundColor(.secondary)
+                        Text(loc.localized("remaining_label")).font(.caption).foregroundColor(.secondary)
                         if isFetching { ProgressView().scaleEffect(0.8) } else {
                             Text(stats.totalRemaining * secondaryRate, format: .currency(code: secondaryCurrency)).font(.headline).foregroundColor(.green.opacity(0.8))
                         }
@@ -906,9 +945,9 @@ struct TripSummaryCard: View {
             }
             ProgressView(value: stats.totalSpent, total: stats.totalSpent + stats.totalRemaining).tint(.purple).padding(.top, 5)
             HStack {
-                Text(start.formatted(date: .numeric, time: .omitted))
+                Text(start.formatted(.dateTime.day().month().year().locale(loc.appLocale)))
                 Spacer()
-                Text(end.formatted(date: .numeric, time: .omitted))
+                Text(end.formatted(.dateTime.day().month().year().locale(loc.appLocale)))
             }.font(.caption).foregroundColor(.secondary)
         }
         .padding(20).background(Color(UIColor.secondarySystemGroupedBackground)).cornerRadius(20)
@@ -919,16 +958,18 @@ struct DailyHistoryCard: View {
     let stat: BudgetView.DailyHistoryItem
     let currency: String
     let dailyBase: Double
+    @EnvironmentObject var loc: LocalizationManager
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            HStack { Text("Dzień \(stat.dayNum)").font(.caption2).fontWeight(.bold); Spacer(); Text(stat.date.formatted(.dateTime.day().month())).font(.caption2).foregroundColor(.secondary) }
+            HStack { Text(loc.localized("day_label", String(stat.dayNum))).font(.caption2).fontWeight(.bold); Spacer(); Text(stat.date.formatted(.dateTime.day().month().locale(loc.appLocale))).font(.caption2).foregroundColor(.secondary) }
             Divider().padding(.vertical, 2)
-            Text("Wydano:").font(.caption2).foregroundColor(.secondary)
+            Text("\(loc.localized("spent")):") .font(.caption2).foregroundColor(.secondary)
             Text(stat.spent, format: .currency(code: currency)).font(.subheadline).fontWeight(.bold).foregroundColor(stat.spent > stat.availableThatDay ? .red : .primary)
-            HStack(spacing: 2) { Text("Limit:").font(.caption2).foregroundColor(.secondary); Text(stat.dailyLimit, format: .currency(code: currency)).font(.caption2) }
+            HStack(spacing: 2) { Text(loc.localized("limit_label")).font(.caption2).foregroundColor(.secondary); Text(stat.dailyLimit, format: .currency(code: currency)).font(.caption2) }
             if stat.rollover != 0 {
                 HStack(spacing: 2) { Image(systemName: stat.rollover > 0 ? "arrow.turn.right.down" : "arrow.turn.right.up").font(.caption2); Text(stat.rollover, format: .currency(code: currency)).font(.caption2).fontWeight(.semibold) }.foregroundColor(stat.rollover > 0 ? .green : .red)
-            } else { Text("Brak przeniesienia").font(.caption2).foregroundColor(.secondary).opacity(0.5) }
+            } else { Text(loc.localized("no_rollover")).font(.caption2).foregroundColor(.secondary).opacity(0.5) }
             Spacer()
             if !stat.spentOriginalCurrencies.isEmpty {
                 let originalAmounts = stat.spentOriginalCurrencies.map { "\(formatAmount($1)) \($0)" }.joined(separator: "+")
@@ -942,6 +983,7 @@ struct DailyHistoryCard: View {
 struct BudgetSetupView: View {
     @Binding var isPresented: Bool
     @EnvironmentObject var manager: ExpenseManager
+    @EnvironmentObject var loc: LocalizationManager
     
     @State private var name: String = ""
     @State private var total: Double = 3000
@@ -953,29 +995,37 @@ struct BudgetSetupView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Informacje")) {
-                    TextField("Nazwa wyjazdu (np. Tajlandia)", text: $name)
+                Section(header: Text(loc.localized("section_info"))) {
+                    TextField(loc.localized("trip_name_placeholder"), text: $name)
                 }
                 
-                Section(header: Text("Finanse")) {
-                    TextField("Kwota budżetu", value: $total, format: .number).keyboardType(.decimalPad)
-                    Picker("Waluta główna", selection: $currency) { ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) } }
-                    Picker("Waluta do przeliczenia", selection: $secondaryCurrency) { ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) } }
+                Section(header: Text(loc.localized("section_finance"))) {
+                    TextField(loc.localized("budget_amount_label"), value: $total, format: .number).keyboardType(.decimalPad)
+                    Picker(loc.localized("primary_currency_label"), selection: $currency) { ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) } }
+                    Picker(loc.localized("secondary_currency_label"), selection: $secondaryCurrency) { ForEach(ExpenseManager.allCurrencies, id: \.self) { Text($0) } }
                 }
-                Section(header: Text("Termin")) {
-                    DatePicker("Początek", selection: $start, displayedComponents: .date)
-                    DatePicker("Koniec", selection: $end, in: start..., displayedComponents: .date)
+                Section(header: Text(loc.localized("section_term"))) {
+                    DatePicker(loc.localized("start_date_label"), selection: $start, displayedComponents: .date)
+                    DatePicker(loc.localized("end_date_label"), selection: $end, in: start..., displayedComponents: .date)
+                }
+                
+                Section(header: Text(loc.localized("language_settings_title"))) {
+                    Picker(loc.localized("language_settings_title"), selection: $loc.currentLanguage) {
+                        ForEach(LocalizationManager.Language.allCases) { lang in
+                            Text(lang.displayName).tag(lang)
+                        }
+                    }
                 }
             }
-            .navigationTitle(manager.isBudgetSet ? "Edycja Budżetu" : "Nowy Budżet")
+            .navigationTitle(manager.isBudgetSet ? loc.localized("edit_budget_title") : loc.localized("new_budget_title"))
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Zapisz") {
+                    Button(loc.localized("btn_save")) {
                         manager.saveActiveTripSettings(name: name, total: total, currency: currency, secondary: secondaryCurrency, start: start, end: end)
                         isPresented = false
                     }
                 }
-                ToolbarItem(placement: .cancellationAction) { Button("Anuluj") { isPresented = false } }
+                ToolbarItem(placement: .cancellationAction) { Button(loc.localized("btn_cancel")) { isPresented = false } }
             }
             .onAppear {
                 if manager.isBudgetSet {
@@ -995,6 +1045,7 @@ struct BudgetSetupView: View {
 
 struct TripsHistoryView: View {
     @EnvironmentObject var manager: ExpenseManager
+    @EnvironmentObject var loc: LocalizationManager
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -1008,7 +1059,7 @@ struct TripsHistoryView: View {
                                 manager.restoreTripToActive(trip)
                                 dismiss()
                             } label: {
-                                Label("Przywróć do edycji", systemImage: "pencil")
+                                Label(loc.localized("restore_edit_action"), systemImage: "pencil")
                             }
                         }
                         .swipeActions {
@@ -1017,29 +1068,29 @@ struct TripsHistoryView: View {
                                     manager.deleteArchivedTrip(at: IndexSet(integer: index))
                                 }
                             } label: {
-                                Label("Usuń", systemImage: "trash")
+                                Label(loc.localized("delete_action"), systemImage: "trash")
                             }
                             
                             Button {
                                 manager.restoreTripToActive(trip)
                                 dismiss()
                             } label: {
-                                Label("Przywróć", systemImage: "arrow.uturn.backward")
+                                Label(loc.localized("restore_action"), systemImage: "arrow.uturn.backward")
                             }
                             .tint(.orange)
                         }
                 }
                 
                 if manager.archivedTrips.isEmpty {
-                    Text("Brak zakończonych wyjazdów.")
+                    Text(loc.localized("no_finished_trips"))
                         .foregroundColor(.secondary)
                         .padding()
                 }
             }
-            .navigationTitle("Zakończone Wyjazdy")
+            .navigationTitle(loc.localized("finished_trips_title"))
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Zamknij") { dismiss() }
+                    Button(loc.localized("btn_close")) { dismiss() }
                 }
             }
         }
@@ -1048,6 +1099,7 @@ struct TripsHistoryView: View {
 
 struct TripHistoryRow: View {
     let trip: Trip
+    @EnvironmentObject var loc: LocalizationManager
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -1055,14 +1107,14 @@ struct TripHistoryRow: View {
                 .font(.headline)
             
             HStack {
-                Text(trip.startDate.formatted(date: .numeric, time: .omitted) + " - " + trip.endDate.formatted(date: .numeric, time: .omitted))
+                Text(trip.startDate.formatted(.dateTime.day().month().year().locale(loc.appLocale)) + " - " + trip.endDate.formatted(.dateTime.day().month().year().locale(loc.appLocale)))
                     .font(.caption)
                     .foregroundColor(.secondary)
                 
                 Spacer()
                 
                 let spent = trip.expenses.reduce(0.0) { $0 + $1.convertedAmount }
-                Text("Wydano: \(formatAmount(spent)) / \(formatAmount(trip.totalBudget)) \(trip.budgetCurrency)")
+                Text(loc.localized("spent_total_label", formatAmount(spent), formatAmount(trip.totalBudget), trip.budgetCurrency))
                     .font(.subheadline)
                     .foregroundColor(spent > trip.totalBudget ? .red : .green)
             }
@@ -1075,6 +1127,7 @@ struct TripHistoryRow: View {
 
 struct ExpensesView: View {
     @EnvironmentObject var manager: ExpenseManager
+    @EnvironmentObject var loc: LocalizationManager
     @State private var itemToDelete: IndexSet?
     @State private var showDeleteConfirmation = false
     @State private var editingItem: ExpenseItem?
@@ -1114,7 +1167,7 @@ struct ExpensesView: View {
                                                 if let index = manager.expenses.firstIndex(of: item) {
                                                     manager.delete(at: IndexSet(integer: index))
                                                 }
-                                            } label: { Label("Usuń", systemImage: "trash") }
+                                            } label: { Label(loc.localized("delete_action"), systemImage: "trash") }
                                         }
                                 }
                             }
@@ -1123,11 +1176,11 @@ struct ExpensesView: View {
                     .listStyle(.insetGrouped)
                 }
             }
-            .navigationTitle("Moje Wydatki")
+            .navigationTitle(loc.localized("my_expenses_title"))
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Menu {
-                        Text("Pokaż sumy w:")
+                        Text(loc.localized("show_totals_in"))
                         ForEach(availableCurrencies, id: \.self) { currency in
                             Button(action: { summaryCurrency = currency }) {
                                 HStack {
@@ -1169,10 +1222,11 @@ struct DailySummaryHeader: View {
     let date: Date
     let items: [ExpenseItem]
     let displayCurrency: String
+    @EnvironmentObject var loc: LocalizationManager
     
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(date.formatted(date: .complete, time: .omitted))
+            Text(date.formatted(.dateTime.day().month().year().weekday(.wide).locale(loc.appLocale)))
                 .font(.headline).foregroundColor(.primary).textCase(nil)
             
             // POPRAWKA: reduce(0.0)
@@ -1186,7 +1240,7 @@ struct DailySummaryHeader: View {
             }
             
             HStack {
-                Text("Łącznie:")
+                Text(loc.localized("total_label"))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 Text("\(formatAmount(totalInSelected)) \(displayCurrency)")
@@ -1202,7 +1256,7 @@ struct DailySummaryHeader: View {
                     let s = its.reduce(0.0) { $0 + $1.amount }
                     return "\(formatAmount(s)) \(curr)"
                 }.joined(separator: " + ")
-                 Text("(+ inne: \(others))").font(.caption).foregroundColor(.secondary).textCase(nil)
+                 Text(loc.localized("plus_others", others)).font(.caption).foregroundColor(.secondary).textCase(nil)
             }
         }
         .padding(.vertical, 8)
@@ -1210,26 +1264,28 @@ struct DailySummaryHeader: View {
 }
 
 struct EmptyStateView: View {
+    @EnvironmentObject var loc: LocalizationManager
     var body: some View {
         VStack(spacing: 20) {
             Image(systemName: "list.bullet.clipboard")
                 .font(.system(size: 60))
                 .foregroundColor(.gray.opacity(0.5))
-            Text("Brak wydatków").font(.title3.weight(.medium)).foregroundColor(.secondary)
-            Text("Twoje zapisane wydatki pojawią się tutaj.").font(.caption).foregroundColor(.secondary)
+            Text(loc.localized("no_expenses_title")).font(.title3.weight(.medium)).foregroundColor(.secondary)
+            Text(loc.localized("no_expenses_desc")).font(.caption).foregroundColor(.secondary)
         }
     }
 }
 
 struct ExpenseRow: View {
     let item: ExpenseItem
+    @EnvironmentObject var loc: LocalizationManager
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text(item.note?.isEmpty == false ? item.note! : "Bez opisu")
+                Text(item.note?.isEmpty == false ? item.note! : loc.localized("no_description"))
                     .font(.headline)
                     .foregroundColor(item.note?.isEmpty == false ? .primary : .secondary)
-                Text(item.date.formatted(date: .abbreviated, time: .shortened))
+                Text(item.date.formatted(.dateTime.day().month().hour().minute().locale(loc.appLocale)))
                     .font(.caption).foregroundColor(.gray)
             }
             Spacer()
@@ -1250,6 +1306,7 @@ struct EditExpenseView: View {
     @State var item: ExpenseItem
     var onSave: (ExpenseItem) -> Void
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var loc: LocalizationManager
     
     @State private var currentAmountString: String
     @State private var isLoadingRate: Bool = false
@@ -1263,11 +1320,11 @@ struct EditExpenseView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Szczegóły")) {
-                    TextField("Opis", text: Binding(get: { item.note ?? "" }, set: { item.note = $0 }))
-                    DatePicker("Data", selection: $item.date)
+                Section(header: Text(loc.localized("section_details"))) {
+                    TextField(loc.localized("label_description"), text: Binding(get: { item.note ?? "" }, set: { item.note = $0 }))
+                    DatePicker(loc.localized("label_date"), selection: $item.date)
                 }
-                Section(header: Text("Kwoty i Waluty")) {
+                Section(header: Text(loc.localized("section_amounts_currencies"))) {
                     TextField("0.00", text: $currentAmountString)
                         .keyboardType(.decimalPad)
                         .onChange(of: currentAmountString) { _, newValue in
@@ -1285,7 +1342,7 @@ struct EditExpenseView: View {
                     }.onChange(of: item.targetCurrency) { _,_ in Task { await fetchRate() } }
                     
                     HStack {
-                        Text("Wynik")
+                        Text(loc.localized("label_result"))
                         Spacer()
                         if isLoadingRate { ProgressView() } else {
                             Text("\(item.convertedAmount, format: .number) \(item.targetCurrency)").bold()
@@ -1293,11 +1350,11 @@ struct EditExpenseView: View {
                     }
                 }
             }
-            .navigationTitle("Edycja")
+            .navigationTitle(loc.localized("title_edit"))
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("Anuluj") { dismiss() } }
+                ToolbarItem(placement: .cancellationAction) { Button(loc.localized("btn_cancel")) { dismiss() } }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Zapisz") {
+                    Button(loc.localized("btn_save")) {
                         if let val = Double(currentAmountString.replacingOccurrences(of: ",", with: ".")) { item.amount = val }
                         onSave(item)
                     }
@@ -1369,12 +1426,13 @@ struct CurrencyPill: View {
 }
 
 struct SuccessOverlayView: View {
+    @EnvironmentObject var loc: LocalizationManager
     var body: some View {
         ZStack {
             Color.black.opacity(0.6).ignoresSafeArea()
             VStack(spacing: 15) {
                 Image(systemName: "checkmark.circle.fill").font(.system(size: 50)).foregroundColor(.green).background(Circle().fill(Color.white).padding(2))
-                Text("Zapisano!").font(.title3.weight(.bold)).foregroundColor(.white)
+                Text(loc.localized("saved_success")).font(.title3.weight(.bold)).foregroundColor(.white)
             }
             .padding(30).background(.ultraThinMaterial).cornerRadius(20)
         }

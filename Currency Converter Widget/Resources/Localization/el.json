@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "el": "Μετατροπέας Νομισμάτων",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "el": "Μετατροπή",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "el": "Προϋπολογισμός",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "el": "Έξοδα",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "el": "Ρυθμίσεις",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "el": "Προσθήκη περιγραφής (π.χ. Ταξί)",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "el": "Αποθήκευση",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "el": "Αποθηκεύτηκε!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "el": "Σχεδιασμός",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "el": "Ορίστε έναν προϋπολογισμό για όλο το ταξίδι, θα τον χωρίσουμε σε ημέρες και θα παρακολουθούμε τα έξοδά σας.",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "el": "Ορισμός Προϋπολογισμού",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "el": "Ιστορικό Ταξιδιών",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "el": "Ο Προϋπολογισμός σας",
+    "en": "Reference"
+  },
+  "today_header": {
+    "el": "ΣΗΜΕΡΑ (Ημέρα %@/%@)",
+    "en": "Reference"
+  },
+  "available_today": {
+    "el": "Διαθέσιμα σήμερα",
+    "en": "Reference"
+  },
+  "remaining": {
+    "el": "Υπόλοιπο",
+    "en": "Reference"
+  },
+  "spent": {
+    "el": "Ξοδεύτηκαν",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "el": "Μεταφορά",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "el": "Υπέρβαση",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "el": "Ιστορικό Εξόδων",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "el": "Σύνοψη Ταξιδιού",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "el": "Συνολικός προϋπολογισμός",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "el": "Σύνολο υπόλοιπου",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "el": "Σε τοπικό νόμισμα (%@)",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "el": "Επεξεργασία ρυθμίσεων",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "el": "Τέλος & Αρχειοθέτηση",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "el": "Τέλος ταξιδιού;",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "el": "Το τρέχον ταξίδι θα αποθηκευτεί στο ιστορικό και η οθόνη προϋπολογισμού θα καθαριστεί.",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "el": "Τέλος & Αρχειοθέτηση",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "el": "Ακύρωση",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "el": "Νόμισμα προϋπολογισμού:",
+    "en": "Reference"
+  },
+  "day_label": {
+    "el": "Ημέρα %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "el": "Όριο:",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "el": "Χωρίς μεταφορά",
+    "en": "Reference"
+  },
+  "section_info": {
+    "el": "Πληροφορίες",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "el": "Όνομα ταξιδιού (π.χ. Ταϊλάνδη)",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "el": "Οικονομικά",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "el": "Ποσό προϋπολογισμού",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "el": "Κύριο νόμισμα",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "el": "Νόμισμα μετατροπής",
+    "en": "Reference"
+  },
+  "section_term": {
+    "el": "Διάρκεια",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "el": "Έναρξη",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "el": "Λήξη",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "el": "Επεξεργασία Προϋπολογισμού",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "el": "Νέος Προϋπολογισμός",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "el": "Αποθήκευση",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "el": "Επαναφορά για επεξεργασία",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "el": "Διαγραφή",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "el": "Επαναφορά",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "el": "Κανένα ολοκληρωμένο ταξίδι.",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "el": "Ολοκληρωμένα Ταξίδια",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "el": "Κλείσιμο",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "el": "Ξοδεύτηκαν: %@ / %@ %@",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "el": "Τα έξοδά μου",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "el": "Εμφάνιση συνόλων σε:",
+    "en": "Reference"
+  },
+  "total_label": {
+    "el": "Σύνολο:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "el": "(+ άλλα: %@)",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "el": "Χωρίς έξοδα",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "el": "Τα αποθηκευμένα έξοδά σας θα εμφανιστούν εδώ.",
+    "en": "Reference"
+  },
+  "no_description": {
+    "el": "Χωρίς περιγραφή",
+    "en": "Reference"
+  },
+  "section_details": {
+    "el": "Λεπτομέρειες",
+    "en": "Reference"
+  },
+  "label_description": {
+    "el": "Περιγραφή",
+    "en": "Reference"
+  },
+  "label_date": {
+    "el": "Ημερομηνία",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "el": "Ποσά και Νομίσματα",
+    "en": "Reference"
+  },
+  "label_result": {
+    "el": "Αποτέλεσμα",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "el": "Επεξεργασία",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "el": "Αποθηκεύτηκε!",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "el": "Ισοτιμία:",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "el": "Γλώσσα",
+    "en": "Reference"
+  },
+  "language_system": {
+    "el": "Σύστημα",
+    "en": "Reference"
+  },
+  "language_english": {
+    "el": "Αγγλικά",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "el": "Πολωνικά",
+    "en": "Reference"
+  }
+}
