@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "my": "ငွေကြေးလဲလှယ်",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "my": "လဲလှယ်",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "my": "ဘတ်ဂျက်",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "my": "ကုန်ကျစရိတ်",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "my": "ဆက်တင်များ",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "my": "သိမ်းဆည်း",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "my": "သိမ်းဆည်းပြီး!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "my": "သင့်ဘတ်ဂျက်",
+    "en": "Reference"
+  },
+  "today_header": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "my": "ကျန်ရှိ",
+    "en": "Reference"
+  },
+  "spent": {
+    "my": "သုံးစွဲ",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "my": "ပယ်ဖျက်",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "my": "နေ့ %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "my": "သိမ်းဆည်း",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "my": "စုစုပေါင်း:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "my": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "my": "...",
+    "en": "Reference"
+  }
+}

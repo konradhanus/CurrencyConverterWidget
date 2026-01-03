@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ku": "Wergêrê Dirav",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ku": "Wergêr",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ku": "Bûdce",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ku": "Xerc",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ku": "Mîheng",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ku": "Tomar bike",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ku": "Hate tomarkirin!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ku": "Bûdceya Te",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ku": "Mayî",
+    "en": "Reference"
+  },
+  "spent": {
+    "ku": "Xerckirî",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ku": "Betal",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ku": "Roj %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ku": "Tomar",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ku": "Giştî:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ku": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ku": "...",
+    "en": "Reference"
+  }
+}

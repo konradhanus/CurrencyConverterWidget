@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "bs": "Konverter valuta",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "bs": "Konverter",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "bs": "Budžet",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "bs": "Troškovi",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "bs": "Postavke",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "bs": "Spremi",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "bs": "Spremljeno!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "bs": "Vaš budžet",
+    "en": "Reference"
+  },
+  "today_header": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "bs": "Preostalo",
+    "en": "Reference"
+  },
+  "spent": {
+    "bs": "Potrošeno",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "bs": "Otkaži",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "bs": "Dan %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "bs": "Spremi",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "bs": "Ukupno:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "bs": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "bs": "...",
+    "en": "Reference"
+  }
+}

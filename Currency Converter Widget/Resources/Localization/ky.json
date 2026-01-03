@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ky": "Валюта конвертери",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ky": "Конвертер",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ky": "Бюджет",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ky": "Чыгымдар",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ky": "Жөндөөлөр",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ky": "Сактоо",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ky": "Сакталды!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ky": "Сиздин бюджет",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ky": "Калды",
+    "en": "Reference"
+  },
+  "spent": {
+    "ky": "Колдонулган",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ky": "Жокко чыгаруу",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ky": "Күн %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ky": "Сактоо",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ky": "Жалпы:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ky": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ky": "...",
+    "en": "Reference"
+  }
+}

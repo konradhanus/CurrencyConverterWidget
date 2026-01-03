@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ig": "Onye Ntụgharị Ego",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ig": "Ntụgharị",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ig": "Büjet",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ig": "Efu",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ig": "Ntọala",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ig": "Chekwaa",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ig": "Echekwara!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ig": "Büjet Gị",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ig": "Fọdụrụ",
+    "en": "Reference"
+  },
+  "spent": {
+    "ig": "Eji",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ig": "Kagbuo",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ig": "Ụbọchị %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ig": "Chekwaa",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ig": "Ngụkọta:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ig": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ig": "...",
+    "en": "Reference"
+  }
+}

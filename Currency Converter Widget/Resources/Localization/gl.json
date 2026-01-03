@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "gl": "Conversor de Moeda",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "gl": "Conversor",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "gl": "Orzamento",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "gl": "Gastos",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "gl": "Axustes",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "gl": "Gardar",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "gl": "Gardado!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "gl": "O Teu Orzamento",
+    "en": "Reference"
+  },
+  "today_header": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "gl": "Restante",
+    "en": "Reference"
+  },
+  "spent": {
+    "gl": "Gastado",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "gl": "Cancelar",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "gl": "Día %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "gl": "Gardar",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "gl": "Total:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "gl": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "gl": "...",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "uz": "Valyuta konvertori",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "uz": "Konvertor",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "uz": "Byudjet",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "uz": "Xarajatlar",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "uz": "Sozlamalar",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "uz": "Saqlash",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "uz": "Saqlandi!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "uz": "Sizning byudjetingiz",
+    "en": "Reference"
+  },
+  "today_header": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "uz": "Qolgan",
+    "en": "Reference"
+  },
+  "spent": {
+    "uz": "Sarflangan",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "uz": "Bekor qilish",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "uz": "Kun %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "uz": "Saqlash",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "uz": "Jami:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "uz": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "uz": "...",
+    "en": "Reference"
+  }
+}

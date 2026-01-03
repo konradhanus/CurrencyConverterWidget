@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ta": "நாணய மாற்றி",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ta": "மாற்றி",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ta": "பட்ஜெட்",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ta": "செலவுகள்",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ta": "அமைப்புகள்",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ta": "சேமி",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ta": "சேமிக்கப்பட்டது!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ta": "உங்கள் பட்ஜெட்",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ta": "மீதம்",
+    "en": "Reference"
+  },
+  "spent": {
+    "ta": "செலவு",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ta": "ரத்து",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ta": "நாள் %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ta": "சேமி",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ta": "மொத்தம்:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ta": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ta": "...",
+    "en": "Reference"
+  }
+}

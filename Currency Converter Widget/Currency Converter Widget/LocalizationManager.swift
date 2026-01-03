@@ -53,6 +53,56 @@ class LocalizationManager: ObservableObject {
         case macedonian = "mk"
         case afrikaans = "af"
         case khmer = "km"
+        case persian = "fa"
+        case urdu = "ur"
+        case bengali = "bn"
+        case punjabi = "pa"
+        case tamil = "ta"
+        case telugu = "te"
+        case marathi = "mr"
+        case gujarati = "gu"
+        case kannada = "kn"
+        case malayalam = "ml"
+        case sinhala = "si"
+        case burmese = "my"
+        case lao = "lo"
+        case nepali = "ne"
+        case armenian = "hy"
+        case azerbaijani = "az"
+        case kazakh = "kk"
+        case uzbek = "uz"
+        case turkmen = "tk"
+        case kyrgyz = "ky"
+        case tajik = "tg"
+        case pashto = "ps"
+        case kurdish = "ku"
+        case amharic = "am"
+        case somali = "so"
+        case yoruba = "yo"
+        case igbo = "ig"
+        case hausa = "ha"
+        case zulu = "zu"
+        case xhosa = "xh"
+        case bosnian = "bs"
+        case maltese = "mt"
+        case irish = "ga"
+        case welsh = "cy"
+        case basque = "eu"
+        case galician = "gl"
+        case belarusian = "be"
+        case luxembourgish = "lb"
+        case haitian = "ht"
+        case javanese = "jv"
+        case kinyarwanda = "rw"
+        case malagasy = "mg"
+        case shona = "sn"
+        case sindhi = "sd"
+        case uyghur = "ug"
+        case tatar = "tt"
+        case odia = "or"
+        case assamese = "as"
+        case tigrinya = "ti"
+        case quechua = "qu"
         
         var id: String { rawValue }
         
@@ -106,11 +156,61 @@ class LocalizationManager: ObservableObject {
             case .macedonian: return "Македонски"
             case .afrikaans: return "Afrikaans"
             case .khmer: return "ភាសាខ្មែរ"
+            case .persian: return "فارسی"
+            case .urdu: return "اردو"
+            case .bengali: return "বাংলা"
+            case .punjabi: return "ਪੰਜਾਬੀ"
+            case .tamil: return "தமிழ்"
+            case .telugu: return "తెలుగు"
+            case .marathi: return "मराठी"
+            case .gujarati: return "ગુજરાતી"
+            case .kannada: return "ಕನ್ನಡ"
+            case .malayalam: return "മലയാളം"
+            case .sinhala: return "සිംහල"
+            case .burmese: return "မြန်မာ"
+            case .lao: return "ລາវ"
+            case .nepali: return "नेपाली"
+            case .armenian: return "ჰայերენ"
+            case .azerbaijani: return "Azərbaycan"
+            case .kazakh: return "Қазақша"
+            case .uzbek: return "Oʻzbek"
+            case .turkmen: return "Türkmen"
+            case .kyrgyz: return "Кыргызча"
+            case .tajik: return "Тоҷикӣ"
+            case .pashto: return "پښتو"
+            case .kurdish: return "Kurdî"
+            case .amharic: return "ამჰარული"
+            case .somali: return "Soomaali"
+            case .yoruba: return "Yorùbá"
+            case .igbo: return "Igbo"
+            case .hausa: return "Hausa"
+            case .zulu: return "isiZulu"
+            case .xhosa: return "isiXhosa"
+            case .bosnian: return "Bosanski"
+            case .maltese: return "Malti"
+            case .irish: return "Gaeilge"
+            case .welsh: return "Cymraeg"
+            case .basque: return "Euskara"
+            case .galician: return "Galego"
+            case .belarusian: return "Беларуская"
+            case .luxembourgish: return "Lëtzebuergesch"
+            case .haitian: return "Kreyòl Ayisyen"
+            case .javanese: return "Jawa"
+            case .kinyarwanda: return "Kinyarwanda"
+            case .malagasy: return "Malagasy"
+            case .shona: return "ChiShona"
+            case .sindhi: return "سنڌي"
+            case .uyghur: return "ئۇيغۇرچە"
+            case .tatar: return "Татарча"
+            case .odia: return "ଓଡ଼ିଆ"
+            case .assamese: return "অসমীয়া"
+            case .tigrinya: return "ትግርኛ"
+            case .quechua: return "Runasimi"
             }
         }
     }
     
-    @AppStorage("selectedLanguage") private var selectedLanguageRaw: String = "System"
+    @AppStorage("selectedLanguage", store: UserDefaults(suiteName: "group.com.currencyconverter.shared")) private var selectedLanguageRaw: String = "System"
     
     @Published var currentLanguage: Language = .system {
         didSet {
@@ -155,12 +255,13 @@ class LocalizationManager: ObservableObject {
         
         if currentLanguage == .system {
             let sys = Locale.current.language.languageCode?.identifier ?? "en"
-            // If system is PL, load PL. Otherwise load EN.
-            if sys == "pl" {
-                langCodeToLoad = "pl"
-                valueKey = "pl"
+            
+            // Check if the system language is supported
+            if let _ = Language(rawValue: sys) {
+                langCodeToLoad = sys
+                valueKey = sys
             } else {
-                langCodeToLoad = "en" // Default to English file
+                langCodeToLoad = "en" // Fallback to English
                 valueKey = "en"
             }
         } else {

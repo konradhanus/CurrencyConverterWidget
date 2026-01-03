@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ha": "Mai Canza Kuɗi",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ha": "Mai canzawa",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ha": "Kasafin kuɗi",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ha": "Kudaden",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ha": "Saituna",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ha": "Ajiye",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ha": "An ajiye!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ha": "Kasafin kuɗin ku",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ha": "Sauran",
+    "en": "Reference"
+  },
+  "spent": {
+    "ha": "An kashe",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ha": "Soke",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ha": "Rana %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ha": "Ajiye",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ha": "Jimla:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ha": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ha": "...",
+    "en": "Reference"
+  }
+}

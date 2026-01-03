@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "am": "የገንዘብ መለወጫ",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "am": "መለወጫ",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "am": "ባጀት",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "am": "ወጪዎች",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "am": "ቅንብሮች",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "am": "አስቀምጥ",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "am": "ተቀምጧል!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "am": "የእርስዎ ባጀት",
+    "en": "Reference"
+  },
+  "today_header": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "am": "ቀሪ",
+    "en": "Reference"
+  },
+  "spent": {
+    "am": "ወጪ",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "am": "ሰርዝ",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "am": "ቀን %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "am": "አስቀምጥ",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "am": "ጠቅላላ:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "am": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "am": "...",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store Screenshot Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Configuration</h2>
+        
+        <div class="control-group">
+            <label>Device Type</label>
+            <select id="deviceType">
+                <option value="iphone">iPhone (6.7" / 6.5")</option>
+                <option value="ipad">iPad Pro (12.9")</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label>Background Color</label>
+            <input type="color" id="bgColor" value="#ffffff">
+            <label>Text Color</label>
+            <input type="color" id="textColor" value="#000000">
+        </div>
+
+        <div class="control-group">
+            <label>Language Preview</label>
+            <select id="languageSelect">
+                <option value="">Select Language...</option>
+                <!-- Filled by JS -->
+            </select>
+            <p style="font-size: 10px; color: #666; margin-top: 5px;">
+                Edit files in <code>/locales/</code> to add languages.
+            </p>
+        </div>
+
+        <div class="control-group">
+            <button id="downloadAllBtn" class="primary-btn">Download ZIP (All Languages)</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Screenshot Editor</h1>
+        <div class="grid-container" id="gridContainer">
+            <!-- Slots will be generated here by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

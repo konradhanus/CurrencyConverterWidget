@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "mt": "Konvertitur tal-Munita",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "mt": "Konvertitur",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "mt": "Baġit",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "mt": "Spejjeż",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "mt": "Settings",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "mt": "Issejvja",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "mt": "Issejvjat!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "mt": "Il-Baġit Tiegħek",
+    "en": "Reference"
+  },
+  "today_header": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "mt": "Li fadal",
+    "en": "Reference"
+  },
+  "spent": {
+    "mt": "Minfaq",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "mt": "Ikkanċella",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "mt": "Jum %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "mt": "Issejvja",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "mt": "Total:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "mt": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "mt": "...",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "qu": "Kañina T'ikraq",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "qu": "T'ikraq",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "qu": "Presupuesto",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "qu": "Gastukuna",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "qu": "Configuración",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "qu": "Waqaychay",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "qu": "Waqaychasqa!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "qu": "Presupuestoyki",
+    "en": "Reference"
+  },
+  "today_header": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "qu": "Puchuq",
+    "en": "Reference"
+  },
+  "spent": {
+    "qu": "Gastusqa",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "qu": "Ama",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "qu": "P'unchaw %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "qu": "Waqaychay",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "qu": "Llapan:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "qu": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "qu": "...",
+    "en": "Reference"
+  }
+}

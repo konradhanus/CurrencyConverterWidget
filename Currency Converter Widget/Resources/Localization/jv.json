@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "jv": "Konverter Mata Uang",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "jv": "Konverter",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "jv": "Anggaran",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "jv": "Biaya",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "jv": "Setelan",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "jv": "Simpen",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "jv": "Disimpen!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "jv": "Anggaran Sampeyan",
+    "en": "Reference"
+  },
+  "today_header": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "jv": "Sisa",
+    "en": "Reference"
+  },
+  "spent": {
+    "jv": "Ngginakaken",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "jv": "Batal",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "jv": "Dina %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "jv": "Simpen",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "jv": "Total:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "jv": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "jv": "...",
+    "en": "Reference"
+  }
+}

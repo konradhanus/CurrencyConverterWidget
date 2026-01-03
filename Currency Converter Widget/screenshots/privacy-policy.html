@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Currency Converter Widget</title>
+    <style>
+        :root {
+            --primary-color: #007aff;
+            --text-color: #1d1d1f;
+            --bg-color: #ffffff;
+            --secondary-bg: #f5f5f7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .last-updated {
+            font-size: 14px;
+            color: #86868b;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+            font-size: 14px;
+            color: #86868b;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: December 24, 2025</p>
+        </header>
+
+        <section>
+            <p><strong>Currency Converter Widget</strong> ("the App") is designed to respect your privacy. This Privacy Policy explains what data is collected, how it is used, and your rights regarding your information.</p>
+
+            <h2>1. Data Collection</h2>
+            <p><strong>We do not collect, store, or share any personal information.</strong></p>
+            <p>The App operates primarily on your device. We do not require you to create an account, log in, or provide any personal details (such as name, email address, or phone number).</p>
+
+            <h2>2. Local Data Storage</h2>
+            <p>All user preferences and data created within the App are stored locally on your device using Apple's secure <code>UserDefaults</code> system. This includes:</p>
+            <ul>
+                <li>Selected currencies (e.g., USD, PLN, EUR).</li>
+                <li>Budget settings (amounts, dates).</li>
+                <li>Expense history.</li>
+            </ul>
+            <p>This data is stored within an "App Group" container to allow synchronization between the main App and the Widget. This data never leaves your device's secure environment.</p>
+
+            <h2>3. Third-Party Services & Network Requests</h2>
+            <p>To provide up-to-date currency exchange rates, the App makes network requests to a third-party API:</p>
+            <ul>
+                <li><strong>Service Provider:</strong> <a href="https://www.frankfurter.app" target="_blank">Frankfurter API</a>.</li>
+                <li><strong>Data Transmitted:</strong> Only the currency codes (e.g., "from=USD&to=EUR") are sent to the API.</li>
+                <li><strong>Privacy:</strong> No personal user data is sent. However, like any web request, your IP address may be visible to the API provider for technical connectivity purposes.</li>
+            </ul>
+
+            <h2>4. Security (Guideline 1.5)</h2>
+            <p>We take the security of your data seriously:</p>
+            <ul>
+                <li><strong>Apple Sandbox:</strong> The App runs within the standard iOS/macOS sandbox environment, preventing unauthorized access to other files or data on your device.</li>
+                <li><strong>HTTPS:</strong> All network communication with the exchange rate API is encrypted using HTTPS (TLS/SSL).</li>
+                <li><strong>No Remote Servers:</strong> We (the developers) do not operate a backend server that stores your usage data.</li>
+            </ul>
+
+            <h2>5. Children’s Privacy</h2>
+            <p>The App does not knowingly collect data from or market to children under the age of 13. Since we do not collect any personal data, the App is safe for users of all ages.</p>
+
+            <h2>6. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page. Your continued use of the App after any changes indicates your acceptance of the new terms.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or require support with the App, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@reactblog.pl">support@reactblog.pl</a></p>
+            <p><strong>Support Page:</strong> <a href="support.html">View Support & FAQ</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Konrad Hanus. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "mg": "Mpanova Vola",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "mg": "Mpanova",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "mg": "Tetibola",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "mg": "Fandaniana",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "mg": "Fikirana",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "mg": "Tehirizo",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "mg": "Voatahiry!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "mg": "Ny Tetibolanao",
+    "en": "Reference"
+  },
+  "today_header": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "mg": "Sisa",
+    "en": "Reference"
+  },
+  "spent": {
+    "mg": "Lany",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "mg": "Aoka",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "mg": "Andro %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "mg": "Tehirizo",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "mg": "Totaly:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "mg": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "mg": "...",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,19 @@
+/* Localizable.strings (English) */
+
+"intent_conf_title" = "Currency Configuration";
+"intent_conf_desc" = "Choose currencies to convert.";
+"intent_param_from" = "From Currency";
+"intent_param_to" = "To Currency";
+"intent_conf_language" = "Language";
+
+"intent_swap_title" = "Swap Currencies";
+"intent_type_number" = "Type Digit";
+"intent_param_digit" = "Digit";
+"intent_clear" = "Clear";
+"intent_refresh" = "Refresh";
+"intent_save" = "Save Expense";
+
+"entity_currency" = "Currency";
+
+"widget_display_name" = "Currency Converter";
+"widget_description" = "Convert currencies instantly.";

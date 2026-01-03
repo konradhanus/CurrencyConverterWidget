@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "be": "Канвертар валют",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "be": "Канвертар",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "be": "Бюджэт",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "be": "Выдаткі",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "be": "Налады",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "be": "Захаваць",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "be": "Захавана!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "be": "Ваш бюджэт",
+    "en": "Reference"
+  },
+  "today_header": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "be": "Засталося",
+    "en": "Reference"
+  },
+  "spent": {
+    "be": "Выдаткавана",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "be": "Адмяніць",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "be": "Дзень %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "be": "Захаваць",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "be": "Усяго:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "be": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "be": "...",
+    "en": "Reference"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "rw": "Ivunjisha",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "rw": "Ivunjisha",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "rw": "Ingengo y'imari",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "rw": "Amafaranga yasohotse",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "rw": "Igenamiterere",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "rw": "Bika",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "rw": "Byabitswe!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "rw": "Ingengo y'imari yawe",
+    "en": "Reference"
+  },
+  "today_header": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "rw": "Asigaye",
+    "en": "Reference"
+  },
+  "spent": {
+    "rw": "Yakoreshejwe",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "rw": "Hagarika",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "rw": "Umunsi %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "rw": "Bika",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "rw": "Yose hamwe:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "rw": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "rw": "...",
+    "en": "Reference"
+  }
+}

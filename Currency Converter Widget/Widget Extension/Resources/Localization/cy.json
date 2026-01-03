@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "cy": "Trawsnewidydd Arian",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "cy": "Trawsnewidydd",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "cy": "Cyllideb",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "cy": "Treuliau",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "cy": "Gosodiadau",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "cy": "Cadw",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "cy": "Cadwyd!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "cy": "Eich Cyllideb",
+    "en": "Reference"
+  },
+  "today_header": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "cy": "Yn weddill",
+    "en": "Reference"
+  },
+  "spent": {
+    "cy": "Gwariwyd",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "cy": "Canslo",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "cy": "Diwrnod %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "cy": "Cadw",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "cy": "Cyfanswm:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "cy": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "cy": "...",
+    "en": "Reference"
+  }
+}

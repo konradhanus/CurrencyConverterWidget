@@ -1,0 +1,19 @@
+/* Localizable.strings (Polish) */
+
+"intent_conf_title" = "Konfiguracja Walut";
+"intent_conf_desc" = "Wybierz waluty do przeliczania.";
+"intent_param_from" = "Z Waluty";
+"intent_param_to" = "Na Walutę";
+"intent_conf_language" = "Język";
+
+"intent_swap_title" = "Zamień Waluty";
+"intent_type_number" = "Wpisz cyfrę";
+"intent_param_digit" = "Cyfra";
+"intent_clear" = "Wyczyść";
+"intent_refresh" = "Odśwież";
+"intent_save" = "Zapisz Wydatek";
+
+"entity_currency" = "Waluta";
+
+"widget_display_name" = "Kalkulator Walut";
+"widget_description" = "Przeliczaj waluty błyskawicznie.";

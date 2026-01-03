@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "tk": "Walyuta konwertory",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "tk": "Konwertor",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "tk": "Býujet",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "tk": "Çykdajylar",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "tk": "Sazlamalar",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "tk": "Sakla",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "tk": "Saklandy!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "tk": "Siziň býujetiňiz",
+    "en": "Reference"
+  },
+  "today_header": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "tk": "Galan",
+    "en": "Reference"
+  },
+  "spent": {
+    "tk": "Sarp edilen",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "tk": "Yatyr",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "tk": "Gün %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "tk": "Sakla",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "tk": "Jemi:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "tk": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "tk": "...",
+    "en": "Reference"
+  }
+}

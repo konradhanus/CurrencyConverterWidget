@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ht": "Konvètisè Lajan",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ht": "Konvètisè",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ht": "Bidjè",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ht": "Depans",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ht": "Anviwònman",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ht": "Sove",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ht": "Sove!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ht": "Bidjè ou",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ht": "Rete",
+    "en": "Reference"
+  },
+  "spent": {
+    "ht": "Depanse",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ht": "Anile",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ht": "Jou %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ht": "Sove",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ht": "Total:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ht": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ht": "...",
+    "en": "Reference"
+  }
+}

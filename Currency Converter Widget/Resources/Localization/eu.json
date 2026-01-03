@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "eu": "Moneta Bihurtzailea",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "eu": "Bihurtzailea",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "eu": "Aurrekontua",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "eu": "Gastuak",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "eu": "Ezarpenak",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "eu": "Gorde",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "eu": "Gordeta!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "eu": "Zure Aurrekontua",
+    "en": "Reference"
+  },
+  "today_header": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "eu": "Geratzen da",
+    "en": "Reference"
+  },
+  "spent": {
+    "eu": "Gastatua",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "eu": "Utzi",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "eu": "Eguna %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "eu": "Gorde",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "eu": "Guztira:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "eu": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "eu": "...",
+    "en": "Reference"
+  }
+}

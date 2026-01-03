@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "tg": "Табдилдиҳандаи асъор",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "tg": "Табдил",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "tg": "Буҷет",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "tg": "Хароҷот",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "tg": "Танзимот",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "tg": "Захира",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "tg": "Захира шуд!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "tg": "Буҷети шумо",
+    "en": "Reference"
+  },
+  "today_header": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "tg": "Боқимонда",
+    "en": "Reference"
+  },
+  "spent": {
+    "tg": "Сарфшуда",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "tg": "Бекор",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "tg": "Рӯзи %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "tg": "Захира",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "tg": "Ҳамагӣ:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "tg": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "tg": "...",
+    "en": "Reference"
+  }
+}

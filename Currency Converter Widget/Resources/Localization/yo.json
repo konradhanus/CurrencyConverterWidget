@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "yo": "Oluyipada Owo",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "yo": "Oluyipada",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "yo": "Isuna",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "yo": "Awọn inawo",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "yo": "Eto",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "yo": "Fipamọ",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "yo": "Ti fipamọ!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "yo": "Isuna rẹ",
+    "en": "Reference"
+  },
+  "today_header": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "yo": "Ti o ku",
+    "en": "Reference"
+  },
+  "spent": {
+    "yo": "Ti lo",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "yo": "Fagilee",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "yo": "Ọjọ %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "yo": "Fipamọ",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "yo": "Apapọ:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "yo": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "yo": "...",
+    "en": "Reference"
+  }
+}

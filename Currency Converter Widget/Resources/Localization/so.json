@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "so": "Beddelka Lacagta",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "so": "Beddel",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "so": "Miisaaniyad",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "so": "Kharashyada",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "so": "Dejinta",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "so": "Kaydi",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "so": "Waa la kaydiyay!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "so": "Miisaaniyaddaada",
+    "en": "Reference"
+  },
+  "today_header": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "so": "Hadhaaga",
+    "en": "Reference"
+  },
+  "spent": {
+    "so": "La kharash gareeyay",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "so": "Jooji",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "so": "Maalin %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "so": "Kaydi",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "so": "Wadarta:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "so": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "so": "...",
+    "en": "Reference"
+  }
+}

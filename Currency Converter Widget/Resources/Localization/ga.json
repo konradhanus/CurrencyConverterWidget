@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "ga": "Tiontaire Airgeadra",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "ga": "Tiontaire",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "ga": "Buiséad",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "ga": "Costais",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "ga": "Socruithe",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "ga": "Sábháil",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "ga": "Sábháilte!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "ga": "Do Bhuiséad",
+    "en": "Reference"
+  },
+  "today_header": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "ga": "Fágtha",
+    "en": "Reference"
+  },
+  "spent": {
+    "ga": "Caite",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "ga": "Cealaigh",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "ga": "Lá %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "ga": "Sábháil",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "ga": "Iomlán:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "ga": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "ga": "...",
+    "en": "Reference"
+  }
+}

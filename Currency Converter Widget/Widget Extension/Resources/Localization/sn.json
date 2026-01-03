@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "sn": "Currency Converter",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "sn": "Converter",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "sn": "Budget",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "sn": "Mari Yakashandiswa",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "sn": "Zvirongwa",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "sn": "Chengeta",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "sn": "Zvachengetwa!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "sn": "Budget Yako",
+    "en": "Reference"
+  },
+  "today_header": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "sn": "Yasarira",
+    "en": "Reference"
+  },
+  "spent": {
+    "sn": "Yakashandiswa",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "sn": "Kanzura",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "sn": "Zuva %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "sn": "Chengeta",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "sn": "Ese pamwe:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "sn": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "sn": "...",
+    "en": "Reference"
+  }
+}

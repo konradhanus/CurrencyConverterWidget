@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "xh": "Isiguquli Semali",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "xh": "Isiguquli",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "xh": "Uhlahlo-lwabiwo-mali",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "xh": "Inkcitho",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "xh": "Izicwangciso",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "xh": "Gcina",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "xh": "Igciniwe!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "xh": "Uhlahlo-lwabiwo-mali Lwakho",
+    "en": "Reference"
+  },
+  "today_header": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "xh": "Eshiyeleyo",
+    "en": "Reference"
+  },
+  "spent": {
+    "xh": "Ichithwe",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "xh": "Rhoxisa",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "xh": "Usuku %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "xh": "Gcina",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "xh": "Isiyonke:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "xh": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "xh": "...",
+    "en": "Reference"
+  }
+}

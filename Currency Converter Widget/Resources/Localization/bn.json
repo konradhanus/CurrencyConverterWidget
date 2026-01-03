@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "bn": "মুद्रा রূপান্তরকারী",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "bn": "রূপান্তর",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "bn": "বাজেট",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "bn": "খরচ",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "bn": "সেটিংস",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "bn": "খরচ সংরক্ষণ করুন",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "bn": "সংরক্ষিত!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "bn": "আপনার বাজেট",
+    "en": "Reference"
+  },
+  "today_header": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "bn": "অবশিষ্ট",
+    "en": "Reference"
+  },
+  "spent": {
+    "bn": "ব্যয়িত",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "bn": "বাতিল",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "bn": "দিন %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "bn": "সংরক্ষণ",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "bn": "মোট:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "bn": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "bn": "...",
+    "en": "Reference"
+  }
+}

@@ -15,6 +15,9 @@ struct Currency_Converter_WidgetApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(localizationManager)
+                .onOpenURL { url in
+                    print("App opened with URL: \(url)")
+                }
         }
     }
 }

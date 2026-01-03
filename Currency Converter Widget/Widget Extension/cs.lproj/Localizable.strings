@@ -1,0 +1,19 @@
+/* Localizable.strings (Czech) */
+
+"intent_conf_title" = "Konfigurace Měn";
+"intent_conf_desc" = "Vyberte měny pro převod.";
+"intent_param_from" = "Z Měny";
+"intent_param_to" = "Do Měny";
+"intent_conf_language" = "Jazyk";
+
+"intent_swap_title" = "Prohodit Měny";
+"intent_type_number" = "Zadat Číslici";
+"intent_param_digit" = "Číslice";
+"intent_clear" = "Vymazat";
+"intent_refresh" = "Obnovit";
+"intent_save" = "Uložit Výdaj";
+
+"entity_currency" = "Měna";
+
+"widget_display_name" = "Převodník Měn";
+"widget_description" = "Okamžitý převod měn.";

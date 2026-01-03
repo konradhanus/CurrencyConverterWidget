@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "lo": "ອັດຕາແລກປ່ຽນ",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "lo": "ແລກປ່ຽນ",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "lo": "ງົບປະມານ",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "lo": "ຄ່າໃຊ້ຈ່າຍ",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "lo": "ຕັ້ງຄ່າ",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "lo": "ບັນທຶກ",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "lo": "ບັນທຶກແລ້ວ!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "lo": "ງົບປະມານຂອງທ່ານ",
+    "en": "Reference"
+  },
+  "today_header": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "lo": "ເຫຼືອ",
+    "en": "Reference"
+  },
+  "spent": {
+    "lo": "ໃຊ້ໄປ",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "lo": "ຍົກເລີກ",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "lo": "ມື້ %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "lo": "ບັນທຶກ",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "lo": "ລວມ:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "lo": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "lo": "...",
+    "en": "Reference"
+  }
+}

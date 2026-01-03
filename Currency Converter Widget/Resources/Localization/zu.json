@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "zu": "Isiguquli Semali",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "zu": "Isiguquli",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "zu": "Isabelomali",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "zu": "Izindleko",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "zu": "Izilungiselelo",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "zu": "Gcina",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "zu": "Kugciniwe!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "zu": "Isabelomali Sakho",
+    "en": "Reference"
+  },
+  "today_header": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "zu": "Okusele",
+    "en": "Reference"
+  },
+  "spent": {
+    "zu": "Kusetshenzisiwe",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "zu": "Khansela",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "zu": "Usuku %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "zu": "Gcina",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "zu": "Isiyonke:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "zu": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "zu": "...",
+    "en": "Reference"
+  }
+}

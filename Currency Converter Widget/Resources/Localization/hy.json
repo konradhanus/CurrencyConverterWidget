@@ -1,0 +1,290 @@
+{
+  "app_name": {
+    "hy": "Արժույթի փոխարկիչ",
+    "en": "Reference"
+  },
+  "tab_converter": {
+    "hy": "Փոխարկիչ",
+    "en": "Reference"
+  },
+  "tab_budget": {
+    "hy": "Բյուջե",
+    "en": "Reference"
+  },
+  "tab_expenses": {
+    "hy": "Ծախսեր",
+    "en": "Reference"
+  },
+  "tab_settings": {
+    "hy": "Կարգավորումներ",
+    "en": "Reference"
+  },
+  "input_placeholder_desc": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "save_expense_button": {
+    "hy": "Պահպանել",
+    "en": "Reference"
+  },
+  "saved_success": {
+    "hy": "Պահպանված է!",
+    "en": "Reference"
+  },
+  "budget_setup_empty_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "budget_setup_empty_desc": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_set_budget": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_trip_history": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "budget_screen_title": {
+    "hy": "Ձեր բյուջեն",
+    "en": "Reference"
+  },
+  "today_header": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "available_today": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "remaining": {
+    "hy": "Մնացորդ",
+    "en": "Reference"
+  },
+  "spent": {
+    "hy": "Ծախսված",
+    "en": "Reference"
+  },
+  "rollover_positive": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "rollover_negative": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "history_expenses_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "trip_summary_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "total_budget_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "total_remaining_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "local_currency_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_edit_settings": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_finish_trip": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "alert_finish_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "alert_finish_message": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_finish_archive": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_cancel": {
+    "hy": "Չեղարկել",
+    "en": "Reference"
+  },
+  "menu_budget_currency": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "day_label": {
+    "hy": "Օր %@",
+    "en": "Reference"
+  },
+  "limit_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "no_rollover": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "section_info": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "trip_name_placeholder": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "section_finance": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "budget_amount_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "primary_currency_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "secondary_currency_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "section_term": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "start_date_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "end_date_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "edit_budget_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "new_budget_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_save": {
+    "hy": "Պահպանել",
+    "en": "Reference"
+  },
+  "restore_edit_action": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "delete_action": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "restore_action": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "no_finished_trips": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "finished_trips_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "btn_close": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "spent_total_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "my_expenses_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "show_totals_in": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "total_label": {
+    "hy": "Ընդամենը:",
+    "en": "Reference"
+  },
+  "plus_others": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "no_expenses_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "no_expenses_desc": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "no_description": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "section_details": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "label_description": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "label_date": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "section_amounts_currencies": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "label_result": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "title_edit": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "widget_saved": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "rate_label": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "language_settings_title": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "language_system": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "language_english": {
+    "hy": "...",
+    "en": "Reference"
+  },
+  "language_polish": {
+    "hy": "...",
+    "en": "Reference"
+  }
+}

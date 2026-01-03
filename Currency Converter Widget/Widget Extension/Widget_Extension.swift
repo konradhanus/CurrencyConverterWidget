@@ -27,6 +27,9 @@ struct WidgetStorage {
     static let lastFetchKey = "widgetLastFetchDate"
     static let fromKey = "widgetFromCurrency"
     static let toKey = "widgetToCurrency"
+    static let configFromKey = "widgetConfigFromCurrency"
+    static let configToKey = "widgetConfigToCurrency"
+    static let widgetLanguageKey = "widgetConfigLanguage"
     static let expensesKey = "savedExpensesList"
     static let lastSaveKey = "widgetLastSaveDate"
     
@@ -58,6 +61,21 @@ struct WidgetStorage {
     static var activeTo: String? {
         get { return shared.string(forKey: toKey) }
         set { shared.set(newValue, forKey: toKey) }
+    }
+    
+    static var configFrom: String? {
+        get { return shared.string(forKey: configFromKey) }
+        set { shared.set(newValue, forKey: configFromKey) }
+    }
+    
+    static var configTo: String? {
+        get { return shared.string(forKey: configToKey) }
+        set { shared.set(newValue, forKey: configToKey) }
+    }
+    
+    static var widgetLanguage: String? {
+        get { return shared.string(forKey: widgetLanguageKey) }
+        set { shared.set(newValue, forKey: widgetLanguageKey) }
     }
     
     static func saveExpense(amount: Double, from: String, to: String, rate: Double) {
@@ -133,6 +151,29 @@ struct Provider: AppIntentTimelineProvider {
         let configFrom = configuration.fromCurrency?.id ?? "USD"
         let configTo = configuration.toCurrency?.id ?? "PLN"
         
+        // Handle Language Configuration
+        let configLang = configuration.language.rawValue
+        if WidgetStorage.widgetLanguage != configLang {
+             WidgetStorage.widgetLanguage = configLang
+        }
+        
+        // Force update localization manager immediately so the view renders with new language
+        LocalizationManager.shared.updateFromSettings()
+        
+        // Check if configuration has changed since last time
+        // or if it's the very first run (WidgetStorage.configFrom is nil)
+        if configFrom != WidgetStorage.configFrom || configTo != WidgetStorage.configTo {
+            WidgetStorage.activeFrom = configFrom
+            WidgetStorage.activeTo = configTo
+            WidgetStorage.configFrom = configFrom
+            WidgetStorage.configTo = configTo
+            
+            // Invalidate cache for new pair
+            WidgetStorage.lastFetchDate = Date.distantPast
+            let cacheKey = "rate_\(configFrom)_\(configTo)"
+            WidgetStorage.rate = WidgetStorage.shared.double(forKey: cacheKey)
+        }
+        
         var finalFrom = WidgetStorage.activeFrom ?? configFrom
         var finalTo = WidgetStorage.activeTo ?? configTo
         
@@ -164,6 +205,9 @@ struct Provider: AppIntentTimelineProvider {
     private func getRateSmart(from: String, to: String) async -> Double {
         if from == to { return 1.0 }
         
+        let cacheKey = "rate_\(from)_\(to)"
+        
+        // 1. Try to use very fresh data from memory/cache if same pair
         let isSamePair = (WidgetStorage.activeFrom == from && WidgetStorage.activeTo == to)
         let hasRate = WidgetStorage.rate > 0
         let lastUpdate = WidgetStorage.lastFetchDate ?? Date.distantPast
@@ -173,10 +217,11 @@ struct Provider: AppIntentTimelineProvider {
             return WidgetStorage.rate
         }
         
+        // 2. Try network
         let urlString = "https://api.frankfurter.app/latest?from=\(from)&to=\(to)"
-        guard let url = URL(string: urlString) else { return WidgetStorage.rate }
-
+        
         do {
+            guard let url = URL(string: urlString) else { throw URLError(.badURL) }
             let (data, _) = try await URLSession.shared.data(from: url)
             let response = try JSONDecoder().decode(ExchangeRateResponse.self, from: data)
             let newRate = response.rates[to] ?? 0.0
@@ -186,11 +231,24 @@ struct Provider: AppIntentTimelineProvider {
                 WidgetStorage.lastFetchDate = Date()
                 WidgetStorage.activeFrom = from
                 WidgetStorage.activeTo = to
+                
+                // Cache specifically for this pair (shared with App)
+                WidgetStorage.shared.set(newRate, forKey: cacheKey)
+                
                 return newRate
             }
         } catch {
-            print("Błąd sieci")
+            print("Błąd sieci: \(error)")
         }
+        
+        // 3. Fallback: Try specific cache for this pair
+        let cachedSpecific = WidgetStorage.shared.double(forKey: cacheKey)
+        if cachedSpecific > 0 {
+            WidgetStorage.rate = cachedSpecific // Update active rate to match
+            return cachedSpecific
+        }
+        
+        // 4. Ultimate fallback
         return WidgetStorage.rate
     }
 }
@@ -280,11 +338,18 @@ struct SmallWidgetView: View {
                     .foregroundStyle(.white.opacity(0.8))
                 
                 let result = entry.amount * entry.rate
-                Text(formatAmount(result))
-                    .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white)
-                    .minimumScaleFactor(0.6)
-                    .lineLimit(1)
+                HStack(alignment: .bottom, spacing: 2) {
+                    Text(formatAmount(result))
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .foregroundStyle(.white)
+                        .minimumScaleFactor(0.6)
+                        .lineLimit(1)
+                    
+                    Text(entry.from)
+                        .font(.system(size: 10, weight: .semibold))
+                        .foregroundStyle(.white.opacity(0.7))
+                        .padding(.bottom, 3)
+                }
             }
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.horizontal, 8)
@@ -292,7 +357,7 @@ struct SmallWidgetView: View {
             
             KeypadView(buttonHeight: 20, fontSize: 12, spacing: 2, showSaveButton: false)
         }
-        .widgetURL(URL(string: "currencyconverter://open"))
+        .widgetURL(URL(string: "currencyconverter://open?from=\(entry.from)&to=\(entry.to)"))
     }
 }
 
@@ -330,7 +395,7 @@ struct MediumWidgetView: View {
                 .frame(width: 130)
         }
         .padding()
-        .widgetURL(URL(string: "currencyconverter://open"))
+        .widgetURL(URL(string: "currencyconverter://open?from=\(entry.from)&to=\(entry.to)"))
     }
 }
 
@@ -401,7 +466,7 @@ struct LargeWidgetView: View {
                 .padding(.horizontal, 12)
                 .padding(.bottom, 12)
         }
-        .widgetURL(URL(string: "currencyconverter://open"))
+        .widgetURL(URL(string: "currencyconverter://open?from=\(entry.from)&to=\(entry.to)"))
     }
 }
 
@@ -409,30 +474,76 @@ struct LargeWidgetView: View {
 
 struct AccessoryRectangularView: View {
     var entry: Provider.Entry
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(entry.from).font(.headline)
-                Image(systemName: "arrow.right").font(.caption)
-                Text(entry.to).font(.headline)
+        HStack(alignment: .center, spacing: 4) {
+            VStack(alignment: .leading, spacing: 0) {
+                HStack(spacing: 4) {
+                    Text(entry.from)
+                        .font(.system(size: 14, weight: .bold))
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(.secondary)
+                    Text(entry.to)
+                        .font(.system(size: 14, weight: .bold))
+                    Spacer()
+                }
+                
+                Spacer(minLength: 0)
+                
+                let inputAmount = entry.amount > 0 ? entry.amount : 1.0
+                let result = inputAmount * entry.rate
+                
+                ViewThatFits(in: .horizontal) {
+                    HStack(alignment: .firstTextBaseline, spacing: 2) {
+                        Text(formatAmount(inputAmount))
+                            .font(.system(size: 13))
+                            .foregroundStyle(.secondary)
+                        Text("=")
+                            .font(.system(size: 13))
+                            .foregroundStyle(.secondary)
+                        Text(formatAmount(result))
+                            .font(.system(size: 19, weight: .bold, design: .rounded))
+                    }
+                    // Fallback for smaller space / long numbers
+                    Text(formatAmount(result))
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                }
             }
-            let result = entry.amount * entry.rate
-            Text("\(formatAmount(entry.amount)) = \(formatAmount(result))")
-                .minimumScaleFactor(0.5)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .widgetURL(URL(string: "currencyconverter://open?from=\(entry.from)&to=\(entry.to)"))
+            
+            // Swap button - Max height allowed in accessory
+            Button(intent: SwapCurrenciesIntent()) {
+                ZStack {
+                    Color.white.opacity(0.15)
+                    Image(systemName: "arrow.up.arrow.down")
+                        .font(.system(size: 14, weight: .bold))
+                }
+                .frame(width: 32, height: 32) // Standard touch target size adaptation
+                .clipShape(Circle())
+            }
+            .buttonStyle(.plain)
         }
     }
 }
 
 struct AccessoryCircularView: View {
     var entry: Provider.Entry
+    
     var body: some View {
         ZStack {
             AccessoryWidgetBackground()
-            VStack(spacing: 0) {
-                Text(entry.to).font(.caption2.bold())
-                Text(String(format: "%.2f", entry.rate)).font(.system(size: 10))
+            VStack(spacing: 1) {
+                Text(entry.from)
+                    .font(.system(size: 14, weight: .bold))
+                
+                Text(String(format: "%.2f", entry.rate))
+                    .font(.system(size: 11, weight: .medium, design: .monospaced))
+                    .minimumScaleFactor(0.8)
             }
         }
+        .widgetURL(URL(string: "currencyconverter://open?from=\(entry.from)&to=\(entry.to)"))
     }
 }
 
@@ -530,8 +641,8 @@ func triggerHaptic() {
 // --- INTENTS ---
 
 struct TypeNumberIntent: AppIntent {
-    static var title: LocalizedStringResource = "Wpisz cyfrę"
-    @Parameter(title: "Cyfra") var number: Int
+    static var title: LocalizedStringResource = "intent_type_number"
+    @Parameter(title: "intent_param_digit") var number: Int
     init() {}
     init(_ number: Int) { self.number = number }
     
@@ -546,7 +657,7 @@ struct TypeNumberIntent: AppIntent {
 }
 
 struct SwapCurrenciesIntent: AppIntent {
-    static var title: LocalizedStringResource = "Zamień Waluty"
+    static var title: LocalizedStringResource = "intent_swap_title"
     func perform() async throws -> some IntentResult {
         let currentFrom = WidgetStorage.activeFrom ?? "USD"
         let currentTo = WidgetStorage.activeTo ?? "PLN"
@@ -561,7 +672,7 @@ struct SwapCurrenciesIntent: AppIntent {
 }
 
 struct ClearAmountIntent: AppIntent {
-    static var title: LocalizedStringResource = "Wyczyść"
+    static var title: LocalizedStringResource = "intent_clear"
     func perform() async throws -> some IntentResult {
         WidgetStorage.amount = 0
         return .result()
@@ -569,7 +680,7 @@ struct ClearAmountIntent: AppIntent {
 }
 
 struct RefreshIntent: AppIntent {
-    static var title: LocalizedStringResource = "Odśwież"
+    static var title: LocalizedStringResource = "intent_refresh"
     func perform() async throws -> some IntentResult {
         WidgetStorage.lastFetchDate = Date.distantPast
         return .result()
@@ -577,7 +688,7 @@ struct RefreshIntent: AppIntent {
 }
 
 struct SaveExpenseIntent: AppIntent {
-    static var title: LocalizedStringResource = "Zapisz Wydatek"
+    static var title: LocalizedStringResource = "intent_save"
     
     func perform() async throws -> some IntentResult {
         let amount = WidgetStorage.amount
@@ -595,9 +706,213 @@ struct SaveExpenseIntent: AppIntent {
 
 // --- CONFIGURATION ---
 
+enum WidgetLanguage: String, AppEnum {
+    case system = "system"
+    case english = "en"
+    case polish = "pl"
+    case german = "de"
+    case dutch = "nl"
+    case spanish = "es"
+    case french = "fr"
+    case chinese = "zh"
+    case japanese = "ja"
+    case portuguese = "pt"
+    case czech = "cs"
+    case slovak = "sk"
+    case croatian = "hr"
+    case russian = "ru"
+    case serbian = "sr"
+    case ukrainian = "uk"
+    case thai = "th"
+    case hindi = "hi"
+    case greek = "el"
+    case italian = "it"
+    case arabic = "ar"
+    case hungarian = "hu"
+    case finnish = "fi"
+    case icelandic = "is"
+    case norwegian = "no"
+    case swedish = "sv"
+    case romanian = "ro"
+    case mongolian = "mn"
+    case korean = "ko"
+    case turkish = "tr"
+    case danish = "da"
+    case hebrew = "he"
+    case indonesian = "id"
+    case vietnamese = "vi"
+    case malay = "ms"
+    case filipino = "tl"
+    case bulgarian = "bg"
+    case lithuanian = "lt"
+    case latvian = "lv"
+    case estonian = "et"
+    case slovenian = "sl"
+    case catalan = "ca"
+    case swahili = "sw"
+    case georgian = "ka"
+    case albanian = "sq"
+    case macedonian = "mk"
+    case afrikaans = "af"
+    case khmer = "km"
+    case persian = "fa"
+    case urdu = "ur"
+    case bengali = "bn"
+    case punjabi = "pa"
+    case tamil = "ta"
+    case telugu = "te"
+    case marathi = "mr"
+    case gujarati = "gu"
+    case kannada = "kn"
+    case malayalam = "ml"
+    case sinhala = "si"
+    case burmese = "my"
+    case lao = "lo"
+    case nepali = "ne"
+    case armenian = "hy"
+    case azerbaijani = "az"
+    case kazakh = "kk"
+    case uzbek = "uz"
+    case turkmen = "tk"
+    case kyrgyz = "ky"
+    case tajik = "tg"
+    case pashto = "ps"
+    case kurdish = "ku"
+    case amharic = "am"
+    case somali = "so"
+    case yoruba = "yo"
+    case igbo = "ig"
+    case hausa = "ha"
+    case zulu = "zu"
+    case xhosa = "xh"
+    case bosnian = "bs"
+    case maltese = "mt"
+    case irish = "ga"
+    case welsh = "cy"
+    case basque = "eu"
+    case galician = "gl"
+    case belarusian = "be"
+    case luxembourgish = "lb"
+    case haitian = "ht"
+    case javanese = "jv"
+    case kinyarwanda = "rw"
+    case malagasy = "mg"
+    case shona = "sn"
+    case sindhi = "sd"
+    case uyghur = "ug"
+    case tatar = "tt"
+    case odia = "or"
+    case assamese = "as"
+    case tigrinya = "ti"
+    case quechua = "qu"
+    
+    static var typeDisplayRepresentation: TypeDisplayRepresentation = "intent_conf_language"
+    
+    static var caseDisplayRepresentations: [WidgetLanguage : DisplayRepresentation] = [
+        .system: "System",
+        .english: "English",
+        .polish: "Polski",
+        .german: "Deutsch",
+        .dutch: "Nederlands",
+        .spanish: "Español",
+        .french: "Français",
+        .chinese: "中文",
+        .japanese: "日本語",
+        .portuguese: "Português",
+        .czech: "Čeština",
+        .slovak: "Slovenčina",
+        .croatian: "Hrvatski",
+        .russian: "Русский",
+        .serbian: "Српски",
+        .ukrainian: "Українська",
+        .thai: "ไทย",
+        .hindi: "हिन्दी",
+        .greek: "Ελληνικά",
+        .italian: "Italiano",
+        .arabic: "العربية",
+        .hungarian: "Magyar",
+        .finnish: "Suomi",
+        .icelandic: "Íslenska",
+        .norwegian: "Norsk",
+        .swedish: "Svenska",
+        .romanian: "Română",
+        .mongolian: "Монгол",
+        .korean: "한국어",
+        .turkish: "Türkçe",
+        .danish: "Dansk",
+        .hebrew: "עברית",
+        .indonesian: "Bahasa Indonesia",
+        .vietnamese: "Tiếng Việt",
+        .malay: "Bahasa Melayu",
+        .filipino: "Filipino",
+        .bulgarian: "Български",
+        .lithuanian: "Lietuvių",
+        .latvian: "Latviešu",
+        .estonian: "Eesti",
+        .slovenian: "Slovenščina",
+        .catalan: "Català",
+        .swahili: "Kiswahili",
+        .georgian: "ქართული",
+        .albanian: "Shqip",
+        .macedonian: "Македонски",
+        .afrikaans: "Afrikaans",
+        .khmer: "ភាសាខ្មែរ",
+        .persian: "فارسی",
+        .urdu: "اردو",
+        .bengali: "বাংলা",
+        .punjabi: "ਪੰਜਾਬੀ",
+        .tamil: "தமிழ்",
+        .telugu: "తెలుగు",
+        .marathi: "मराठी",
+        .gujarati: "ગુજરાતી",
+        .kannada: "ಕನ್ನಡ",
+        .malayalam: "മലയാളം",
+        .sinhala: "සිംහල",
+        .burmese: "မြန်မာ",
+        .lao: "ລາវ",
+        .nepali: "नेपाली",
+        .armenian: "Հայերեն",
+        .azerbaijani: "Azərbaycan",
+        .kazakh: "Қазақша",
+        .uzbek: "Oʻzbek",
+        .turkmen: "Türkmen",
+        .kyrgyz: "Кыргызча",
+        .tajik: "Тоҷикӣ",
+        .pashto: "پښتو",
+        .kurdish: "Kurdî",
+        .amharic: "ამჰარული",
+        .somali: "Soomaali",
+        .yoruba: "Yorùbá",
+        .igbo: "Igbo",
+        .hausa: "Hausa",
+        .zulu: "isiZulu",
+        .xhosa: "isiXhosa",
+        .bosnian: "Bosanski",
+        .maltese: "Malti",
+        .irish: "Gaeilge",
+        .welsh: "Cymraeg",
+        .basque: "Euskara",
+        .galician: "Galego",
+        .belarusian: "Беларуская",
+        .luxembourgish: "Lëtzebuergesch",
+        .haitian: "Kreyòl Ayisyen",
+        .javanese: "Jawa",
+        .kinyarwanda: "Kinyarwanda",
+        .malagasy: "Malagasy",
+        .shona: "ChiShona",
+        .sindhi: "سنڌي",
+        .uyghur: "ئۇيغۇرچە",
+        .tatar: "Татарча",
+        .odia: "ଓଡ଼ିଆ",
+        .assamese: "অসমীয়া",
+        .tigrinya: "ትግርኛ",
+        .quechua: "Runasimi"
+    ]
+}
+
 struct CurrencyEntity: AppEntity {
     let id: String
-    static var typeDisplayRepresentation: TypeDisplayRepresentation = "Waluta"
+    static var typeDisplayRepresentation: TypeDisplayRepresentation = "entity_currency"
     var displayRepresentation: DisplayRepresentation { DisplayRepresentation(title: "\(id)") }
     static var defaultQuery = CurrencyQuery()
 }
@@ -616,24 +931,27 @@ struct CurrencyQuery: EntityStringQuery {
 
 @available(iOS 17.0, *)
 struct CurrencySelectionIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource = "Konfiguracja Walut"
-    static var description = IntentDescription("Wybierz waluty do przeliczania.")
+    static var title: LocalizedStringResource = "intent_conf_title"
+    static var description = IntentDescription("intent_conf_desc")
 
-    @Parameter(title: "Z Waluty")
+    @Parameter(title: "intent_param_from")
     var fromCurrency: CurrencyEntity?
 
-    @Parameter(title: "Na Walutę")
+    @Parameter(title: "intent_param_to")
     var toCurrency: CurrencyEntity?
     
+    @Parameter(title: "intent_conf_language", default: .system)
+    var language: WidgetLanguage
+    
     init() {
-        self.fromCurrency = CurrencyEntity(id: "THB")
+        self.fromCurrency = CurrencyEntity(id: "USD")
         self.toCurrency = CurrencyEntity(id: "PLN")
+        self.language = .system
     }
 }
 
-let allCurrencies = ["PLN", "USD", "EUR", "GBP", "CHF", "JPY", "CZK", "NOK", "SEK", "CAD", "AUD", "THB", "HUF", "DKK"]
+let allCurrencies = ["AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "SEK", "SGD", "THB", "TRY", "USD", "ZAR"]
 
-@main
 struct WidgetExtensionWidget: Widget {
     let kind: String = "Widget_Extension"
     var body: some WidgetConfiguration {
@@ -644,9 +962,49 @@ struct WidgetExtensionWidget: Widget {
                 }
                 .environmentObject(LocalizationManager.shared)
                 .environment(\.locale, LocalizationManager.shared.appLocale)
+                .onAppear {
+                    // Update language if changed in config or app settings
+                    LocalizationManager.shared.updateFromSettings()
+                }
         }
-        .configurationDisplayName("Kalkulator Walut")
-        .description("Przeliczaj waluty błyskawicznie.")
+        .configurationDisplayName(String(localized: "widget_display_name"))
+        .description(String(localized: "widget_description"))
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .accessoryCircular, .accessoryRectangular, .accessoryInline])
+    }
+}
+
+@main
+struct CurrencyWidgetsBundle: WidgetBundle {
+    var body: some Widget {
+        WidgetExtensionWidget()
+        
+        if #available(iOSApplicationExtension 18.0, *) {
+            OpenAppControl()
+        }
+    }
+}
+
+@available(iOS 18.0, *)
+struct OpenAppControl: ControlWidget {
+    var body: some ControlWidgetConfiguration {
+        StaticControlConfiguration(kind: "com.currencyconverter.open") {
+            ControlWidgetButton(action: OpenCurrencyConverterIntent()) {
+                Label(String(localized: "widget_display_name"), systemImage: "arrow.right.arrow.left.circle")
+            }
+        }
+        .displayName(LocalizedStringResource("widget_display_name"))
+        .description(LocalizedStringResource("widget_description"))
+    }
+}
+
+@available(iOS 16.0, *)
+struct OpenCurrencyConverterIntent: AppIntent {
+    static var title: LocalizedStringResource = "widget_display_name"
+    static var openAppWhenRun: Bool = true
+    
+    init() {}
+    
+    func perform() async throws -> some IntentResult {
+        return .result()
     }
 }

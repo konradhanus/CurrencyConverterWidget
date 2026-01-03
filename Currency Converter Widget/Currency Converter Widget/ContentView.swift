@@ -52,7 +52,7 @@ class ExpenseManager: ObservableObject {
     // HISTORIA
     @Published var archivedTrips: [Trip] = []
     
-    static let allCurrencies = ["THB", "PLN", "USD", "EUR", "GBP", "CHF", "JPY", "CAD", "AUD", "CZK", "NOK", "SEK", "HUF", "DKK"]
+    static let allCurrencies = ["AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HUF", "IDR", "ILS", "INR", "ISK", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "SEK", "SGD", "THB", "TRY", "USD", "ZAR"]
     
     private var defaults: UserDefaults {
         UserDefaults(suiteName: suiteName) ?? UserDefaults.standard
@@ -215,17 +215,31 @@ class ExpenseManager: ObservableObject {
     
     static func fetchExchangeRate(from fromCurrency: String, to toCurrency: String) async -> Double {
         if fromCurrency == toCurrency { return 1.0 }
+        
+        let defaults = UserDefaults(suiteName: "group.com.currencyconverter.shared") ?? UserDefaults.standard
+        let cacheKey = "rate_\(fromCurrency)_\(toCurrency)"
+        
         let urlString = "https://api.frankfurter.app/latest?from=\(fromCurrency)&to=\(toCurrency)"
-        guard let url = URL(string: urlString) else { return 0.0 }
+        guard let url = URL(string: urlString) else {
+            return defaults.double(forKey: cacheKey)
+        }
 
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let response = try JSONDecoder().decode(ExchangeRateResponse.self, from: data)
-            return response.rates[toCurrency] ?? 0.0
+            let rate = response.rates[toCurrency] ?? 0.0
+            
+            if rate > 0 {
+                defaults.set(rate, forKey: cacheKey)
+                return rate
+            }
         } catch {
             print("Error: \(error)")
-            return 0.0
         }
+        
+        // Offline fallback
+        let cached = defaults.double(forKey: cacheKey)
+        return cached
     }
 }
 
@@ -239,8 +253,16 @@ struct ExchangeRateResponse: Codable {
 @MainActor
 class ExchangeRateViewModel: ObservableObject {
     @Published var amount: Double = 0.0
-    @Published var fromCurrency: String = "THB"
-    @Published var toCurrency: String = "PLN"
+    @Published var fromCurrency: String {
+        didSet {
+            saveState()
+        }
+    }
+    @Published var toCurrency: String {
+        didSet {
+            saveState()
+        }
+    }
     @Published var result: Double = 0.0
     @Published var exchangeRate: Double = 0.0
     @Published var isLoading: Bool = false
@@ -250,9 +272,22 @@ class ExchangeRateViewModel: ObservableObject {
     
     @Published var useCustomRate: Bool = false
     @Published var customRateString: String = "0.12"
+    
+    private var defaults: UserDefaults {
+        UserDefaults(suiteName: "group.com.currencyconverter.shared") ?? UserDefaults.standard
+    }
 
     init() {
+        let defaults = UserDefaults(suiteName: "group.com.currencyconverter.shared") ?? UserDefaults.standard
+        self.fromCurrency = defaults.string(forKey: "lastSourceCurrency") ?? "THB"
+        self.toCurrency = defaults.string(forKey: "lastTargetCurrency") ?? "PLN"
+        
         Task { await fetchExchangeRate() }
+    }
+    
+    private func saveState() {
+        defaults.set(fromCurrency, forKey: "lastSourceCurrency")
+        defaults.set(toCurrency, forKey: "lastTargetCurrency")
     }
     
     func calculateResult() {
@@ -474,6 +509,20 @@ struct CalculatorView: View {
         }
         .onChange(of: viewModel.fromCurrency) { _,_ in Task { await viewModel.fetchExchangeRate() } }
         .onChange(of: viewModel.toCurrency) { _,_ in Task { await viewModel.fetchExchangeRate() } }
+        .onOpenURL { url in
+            guard url.scheme == "currencyconverter", url.host == "open" else { return }
+            
+            let components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+            let newFrom = components?.queryItems?.first(where: { $0.name == "from" })?.value
+            let newTo = components?.queryItems?.first(where: { $0.name == "to" })?.value
+            
+            if let newFrom, let newTo {
+                // Aktualizujemy ViewModel - to automatycznie zapisze stan w UserDefaults dzięki didSet
+                viewModel.fromCurrency = newFrom
+                viewModel.toCurrency = newTo
+                Task { await viewModel.fetchExchangeRate() }
+            }
+        }
     }
     
     func handleKeypadInput(_ key: String) {
@@ -1418,8 +1467,9 @@ struct CurrencyPill: View {
         Menu {
             ForEach(all, id: \.self) { curr in Button(curr) { currency = curr } }
         } label: {
-            HStack { Text(currency).font(.headline).foregroundColor(.white); Image(systemName: "chevron.down").font(.caption).foregroundColor(.white.opacity(0.7)) }
+            HStack { Text(currency).font(.headline).foregroundColor(.white).minimumScaleFactor(0.7).lineLimit(1); Image(systemName: "chevron.down").font(.caption).foregroundColor(.white.opacity(0.7)) }
             .padding(.horizontal, 16).padding(.vertical, 10)
+            .frame(minWidth: 80) // Zwiększono minimalną szerokość dla lepszego dopasowania
             .background(Color.white.opacity(0.2)).cornerRadius(20)
         }
     }
