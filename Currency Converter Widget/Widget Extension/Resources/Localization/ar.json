@@ -330,5 +330,41 @@
   "feedback_prompt_great": {
     "en": "Yes, it's great!",
     "ar": "Yes, it's great!"
+  },
+  "settings_header_general": {
+    "en": "General",
+    "ar": "General"
+  },
+  "settings_header_appearance": {
+    "en": "Appearance",
+    "ar": "Appearance"
+  },
+  "settings_header_support": {
+    "en": "Support & Feedback",
+    "ar": "Support & Feedback"
+  },
+  "settings_header_about": {
+    "en": "About",
+    "ar": "About"
+  },
+  "theme_light": {
+    "en": "Light",
+    "ar": "Light"
+  },
+  "theme_dark": {
+    "en": "Dark",
+    "ar": "Dark"
+  },
+  "theme_system": {
+    "en": "System",
+    "ar": "System"
+  },
+  "settings_language_footer": {
+    "en": "Choose the language for the app interface.",
+    "ar": "Choose the language for the app interface."
+  },
+  "settings_version": {
+    "en": "Version",
+    "ar": "Version"
   }
 }

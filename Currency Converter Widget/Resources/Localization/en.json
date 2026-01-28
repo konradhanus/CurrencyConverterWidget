@@ -407,5 +407,41 @@
   "feedback_prompt_great": {
     "en": "Yes, it's great!",
     "pl": "Tak, jest świetna!"
+  },
+  "settings_header_general": {
+    "en": "General",
+    "pl": "Ogólne"
+  },
+  "settings_header_appearance": {
+    "en": "Appearance",
+    "pl": "Wygląd"
+  },
+  "settings_header_support": {
+    "en": "Support & Feedback",
+    "pl": "Pomoc i Opinie"
+  },
+  "settings_header_about": {
+    "en": "About",
+    "pl": "O aplikacji"
+  },
+  "theme_light": {
+    "en": "Light",
+    "pl": "Jasny"
+  },
+  "theme_dark": {
+    "en": "Dark",
+    "pl": "Ciemny"
+  },
+  "theme_system": {
+    "en": "System",
+    "pl": "System"
+  },
+  "settings_language_footer": {
+    "en": "Choose the language for the app interface.",
+    "pl": "Wybierz język interfejsu aplikacji."
+  },
+  "settings_version": {
+    "en": "Version",
+    "pl": "Wersja"
   }
 }

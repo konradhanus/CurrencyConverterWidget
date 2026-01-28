@@ -379,7 +379,7 @@ struct ContentView: View {
     }
 }
 
-// --- ZAKŁADKA 4: USTAWIENIA ---
+// --- ZAKŁADKA 4: USTAWIENIA (REDESIGNED) ---
 struct SettingsView: View {
     @EnvironmentObject var loc: LocalizationManager
     @EnvironmentObject var themeManager: ThemeManager
@@ -387,54 +387,120 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                Section(header: Text(loc.localized("language_settings_title"))) {
-                    Picker(loc.localized("language_settings_title"), selection: $loc.currentLanguage) {
-                        ForEach(LocalizationManager.Language.allCases) { lang in
-                            Text(lang.displayName).tag(lang)
+            List {
+                // SEKCJA 1: JĘZYK (NAJWAŻNIEJSZE)
+                Section(header: Text(loc.localized("settings_header_general")), footer: Text(loc.localized("settings_language_footer"))) {
+                    NavigationLink(destination: LanguageSelectionView()) {
+                        HStack {
+                            SettingsIcon(icon: "globe", color: .blue)
+                            Text(loc.localized("language_settings_title"))
+                                .font(.body)
+                            Spacer()
+                            Text(loc.currentLanguage.displayName)
+                                .foregroundColor(.secondary)
                         }
                     }
-                    .pickerStyle(.inline)
-                }
-
-                Section(header: Text("Appearance")) {
-                    Picker("Theme", selection: $themeManager.colorSchemeOption) {
-                        ForEach(ColorSchemeOption.allCases) { option in
-                            Text(option.displayName).tag(option)
-                        }
-                    }
-                    .pickerStyle(.segmented)
                 }
                 
-                Section(header: Text(loc.localized("feedback_section_title"))) {
+                // SEKCJA 2: WYGLĄD
+                Section(header: Text(loc.localized("settings_header_appearance"))) {
+                    VStack(alignment: .leading, spacing: 15) {
+                        HStack {
+                            SettingsIcon(icon: "paintbrush.fill", color: .purple)
+                            Text(loc.localized("settings_header_appearance"))
+                            Spacer()
+                        }
+                        
+                        Picker("Theme", selection: $themeManager.colorSchemeOption) {
+                            Text(loc.localized("theme_system")).tag(ColorSchemeOption.auto)
+                            Text(loc.localized("theme_light")).tag(ColorSchemeOption.light)
+                            Text(loc.localized("theme_dark")).tag(ColorSchemeOption.dark)
+                        }
+                        .pickerStyle(.segmented)
+                    }
+                    .padding(.vertical, 8)
+                }
+                
+                // SEKCJA 3: FEEDBACK
+                Section(header: Text(loc.localized("settings_header_support"))) {
                     Button(action: { feedbackManager.userIsHappy() }) {
                         HStack {
-                            Image(systemName: "star.fill")
-                                .foregroundColor(.yellow)
+                            SettingsIcon(icon: "star.fill", color: .yellow)
                             Text(loc.localized("btn_rate_app"))
+                                .foregroundColor(.primary)
                         }
                     }
                     
                     Button(action: { feedbackManager.userIsUnhappy() }) {
                         HStack {
-                            Image(systemName: "envelope.fill")
-                                .foregroundColor(.blue)
+                            SettingsIcon(icon: "envelope.fill", color: .green)
                             Text(loc.localized("btn_send_feedback"))
+                                .foregroundColor(.primary)
                         }
                     }
                 }
                 
-                Section {
-                    Text("Version 1.0.0")
-                        .foregroundColor(.secondary)
-                        .font(.caption)
+                // SEKCJA 4: INFO
+                Section(header: Text(loc.localized("settings_header_about"))) {
+                    HStack {
+                        SettingsIcon(icon: "info.circle.fill", color: .gray)
+                        Text(loc.localized("settings_version"))
+                        Spacer()
+                        Text(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0")
+                            .foregroundColor(.secondary)
+                    }
                 }
             }
+            .listStyle(.insetGrouped)
             .navigationTitle(loc.localized("tab_settings"))
             .sheet(isPresented: $feedbackManager.showNegativeFeedbackSheet) {
                 FeedbackView()
             }
         }
+    }
+}
+
+struct LanguageSelectionView: View {
+    @EnvironmentObject var loc: LocalizationManager
+    @Environment(\.dismiss) var dismiss
+    
+    var body: some View {
+        List {
+            ForEach(LocalizationManager.Language.allCases) { lang in
+                Button(action: {
+                    withAnimation {
+                        loc.currentLanguage = lang
+                        dismiss()
+                    }
+                }) {
+                    HStack {
+                        Text(lang.displayName)
+                            .foregroundColor(.primary)
+                        Spacer()
+                        if loc.currentLanguage == lang {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(.blue)
+                        }
+                    }
+                }
+            }
+        }
+        .navigationTitle(loc.localized("language_settings_title"))
+    }
+}
+
+struct SettingsIcon: View {
+    let icon: String
+    let color: Color
+    
+    var body: some View {
+        Image(systemName: icon)
+            .font(.system(size: 14, weight: .bold))
+            .foregroundColor(.white)
+            .frame(width: 28, height: 28)
+            .background(color)
+            .cornerRadius(6)
+            .padding(.trailing, 8)
     }
 }
 
