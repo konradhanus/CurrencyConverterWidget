@@ -367,27 +367,27 @@ struct MediumWidgetView: View {
         HStack(spacing: 16) {
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
-                    Text(entry.from).font(.caption.weight(.bold)).foregroundStyle(.blue)
+                    Text(entry.from).font(.caption.weight(.bold)).foregroundStyle(.white.opacity(0.8))
                     Button(intent: SwapCurrenciesIntent()) {
                         Image(systemName: "arrow.left.arrow.right.circle.fill")
                             .font(.title3)
                             .foregroundStyle(.white.opacity(0.3))
                     }.buttonStyle(.plain)
-                    Text(entry.to).font(.caption.weight(.bold)).foregroundStyle(.purple)
+                    Text(entry.to).font(.caption.weight(.bold)).foregroundStyle(.white.opacity(0.8))
                 }
                 Spacer()
                 Text(formatAmount(entry.amount))
                     .font(.system(size: 20, design: .monospaced))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.white.opacity(0.7))
                 let result = entry.amount * entry.rate
                 Text(formatAmount(result))
                     .font(.system(size: 34, weight: .bold, design: .rounded))
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(.white)
                     .minimumScaleFactor(0.5)
                     .lineLimit(1)
                 Spacer()
                 Text("1 \(entry.from) ≈ \(String(format: "%.3f", entry.rate)) \(entry.to)")
-                    .font(.caption2).foregroundStyle(.tertiary)
+                    .font(.caption2).foregroundStyle(.white.opacity(0.5))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
@@ -504,10 +504,12 @@ struct AccessoryRectangularView: View {
                             .foregroundStyle(.secondary)
                         Text(formatAmount(result))
                             .font(.system(size: 19, weight: .bold, design: .rounded))
+                            .foregroundStyle(.white)
                     }
                     // Fallback for smaller space / long numbers
                     Text(formatAmount(result))
                         .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .foregroundStyle(.white)
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)

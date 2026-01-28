@@ -286,5 +286,49 @@
   "language_polish": {
     "gl": "...",
     "en": "Reference"
+  },
+  "feedback_section_title": {
+    "en": "Feedback",
+    "gl": "Feedback"
+  },
+  "btn_rate_app": {
+    "en": "Rate the app",
+    "gl": "Rate the app"
+  },
+  "btn_send_feedback": {
+    "en": "Send feedback",
+    "gl": "Send feedback"
+  },
+  "feedback_view_title": {
+    "en": "Feedback",
+    "gl": "Feedback"
+  },
+  "feedback_improve_header": {
+    "en": "How can we improve?",
+    "gl": "How can we improve?"
+  },
+  "feedback_email_placeholder": {
+    "en": "Your Email (Optional)",
+    "gl": "Your Email (Optional)"
+  },
+  "feedback_sent": {
+    "en": "Sent!",
+    "gl": "Sent!"
+  },
+  "feedback_send_button": {
+    "en": "Send Feedback",
+    "gl": "Send Feedback"
+  },
+  "feedback_prompt_title": {
+    "en": "Enjoying Currency Widget?",
+    "gl": "Enjoying Currency Widget?"
+  },
+  "feedback_prompt_not_really": {
+    "en": "Not really",
+    "gl": "Not really"
+  },
+  "feedback_prompt_great": {
+    "en": "Yes, it's great!",
+    "gl": "Yes, it's great!"
   }
 }

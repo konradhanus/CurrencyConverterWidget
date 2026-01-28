@@ -1,0 +1,3 @@
+The languages translated in this application are:
+
+af, am, ar, as, az, be, bg, bn, bs, ca, cs, cy, da, de, el, en, es, et, eu, fa, fi, fr, ga, gl, gu, ha, he, hi, hr, ht, hu, hy, id, ig, is, it, ja, jv, ka, kk, km, kn, ko, ku, ky, lb, lo, lt, lv, mg, mk, ml, mn, mr, ms, mt, my, ne, nl, no, or, pa, pl, ps, pt, qu, ro, ru, rw, sd, si, sk, sl, sn, so, sq, sr, sv, sw, ta, te, tg, th, ti, tk, tl, tr, tt, ug, uk, ur, uz, vi, xh, yo, zh, zu.

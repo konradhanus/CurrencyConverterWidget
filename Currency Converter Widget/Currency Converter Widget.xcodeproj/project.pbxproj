@@ -63,13 +63,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		774914AA2F07D6E6001AED0D /* Exceptions for "Currency Converter Widget" folder in "Currency Converter Widget" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Currency-Converter-Widget-Info.plist",
-			);
-			target = 77CB38F92EF21F9F00A27DFD /* Currency Converter Widget */;
-		};
 		77CB393F2EF222EF00A27DFD /* Exceptions for "Widget Extension" folder in "Widget ExtensionExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -82,9 +75,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		77CB38FC2EF21F9F00A27DFD /* Currency Converter Widget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				774914AA2F07D6E6001AED0D /* Exceptions for "Currency Converter Widget" folder in "Currency Converter Widget" target */,
-			);
 			path = "Currency Converter Widget";
 			sourceTree = "<group>";
 		};
@@ -539,7 +529,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Currency Converter Widget/Currency Converter Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 683MXZZR23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -553,7 +543,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hanuscommercialars.Currency-Converter-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -569,7 +559,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Currency Converter Widget/Currency Converter Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 683MXZZR23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -583,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hanuscommercialars.Currency-Converter-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

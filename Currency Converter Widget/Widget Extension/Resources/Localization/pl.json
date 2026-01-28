@@ -358,5 +358,54 @@
     "en": "Polish",
     "pl": "Polski",
     "description": "Polish language option"
+  },
+  "remaining_label": {
+    "en": "Remaining",
+    "pl": "Zostało",
+    "description": "Label for remaining funds"
+  },
+  "feedback_section_title": {
+    "en": "Feedback",
+    "pl": "Opinia"
+  },
+  "btn_rate_app": {
+    "en": "Rate the app",
+    "pl": "Oceń aplikację"
+  },
+  "btn_send_feedback": {
+    "en": "Send feedback",
+    "pl": "Prześlij opinię"
+  },
+  "feedback_view_title": {
+    "en": "Feedback",
+    "pl": "Opinia"
+  },
+  "feedback_improve_header": {
+    "en": "How can we improve?",
+    "pl": "Jak możemy się poprawić?"
+  },
+  "feedback_email_placeholder": {
+    "en": "Your Email (Optional)",
+    "pl": "Twój Email (Opcjonalnie)"
+  },
+  "feedback_sent": {
+    "en": "Sent!",
+    "pl": "Wysłano!"
+  },
+  "feedback_send_button": {
+    "en": "Send Feedback",
+    "pl": "Wyślij opinię"
+  },
+  "feedback_prompt_title": {
+    "en": "Enjoying Currency Widget?",
+    "pl": "Podoba Ci się nasza aplikacja?"
+  },
+  "feedback_prompt_not_really": {
+    "en": "Not really",
+    "pl": "Nie bardzo"
+  },
+  "feedback_prompt_great": {
+    "en": "Yes, it's great!",
+    "pl": "Tak, jest świetna!"
   }
 }

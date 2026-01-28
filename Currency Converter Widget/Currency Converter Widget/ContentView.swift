@@ -335,6 +335,7 @@ class ExchangeRateViewModel: ObservableObject {
 
 struct ContentView: View {
     @StateObject private var expenseManager = ExpenseManager()
+    @StateObject private var themeManager = ThemeManager()
     @EnvironmentObject var loc: LocalizationManager
     
     init() {
@@ -367,18 +368,22 @@ struct ContentView: View {
             
             SettingsView()
                 .environmentObject(expenseManager) // Pass just in case, or for uniformity
+                .environmentObject(themeManager)
                 .tabItem {
                     Label(loc.localized("tab_settings"), systemImage: "gearshape.fill")
                 }
         }
         .environment(\.locale, loc.appLocale)
         .accentColor(.purple)
+        .preferredColorScheme(themeManager.preferredColorScheme)
     }
 }
 
 // --- ZAKŁADKA 4: USTAWIENIA ---
 struct SettingsView: View {
     @EnvironmentObject var loc: LocalizationManager
+    @EnvironmentObject var themeManager: ThemeManager
+    @StateObject private var feedbackManager = FeedbackManager.shared
     
     var body: some View {
         NavigationView {
@@ -391,6 +396,33 @@ struct SettingsView: View {
                     }
                     .pickerStyle(.inline)
                 }
+
+                Section(header: Text("Appearance")) {
+                    Picker("Theme", selection: $themeManager.colorSchemeOption) {
+                        ForEach(ColorSchemeOption.allCases) { option in
+                            Text(option.displayName).tag(option)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+                
+                Section(header: Text(loc.localized("feedback_section_title"))) {
+                    Button(action: { feedbackManager.userIsHappy() }) {
+                        HStack {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.yellow)
+                            Text(loc.localized("btn_rate_app"))
+                        }
+                    }
+                    
+                    Button(action: { feedbackManager.userIsUnhappy() }) {
+                        HStack {
+                            Image(systemName: "envelope.fill")
+                                .foregroundColor(.blue)
+                            Text(loc.localized("btn_send_feedback"))
+                        }
+                    }
+                }
                 
                 Section {
                     Text("Version 1.0.0")
@@ -399,6 +431,9 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle(loc.localized("tab_settings"))
+            .sheet(isPresented: $feedbackManager.showNegativeFeedbackSheet) {
+                FeedbackView()
+            }
         }
     }
 }
@@ -407,6 +442,7 @@ struct SettingsView: View {
 
 struct CalculatorView: View {
     @StateObject private var viewModel = ExchangeRateViewModel()
+    @StateObject private var feedbackManager = FeedbackManager.shared
     @EnvironmentObject var expenseManager: ExpenseManager
     @EnvironmentObject var loc: LocalizationManager
     @State private var showSaveConfirmation: Bool = false
@@ -523,6 +559,17 @@ struct CalculatorView: View {
                 Task { await viewModel.fetchExchangeRate() }
             }
         }
+        .alert(loc.localized("feedback_prompt_title"), isPresented: $feedbackManager.showFeedbackPrompt) {
+            Button(loc.localized("feedback_prompt_not_really")) {
+                feedbackManager.userIsUnhappy()
+            }
+            Button(loc.localized("feedback_prompt_great")) {
+                feedbackManager.userIsHappy()
+            }
+        }
+        .sheet(isPresented: $feedbackManager.showNegativeFeedbackSheet) {
+            FeedbackView()
+        }
     }
     
     func handleKeypadInput(_ key: String) {
@@ -552,6 +599,9 @@ struct CalculatorView: View {
             note: note.isEmpty ? nil : note
         )
         expenseManager.addExpense(newExpense)
+        
+        // Log significant event for feedback
+        feedbackManager.logSignificantEvent()
         
         note = ""
         inputString = "0"
@@ -923,15 +973,25 @@ struct TodayBudgetCard: View {
                 VStack {
                     Text(loc.localized("remaining")).font(.caption2).foregroundColor(.secondary)
                     Text(stats.remainingToday, format: .currency(code: currency))
-                        .font(.title.weight(.bold)).foregroundColor(stats.remainingToday >= 0 ? .primary : .red)
+                        .font(.system(size: 36, weight: .bold, design: .rounded))
+                        .foregroundColor(stats.remainingToday >= 0 ? .primary : .red)
+                        .minimumScaleFactor(0.4)
+                        .lineLimit(1)
+                        .padding(.horizontal, 30)
+                    
                     if isFetching { ProgressView().scaleEffect(0.8) }
                     else if currency != secondaryCurrency {
                         let remainingTodayConverted = stats.remainingToday * secondaryRate
-                        Text("≈ \(remainingTodayConverted, format: .currency(code: secondaryCurrency))").font(.caption2).foregroundColor(.secondary)
+                        Text("≈ \(remainingTodayConverted, format: .currency(code: secondaryCurrency))")
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                            .minimumScaleFactor(0.6)
+                            .lineLimit(1)
+                            .padding(.horizontal, 40)
                     }
                 }
             }
-            .frame(height: 200).padding(.vertical, 10)
+            .frame(height: 240).padding(.vertical, 10)
             
             HStack(spacing: 30) {
                 VStack {
@@ -985,7 +1045,7 @@ struct TripSummaryCard: View {
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
-                        Text(loc.localized("remaining_label")).font(.caption).foregroundColor(.secondary)
+                        Text(loc.localized("remaining")).font(.caption).foregroundColor(.secondary)
                         if isFetching { ProgressView().scaleEffect(0.8) } else {
                             Text(stats.totalRemaining * secondaryRate, format: .currency(code: secondaryCurrency)).font(.headline).foregroundColor(.green.opacity(0.8))
                         }
@@ -1101,33 +1161,34 @@ struct TripsHistoryView: View {
         NavigationView {
             List {
                 ForEach(manager.archivedTrips) { trip in
-                    TripHistoryRow(trip: trip)
-                        .contentShape(Rectangle())
-                        .contextMenu {
-                            Button {
-                                manager.restoreTripToActive(trip)
-                                dismiss()
-                            } label: {
-                                Label(loc.localized("restore_edit_action"), systemImage: "pencil")
-                            }
-                        }
-                        .swipeActions {
-                            Button(role: .destructive) {
-                                if let index = manager.archivedTrips.firstIndex(of: trip) {
-                                    manager.deleteArchivedTrip(at: IndexSet(integer: index))
+                    NavigationLink(destination: TripDetailView(trip: trip)) {
+                        TripHistoryRow(trip: trip)
+                            .contextMenu {
+                                Button {
+                                    manager.restoreTripToActive(trip)
+                                    dismiss()
+                                } label: {
+                                    Label(loc.localized("restore_edit_action"), systemImage: "pencil")
                                 }
-                            } label: {
-                                Label(loc.localized("delete_action"), systemImage: "trash")
                             }
-                            
-                            Button {
-                                manager.restoreTripToActive(trip)
-                                dismiss()
-                            } label: {
-                                Label(loc.localized("restore_action"), systemImage: "arrow.uturn.backward")
+                            .swipeActions {
+                                Button(role: .destructive) {
+                                    if let index = manager.archivedTrips.firstIndex(of: trip) {
+                                        manager.deleteArchivedTrip(at: IndexSet(integer: index))
+                                    }
+                                } label: {
+                                    Label(loc.localized("delete_action"), systemImage: "trash")
+                                }
+                                
+                                Button {
+                                    manager.restoreTripToActive(trip)
+                                    dismiss()
+                                } label: {
+                                    Label(loc.localized("restore_action"), systemImage: "arrow.uturn.backward")
+                                }
+                                .tint(.orange)
                             }
-                            .tint(.orange)
-                        }
+                    }
                 }
                 
                 if manager.archivedTrips.isEmpty {
@@ -1143,6 +1204,81 @@ struct TripsHistoryView: View {
                 }
             }
         }
+    }
+}
+
+struct TripDetailView: View {
+    let trip: Trip
+    @EnvironmentObject var loc: LocalizationManager
+    
+    var spent: Double {
+        trip.expenses.reduce(0.0) { $0 + $1.convertedAmount }
+    }
+    
+    var remaining: Double {
+        trip.totalBudget - spent
+    }
+    
+    var groupedExpenses: [(Date, [ExpenseItem])] {
+        let grouped = Dictionary(grouping: trip.expenses) { item -> Date in
+            Calendar.current.startOfDay(for: item.date)
+        }
+        return grouped.sorted { $0.key > $1.key }
+    }
+    
+    var body: some View {
+        List {
+            Section(header: Text(loc.localized("trip_summary_title"))) {
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack {
+                        Text(loc.localized("total_budget_label"))
+                            .foregroundColor(.secondary)
+                        Spacer()
+                        Text(trip.totalBudget, format: .currency(code: trip.budgetCurrency))
+                            .fontWeight(.bold)
+                    }
+                    
+                    HStack {
+                        Text(loc.localized("spent"))
+                            .foregroundColor(.secondary)
+                        Spacer()
+                        Text(spent, format: .currency(code: trip.budgetCurrency))
+                            .fontWeight(.bold)
+                            .foregroundColor(.red)
+                    }
+                    
+                    Divider()
+                    
+                    HStack {
+                        Text(loc.localized("remaining"))
+                            .foregroundColor(.secondary)
+                        Spacer()
+                        Text(remaining, format: .currency(code: trip.budgetCurrency))
+                            .fontWeight(.bold)
+                            .foregroundColor(remaining >= 0 ? .green : .red)
+                    }
+                    
+                    HStack {
+                        Text(trip.startDate.formatted(.dateTime.day().month().year().locale(loc.appLocale)) + " - " + trip.endDate.formatted(.dateTime.day().month().year().locale(loc.appLocale)))
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                            .padding(.top, 5)
+                        Spacer()
+                    }
+                }
+                .padding(.vertical, 5)
+            }
+            
+            ForEach(groupedExpenses, id: \.0) { date, items in
+                Section(header: Text(date.formatted(.dateTime.day().month().year().weekday(.wide).locale(loc.appLocale)))) {
+                    ForEach(items) { item in
+                        ExpenseRow(item: item)
+                    }
+                }
+            }
+        }
+        .navigationTitle(trip.name)
+        .listStyle(.insetGrouped)
     }
 }
 
